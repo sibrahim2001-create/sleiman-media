@@ -1,0 +1,1022 @@
+{
+  "timezone": "Europe/Berlin",
+  "brand": "Sleiman Systems",
+  "week_start": "2026-09-23",
+  "reels": [
+    {
+      "id": "viral-2026-09-23-01",
+      "scheduled_at": "2026-09-23T06:45:00+02:00",
+      "format": "number",
+      "title": "20 Stunden nur für Angebote? #Shorts",
+      "scenes": [
+        {
+          "kicker": "STOPP. RECHNE DAS MAL.",
+          "headline": "20 STUNDEN.",
+          "body": "So schnell wird aus 30 Minuten pro Angebot ein ganzer Büroblock."
+        },
+        {
+          "kicker": "BEISPIEL",
+          "headline": "40 × 30 MIN",
+          "body": "40 Angebote im Monat × 30 Minuten = 20 Stunden."
+        },
+        {
+          "kicker": "DAS SIND",
+          "headline": "2,5 ARBEITSTAGE",
+          "body": "Und Nachfassen, Rückfragen und Ablage sind noch nicht drin."
+        },
+        {
+          "kicker": "BESSERER ABLAUF",
+          "headline": "ANFRAGE → KI → PRÜFUNG",
+          "body": "KI bereitet vor. Der Mensch prüft. Dann geht das Angebot raus."
+        }
+      ],
+      "caption": "30 Minuten pro Angebot klingen klein. Bei 40 Angeboten sind das 20 Stunden im Monat – bevor Nachfassen und Rückfragen dazukommen.\\n\\nFolge für einfache KI-Systeme fürs Handwerk.\\n\\n#handwerk #handwerker #kifürhandwerker #automatisierung #digitalisierung"
+    },
+    {
+      "id": "viral-2026-09-23-02",
+      "scheduled_at": "2026-09-23T10:00:00+02:00",
+      "format": "prompt",
+      "title": "Diesen KI-Prompt würde ich jedem Elektriker geben #Shorts",
+      "scenes": [
+        {
+          "kicker": "ELEKTRIKER?",
+          "headline": "KOPIER DIESEN PROMPT.",
+          "body": "Er spart nicht automatisch Zeit – aber er bringt Struktur in jede Anfrage."
+        },
+        {
+          "kicker": "PROMPT • TEIL 1",
+          "headline": "„ANALYSIERE DIE ANFRAGE“",
+          "body": "Was will der Kunde? Welche Leistung? Welche Angaben fehlen?"
+        },
+        {
+          "kicker": "PROMPT • TEIL 2",
+          "headline": "„STELLE NUR FEHLENDE FRAGEN“",
+          "body": "Kurz, verständlich und ohne technische Fachsprache für den Kunden."
+        },
+        {
+          "kicker": "PROMPT • TEIL 3",
+          "headline": "„ERSTELLE EIN BRIEFING“",
+          "body": "Danach prüfst DU das Ergebnis, bevor irgendetwas rausgeht."
+        }
+      ],
+      "caption": "Ein einfacher Prompt kann Kundenanfragen sauberer vorbereiten. Wichtig: KI vorbereitet – der Mensch prüft.\\n\\nSpeichern und beim nächsten Auftrag testen.\\n\\n#elektriker #handwerk #kifürhandwerker #chatgpt #digitalisierung"
+    },
+    {
+      "id": "viral-2026-09-23-03",
+      "scheduled_at": "2026-09-23T13:15:00+02:00",
+      "format": "demo",
+      "title": "Aus einer chaotischen Anfrage wird ein Angebots-Briefing #Shorts",
+      "scenes": [
+        {
+          "kicker": "KUNDENANFRAGE",
+          "headline": "„BRAUCHE PV + SPEICHER. PREIS?“",
+          "body": "Typisch: wenig Infos, aber der Kunde erwartet eine schnelle Antwort."
+        },
+        {
+          "kicker": "KI STRUKTURIERT",
+          "headline": "LEISTUNG • ORT • GRÖSSE",
+          "body": "Fehlende Angaben werden sichtbar, statt im Kopf gesucht zu werden."
+        },
+        {
+          "kicker": "NÄCHSTER SCHRITT",
+          "headline": "3 KLARE RÜCKFRAGEN",
+          "body": "Nur das fragen, was für die Vorbereitung wirklich fehlt."
+        },
+        {
+          "kicker": "ERGEBNIS",
+          "headline": "SAUBERES ANGEBOTS-BRIEFING",
+          "body": "Jetzt kann ein Mensch prüfen und gezielt weiterarbeiten."
+        }
+      ],
+      "caption": "So kann aus einer unvollständigen Anfrage ein sauberes Briefing werden: strukturieren, fehlende Angaben erkennen, gezielt nachfragen, prüfen.\\n\\n#handwerk #pv #kifürhandwerker #automatisierung #büro"
+    },
+    {
+      "id": "viral-2026-09-23-04",
+      "scheduled_at": "2026-09-23T17:00:00+02:00",
+      "format": "contrarian",
+      "title": "Mehr Leads lösen dein Problem vielleicht gar nicht #Shorts",
+      "scenes": [
+        {
+          "kicker": "UNBEQUEME WAHRHEIT",
+          "headline": "MEHR LEADS ≠ MEHR UMSATZ",
+          "body": "Nicht, wenn deine Anfragen und Angebote schon jetzt liegen bleiben."
+        },
+        {
+          "kicker": "MEHR ANFRAGEN",
+          "headline": "× SCHLECHTER PROZESS",
+          "body": "Kann einfach nur mehr Chaos, mehr Rückfragen und mehr Vergessen bedeuten."
+        },
+        {
+          "kicker": "ERST DANN",
+          "headline": "ANFRAGE → ANGEBOT → NACHFASSEN",
+          "body": "Wenn der Ablauf sitzt, lohnt es sich viel mehr, Traffic hochzufahren."
+        },
+        {
+          "kicker": "FRAGE",
+          "headline": "WO HÄNGT ES BEI DIR?",
+          "body": "Anfragen, Angebote oder Nachfassen?"
+        }
+      ],
+      "caption": "Mehr Leads sind nicht automatisch die Lösung. Wenn der Prozess dahinter nicht sauber läuft, skalierst du im Zweifel nur das Chaos.\\n\\nWas ist bei dir der größte Engpass?\\n\\n#handwerk #vertrieb #handwerker #automatisierung #digitalisierung"
+    },
+    {
+      "id": "viral-2026-09-23-05",
+      "scheduled_at": "2026-09-23T20:30:00+02:00",
+      "format": "offer",
+      "title": "Das KI-Office Kit ist kein ChatGPT-Kurs #Shorts",
+      "scenes": [
+        {
+          "kicker": "KEIN THEORIE-KURS",
+          "headline": "EIN STARTSYSTEM.",
+          "body": "Für Anfragen, Angebote und Nachfassen im Handwerksbüro."
+        },
+        {
+          "kicker": "DRIN IST",
+          "headline": "TRACKER + VORLAGEN",
+          "body": "Dazu KI-Prompts und ein klarer Anfrage→Angebot→Nachfassen-Ablauf."
+        },
+        {
+          "kicker": "FÜR",
+          "headline": "KLEINE & WACHSENDE BETRIEBE",
+          "body": "Wenn du Büroarbeit strukturierter vorbereiten willst."
+        },
+        {
+          "kicker": "HANDWERKER KI-OFFICE KIT",
+          "headline": "79 € • EINMALIG",
+          "body": "Mehr Infos und Kauf über den Link im Profil."
+        }
+      ],
+      "caption": "Kein ChatGPT-Kurs, sondern ein konkreter Startpunkt für strukturiertere Büroprozesse im Handwerk.\\n\\nHandwerker KI-Office Kit: 79 € einmalig. Link im Profil.\\n\\n#handwerk #handwerker #kifürhandwerker #automatisierung #büro"
+    },
+    {
+      "id": "viral-2026-09-24-01",
+      "scheduled_at": "2026-09-24T06:45:00+02:00",
+      "format": "pain",
+      "title": "Der teuerste Satz im Handwerk? Ich ruf später zurück #Shorts",
+      "scenes": [
+        {
+          "kicker": "KENNST DU DEN SATZ?",
+          "headline": "„ICH RUF SPÄTER ZURÜCK.“",
+          "body": "Und zwei Tage später fällt dir ein: Da war doch noch jemand."
+        },
+        {
+          "kicker": "DAS PROBLEM",
+          "headline": "GEDÄCHTNIS IST KEIN CRM",
+          "body": "Offene Rückrufe brauchen einen festen nächsten Schritt."
+        },
+        {
+          "kicker": "BESSER",
+          "headline": "KONTAKT → TERMIN → REMINDER",
+          "body": "Jede Anfrage bekommt sofort einen Status und ein Datum."
+        },
+        {
+          "kicker": "REGEL",
+          "headline": "NICHT MERKEN. SYSTEMATISIEREN.",
+          "body": "Dann hängt Nachfassen nicht mehr vom Kopf des Chefs ab."
+        }
+      ],
+      "caption": "„Ich ruf später zurück“ ist kein Prozess. Jeder offene Kontakt braucht Status, nächsten Schritt und Termin.\\n\\n#handwerk #handwerker #crm #vertrieb #digitalisierung"
+    },
+    {
+      "id": "viral-2026-09-24-02",
+      "scheduled_at": "2026-09-24T10:00:00+02:00",
+      "format": "template",
+      "title": "So kannst du nach einem offenen Angebot nachfassen #Shorts",
+      "scenes": [
+        {
+          "kicker": "NICHT BETTELN.",
+          "headline": "EINFACH KLAR NACHFASSEN.",
+          "body": "Kurz, freundlich, mit einer konkreten Frage."
+        },
+        {
+          "kicker": "VORLAGE",
+          "headline": "„HALLO HERR MÜLLER,“",
+          "body": "„ich wollte kurz fragen, ob Sie unser Angebot bereits prüfen konnten.“"
+        },
+        {
+          "kicker": "DANN",
+          "headline": "EINE KLARE FRAGE",
+          "body": "„Gibt es noch offene Punkte, bei denen wir helfen können?“"
+        },
+        {
+          "kicker": "WICHTIG",
+          "headline": "KEIN DRUCK. EIN NÄCHSTER SCHRITT.",
+          "body": "Und danach Termin fürs nächste Nachfassen setzen."
+        }
+      ],
+      "caption": "Gutes Nachfassen muss nicht unangenehm sein. Kurz, freundlich und mit einer klaren Frage.\\n\\nSpeichern für dein nächstes offenes Angebot.\\n\\n#handwerk #angebot #vertrieb #handwerker #nachfassen"
+    },
+    {
+      "id": "viral-2026-09-24-03",
+      "scheduled_at": "2026-09-24T13:15:00+02:00",
+      "format": "demo",
+      "title": "Welche Angebote musst du heute nachfassen? #Shorts",
+      "scenes": [
+        {
+          "kicker": "MONTAG 08:00",
+          "headline": "12 OFFENE ANGEBOTE.",
+          "body": "Welche davon brauchen heute eine Aktion?"
+        },
+        {
+          "kicker": "NICHT SO",
+          "headline": "POSTFACH DURCHSUCHEN",
+          "body": "Oder versuchen, dich an jeden Kunden zu erinnern."
+        },
+        {
+          "kicker": "SONDERN",
+          "headline": "FILTER: „HEUTE FÄLLIG“",
+          "body": "Status, Angebotswert, letzter Kontakt, nächster Schritt."
+        },
+        {
+          "kicker": "ERGEBNIS",
+          "headline": "5 KLARE AUFGABEN",
+          "body": "Du weißt sofort, wen du heute kontaktierst."
+        }
+      ],
+      "caption": "Ein gutes System sagt dir nicht nur, was offen ist – sondern was heute dran ist.\\n\\n#handwerk #crm #angebote #automatisierung #handwerker"
+    },
+    {
+      "id": "viral-2026-09-24-04",
+      "scheduled_at": "2026-09-24T17:00:00+02:00",
+      "format": "contrarian",
+      "title": "Der Chef sollte nicht der Reminder des Unternehmens sein #Shorts",
+      "scenes": [
+        {
+          "kicker": "WENN ALLES AN DIR HÄNGT",
+          "headline": "HAST DU KEIN SYSTEM.",
+          "body": "Du bist dann gleichzeitig Chef, Kalender und Erinnerung."
+        },
+        {
+          "kicker": "TYPISCH",
+          "headline": "„FRAG MICH SPÄTER NOCHMAL“",
+          "body": "So entstehen Rückfragen, Unterbrechungen und vergessene Aufgaben."
+        },
+        {
+          "kicker": "BESSER",
+          "headline": "STATUS + OWNER + DATUM",
+          "body": "Jede Aufgabe weiß, wem sie gehört und wann sie fällig ist."
+        },
+        {
+          "kicker": "ZIEL",
+          "headline": "DER BETRIEB DARF OHNE DEIN GEDÄCHTNIS LAUFEN.",
+          "body": "Das schafft Ruhe und bessere Übergaben."
+        }
+      ],
+      "caption": "Wenn jede offene Aufgabe im Kopf des Chefs lebt, skaliert der Betrieb schlecht. Status, Verantwortlicher und Termin gehören ins System.\\n\\n#handwerk #unternehmer #prozesse #automatisierung #digitalisierung"
+    },
+    {
+      "id": "viral-2026-09-24-05",
+      "scheduled_at": "2026-09-24T20:30:00+02:00",
+      "format": "offer",
+      "title": "Was steckt wirklich im KI-Office Kit? #Shorts",
+      "scenes": [
+        {
+          "kicker": "79 € EINMALIG",
+          "headline": "WAS BEKOMMST DU?",
+          "body": "Kein Abo. Kein kompliziertes Software-Projekt."
+        },
+        {
+          "kicker": "1",
+          "headline": "LEAD- & ANGEBOTS-TRACKER",
+          "body": "Damit offene Anfragen und Angebote sichtbar bleiben."
+        },
+        {
+          "kicker": "2",
+          "headline": "PROMPTS + VORLAGEN",
+          "body": "Für Vorbereitung, Rückfragen und Nachfassen."
+        },
+        {
+          "kicker": "3",
+          "headline": "KLARER WORKFLOW",
+          "body": "Anfrage → Angebot → Nachfassen. Link im Profil."
+        }
+      ],
+      "caption": "Das Handwerker KI-Office Kit bündelt Tracker, Vorlagen, Prompts und einen klaren Workflow. 79 € einmalig.\\n\\nLink im Profil.\\n\\n#handwerk #handwerker #kifürhandwerker #büro #digitalisierung"
+    },
+    {
+      "id": "viral-2026-09-25-01",
+      "scheduled_at": "2026-09-25T06:45:00+02:00",
+      "format": "pain",
+      "title": "3 Zeichen, dass dein Betrieb zu abhängig vom Chef ist #Shorts",
+      "scenes": [
+        {
+          "kicker": "ZEICHEN 1",
+          "headline": "NUR DU KENNST DEN STATUS.",
+          "body": "Mitarbeiter müssen dich fragen, bevor es weitergeht."
+        },
+        {
+          "kicker": "ZEICHEN 2",
+          "headline": "TERMINE LEBEN IM KOPF.",
+          "body": "Rückrufe und Nachfassen hängen an Erinnerung."
+        },
+        {
+          "kicker": "ZEICHEN 3",
+          "headline": "ANGEBOTE LIEGEN ÜBERALL.",
+          "body": "Postfach, WhatsApp, Papier, Notizen."
+        },
+        {
+          "kicker": "DANN",
+          "headline": "BRAUCHST DU KEINE MEHRARBEIT.",
+          "body": "Du brauchst einen klareren Ablauf."
+        }
+      ],
+      "caption": "Drei Warnsignale: Statuswissen nur beim Chef, Termine im Kopf und Angebote verteilt über mehrere Orte.\\n\\n#handwerk #unternehmer #prozesse #handwerker #digitalisierung"
+    },
+    {
+      "id": "viral-2026-09-25-02",
+      "scheduled_at": "2026-09-25T10:00:00+02:00",
+      "format": "prompt",
+      "title": "Ein guter KI-Prompt braucht nur diese 4 Dinge #Shorts",
+      "scenes": [
+        {
+          "kicker": "PROMPT-FORMEL",
+          "headline": "4 DINGE REICHEN.",
+          "body": "Damit ChatGPT nicht einfach irgendetwas rät."
+        },
+        {
+          "kicker": "1 + 2",
+          "headline": "ROLLE + KONTEXT",
+          "body": "Wer soll die KI sein? Was ist passiert?"
+        },
+        {
+          "kicker": "3",
+          "headline": "KLARE AUFGABE",
+          "body": "Was genau soll vorbereitet, geprüft oder zusammengefasst werden?"
+        },
+        {
+          "kicker": "4",
+          "headline": "AUSGABEFORMAT",
+          "body": "Liste, Tabelle, Nachricht oder Angebots-Briefing."
+        }
+      ],
+      "caption": "Rolle, Kontext, Aufgabe, Ausgabeformat. Diese vier Bausteine machen viele Prompts sofort klarer.\\n\\n#chatgpt #handwerk #prompt #kifürhandwerker #digitalisierung"
+    },
+    {
+      "id": "viral-2026-09-25-03",
+      "scheduled_at": "2026-09-25T13:15:00+02:00",
+      "format": "demo",
+      "title": "WhatsApp-Anfrage → saubere Angebotsvorbereitung #Shorts",
+      "scenes": [
+        {
+          "kicker": "WHATSAPP",
+          "headline": "„KÖNNT IHR MORGEN KOMMEN?“",
+          "body": "Kein Ort. Keine genaue Leistung. Kein Foto. Kein Budget."
+        },
+        {
+          "kicker": "KI FINDET",
+          "headline": "WAS FEHLT?",
+          "body": "Adresse, Leistung, Dringlichkeit, Fotos, Zugänglichkeit."
+        },
+        {
+          "kicker": "ANTWORT",
+          "headline": "5 KURZE FRAGEN",
+          "body": "So bekommt der Kunde eine klare Nachricht statt zehn Einzelrückfragen."
+        },
+        {
+          "kicker": "DANN",
+          "headline": "ANGEBOTS-BRIEFING",
+          "body": "Nach Prüfung kann das Büro gezielt weiterarbeiten."
+        }
+      ],
+      "caption": "Viele WhatsApp-Anfragen sind unvollständig. Statt zehnmal nachzufragen: fehlende Angaben einmal sauber erfassen.\\n\\n#handwerk #whatsapp #kifürhandwerker #angebot #automatisierung"
+    },
+    {
+      "id": "viral-2026-09-25-04",
+      "scheduled_at": "2026-09-25T17:00:00+02:00",
+      "format": "contrarian",
+      "title": "KI soll nicht für dich entscheiden #Shorts",
+      "scenes": [
+        {
+          "kicker": "WICHTIG",
+          "headline": "KI ≠ CHEF.",
+          "body": "Sie sollte nicht blind Preise, Zusagen oder Entscheidungen rausschicken."
+        },
+        {
+          "kicker": "STARK IST KI BEI",
+          "headline": "VORBEREITEN.",
+          "body": "Zusammenfassen, strukturieren, fehlende Infos erkennen, Entwürfe erstellen."
+        },
+        {
+          "kicker": "DANN",
+          "headline": "MENSCH PRÜFT.",
+          "body": "Fachwissen, Preis, Risiko und Kundenkommunikation bleiben unter Kontrolle."
+        },
+        {
+          "kicker": "MERKSATZ",
+          "headline": "KI BEREITET VOR. DU ENTSCHEIDEST.",
+          "body": "So nutzen wir sie bei Sleiman Systems."
+        }
+      ],
+      "caption": "Die sinnvollste Rolle von KI im Handwerksbüro: vorbereiten statt blind entscheiden.\\n\\n#handwerk #ki #kifürhandwerker #automatisierung #unternehmer"
+    },
+    {
+      "id": "viral-2026-09-25-05",
+      "scheduled_at": "2026-09-25T20:30:00+02:00",
+      "format": "offer",
+      "title": "Selbst starten oder für dich bauen lassen? #Shorts",
+      "scenes": [
+        {
+          "kicker": "2 WEGE",
+          "headline": "SELBST STARTEN",
+          "body": "KI-Office Kit: Tracker, Prompts, Vorlagen, Workflow."
+        },
+        {
+          "kicker": "ODER",
+          "headline": "INDIVIDUELL UMSETZEN",
+          "body": "Wir bauen Prozesse passend zu deinem Betrieb."
+        },
+        {
+          "kicker": "WENN DU TESTEN WILLST",
+          "headline": "KIT → LINK IM PROFIL",
+          "body": "79 € einmalig."
+        },
+        {
+          "kicker": "WENN DU UMSETZUNG WILLST",
+          "headline": "DM: SETUP",
+          "body": "Dann sprechen wir über deinen konkreten Ablauf."
+        }
+      ],
+      "caption": "Du willst selbst starten? KI-Office Kit über den Link im Profil. Du willst individuelle Umsetzung? Schreib „SETUP“.\\n\\n#handwerk #kifürhandwerker #automatisierung #digitalisierung #unternehmer"
+    },
+    {
+      "id": "viral-2026-09-26-01",
+      "scheduled_at": "2026-09-26T06:45:00+02:00",
+      "format": "pain",
+      "title": "50 Angebote raus – und niemand fasst systematisch nach #Shorts",
+      "scenes": [
+        {
+          "kicker": "50 ANGEBOTE",
+          "headline": "UND DANN?",
+          "body": "Bei vielen Betrieben endet der Prozess mit „Angebot gesendet“."
+        },
+        {
+          "kicker": "ABER",
+          "headline": "OFFEN ≠ VERLOREN",
+          "body": "Manche Kunden sind unsicher, beschäftigt oder haben Rückfragen."
+        },
+        {
+          "kicker": "DESHALB",
+          "headline": "NACHFASSDATUM SETZEN",
+          "body": "Jedes Angebot bekommt einen nächsten Schritt."
+        },
+        {
+          "kicker": "SONST",
+          "headline": "VERSCHWINDET ES IM POSTFACH.",
+          "body": "Nicht wegen fehlender Nachfrage – wegen fehlendem Prozess."
+        }
+      ],
+      "caption": "Ein Angebot ist nach dem Versand noch nicht fertig. Setze direkt ein Nachfassdatum und einen nächsten Schritt.\\n\\n#handwerk #angebote #vertrieb #nachfassen #handwerker"
+    },
+    {
+      "id": "viral-2026-09-26-02",
+      "scheduled_at": "2026-09-26T10:00:00+02:00",
+      "format": "tip",
+      "title": "Diese 5 Infos sollte jede Kundenanfrage enthalten #Shorts",
+      "scenes": [
+        {
+          "kicker": "JEDE ANFRAGE",
+          "headline": "5 BASIS-INFOS.",
+          "body": "Damit dein Büro nicht fünfmal zurückfragen muss."
+        },
+        {
+          "kicker": "1–3",
+          "headline": "WER? WAS? WO?",
+          "body": "Kunde, gewünschte Leistung, Einsatzort."
+        },
+        {
+          "kicker": "4",
+          "headline": "WANN?",
+          "body": "Dringlichkeit oder gewünschter Zeitraum."
+        },
+        {
+          "kicker": "5",
+          "headline": "BEWEISE",
+          "body": "Fotos, Maße, Unterlagen – je nach Gewerk."
+        }
+      ],
+      "caption": "Wer, was, wo, wann und relevante Unterlagen/Fotos. Fünf Basisinfos sparen unnötige Rückfragen.\\n\\n#handwerk #kundenanfrage #büro #handwerker #prozesse"
+    },
+    {
+      "id": "viral-2026-09-26-03",
+      "scheduled_at": "2026-09-26T13:15:00+02:00",
+      "format": "demo",
+      "title": "Postfach-Chaos vs. klarer Anfrage-Prozess #Shorts",
+      "scenes": [
+        {
+          "kicker": "VORHER",
+          "headline": "MAIL • WHATSAPP • ZETTEL",
+          "body": "Drei Orte. Kein gemeinsamer Status."
+        },
+        {
+          "kicker": "DANN PASSIERT",
+          "headline": "DOPPELTE ARBEIT",
+          "body": "Suchen, nachfragen, erinnern, weiterleiten."
+        },
+        {
+          "kicker": "NACHHER",
+          "headline": "1 ANFRAGE = 1 DATENSATZ",
+          "body": "Quelle, Kunde, Status, nächster Schritt, Termin."
+        },
+        {
+          "kicker": "ZIEL",
+          "headline": "WENIGER SUCHEN.",
+          "body": "Mehr Klarheit darüber, was als Nächstes passiert."
+        }
+      ],
+      "caption": "Der größte Hebel ist oft nicht mehr Software, sondern ein sauberer Eingang für alle Anfragen.\\n\\n#handwerk #büro #crm #automatisierung #digitalisierung"
+    },
+    {
+      "id": "viral-2026-09-26-04",
+      "scheduled_at": "2026-09-26T17:00:00+02:00",
+      "format": "contrarian",
+      "title": "Handwerker brauchen nicht noch mehr Software #Shorts",
+      "scenes": [
+        {
+          "kicker": "MEINE MEINUNG",
+          "headline": "MEHR TOOLS ≠ BESSERER PROZESS",
+          "body": "Fünf Apps helfen nicht, wenn niemand weiß, was wohin gehört."
+        },
+        {
+          "kicker": "ZUERST",
+          "headline": "PROZESS DEFINIEREN",
+          "body": "Was kommt rein? Wer macht was? Wann ist etwas fertig?"
+        },
+        {
+          "kicker": "DANN",
+          "headline": "TOOL AUSWÄHLEN",
+          "body": "Software soll den Ablauf unterstützen, nicht ersetzen."
+        },
+        {
+          "kicker": "REGEL",
+          "headline": "ERST PROZESS. DANN AUTOMATION.",
+          "body": "Sonst automatisierst du nur Chaos."
+        }
+      ],
+      "caption": "Erst Prozess, dann Tool, dann Automation. Sonst wird aus Chaos nur automatisiertes Chaos.\\n\\n#handwerk #prozesse #automatisierung #software #digitalisierung"
+    },
+    {
+      "id": "viral-2026-09-26-05",
+      "scheduled_at": "2026-09-26T20:30:00+02:00",
+      "format": "offer",
+      "title": "Für wen das KI-Office Kit NICHT ist #Shorts",
+      "scenes": [
+        {
+          "kicker": "NICHT FÜR DICH",
+          "headline": "WENN DU VOLLAUTOMATION ERWARTEST.",
+          "body": "Das Kit ersetzt weder Fachwissen noch deine Entscheidungen."
+        },
+        {
+          "kicker": "AUCH NICHT",
+          "headline": "WENN DU NICHTS ÄNDERN WILLST.",
+          "body": "Vorlagen funktionieren nur, wenn du sie wirklich nutzt."
+        },
+        {
+          "kicker": "PASSEND WENN",
+          "headline": "DU STRUKTUR WILLST.",
+          "body": "Anfragen, Angebote und Nachfassen klarer organisieren."
+        },
+        {
+          "kicker": "START",
+          "headline": "79 € • LINK IM PROFIL",
+          "body": "Einmalig. Direkt digital."
+        }
+      ],
+      "caption": "Das Kit ist kein Autopilot. Es ist ein Startsystem für Betriebe, die ihre Büroabläufe strukturierter organisieren wollen.\\n\\n#handwerk #kifürhandwerker #büro #automatisierung #handwerker"
+    },
+    {
+      "id": "viral-2026-09-27-01",
+      "scheduled_at": "2026-09-27T06:45:00+02:00",
+      "format": "number",
+      "title": "So entstehen 10 Stunden Büroarbeit ohne dass du es merkst #Shorts",
+      "scenes": [
+        {
+          "kicker": "10 MINUTEN HIER.",
+          "headline": "5 MINUTEN DA.",
+          "body": "Kleine Unterbrechungen wirken harmlos."
+        },
+        {
+          "kicker": "ABER",
+          "headline": "20 × 30 MIN = 10 STUNDEN",
+          "body": "Zwanzig kleine Aufgabenblöcke summieren sich schnell."
+        },
+        {
+          "kicker": "TYPISCH",
+          "headline": "SUCHEN • RÜCKFRAGEN • KOPIEREN",
+          "body": "Genau diese Wiederholungen gehören zuerst untersucht."
+        },
+        {
+          "kicker": "FRAGE",
+          "headline": "WAS MACHST DU JEDE WOCHE DOPPELT?",
+          "body": "Dort beginnt Automatisierung."
+        }
+      ],
+      "caption": "Viele Zeitfresser sind einzeln klein. Erst in Summe sieht man, wie viel Büroarbeit daraus wird.\\n\\n#handwerk #zeitmanagement #automatisierung #handwerker #büro"
+    },
+    {
+      "id": "viral-2026-09-27-02",
+      "scheduled_at": "2026-09-27T10:00:00+02:00",
+      "format": "prompt",
+      "title": "Dieser Prompt macht aus einer Anfrage eine Checkliste #Shorts",
+      "scenes": [
+        {
+          "kicker": "KOPIEREN",
+          "headline": "„FASSE DIE ANFRAGE ZUSAMMEN.“",
+          "body": "Aber nicht nur als Fließtext."
+        },
+        {
+          "kicker": "ERGÄNZE",
+          "headline": "„TEILE IN 4 BEREICHE“",
+          "body": "Kunde • Leistung • vorhandene Infos • fehlende Infos."
+        },
+        {
+          "kicker": "DANN",
+          "headline": "„NÄCHSTE 3 SCHRITTE“",
+          "body": "Was sollte das Büro jetzt konkret tun?"
+        },
+        {
+          "kicker": "WICHTIG",
+          "headline": "ERGEBNIS PRÜFEN.",
+          "body": "KI kann Informationen falsch verstehen oder ergänzen."
+        }
+      ],
+      "caption": "Aus unstrukturiertem Text eine klare Checkliste machen: vorhandene Infos, fehlende Infos, nächste Schritte.\\n\\n#chatgpt #handwerk #prompt #kifürhandwerker #büro"
+    },
+    {
+      "id": "viral-2026-09-27-03",
+      "scheduled_at": "2026-09-27T13:15:00+02:00",
+      "format": "demo",
+      "title": "So würde ich einen Elektrikerbetrieb mit 8 Mitarbeitern strukturieren #Shorts",
+      "scenes": [
+        {
+          "kicker": "ELEKTRIKER • 8 MA",
+          "headline": "ANFRAGEN ZENTRAL.",
+          "body": "E-Mail, Website und Telefon landen in einer gemeinsamen Übersicht."
+        },
+        {
+          "kicker": "DANN",
+          "headline": "KI BEREITET VOR.",
+          "body": "Zusammenfassung, fehlende Angaben, Antwortentwurf."
+        },
+        {
+          "kicker": "MENSCH",
+          "headline": "PRÜFT & PRIORISIERT.",
+          "body": "Welche Anfrage ist dringend? Was braucht Vor-Ort-Termin?"
+        },
+        {
+          "kicker": "AM ENDE",
+          "headline": "ANGEBOT + NACHFASSDATUM",
+          "body": "Jeder Vorgang bekommt einen nächsten Schritt."
+        }
+      ],
+      "caption": "So würde ich einen kleinen Elektrikerbetrieb strukturieren: Eingang zentralisieren, KI vorbereiten lassen, menschlich prüfen, nächsten Schritt setzen.\\n\\n#elektriker #handwerk #automatisierung #kifürhandwerker #prozesse"
+    },
+    {
+      "id": "viral-2026-09-27-04",
+      "scheduled_at": "2026-09-27T17:00:00+02:00",
+      "format": "contrarian",
+      "title": "Wenn Mitarbeiter ständig fragen wo etwas liegt ist das ein Prozessproblem #Shorts",
+      "scenes": [
+        {
+          "kicker": "STÄNDIGE FRAGE",
+          "headline": "„WO IST DAS?“",
+          "body": "Angebot, Foto, Kundendaten, Materialliste, Termin."
+        },
+        {
+          "kicker": "DAS WIRKT",
+          "headline": "WIE EIN MENSCHENPROBLEM.",
+          "body": "Oft fehlt aber einfach eine klare Ablage und Zuständigkeit."
+        },
+        {
+          "kicker": "BESSER",
+          "headline": "1 ORT + KLARE NAMEN",
+          "body": "Und jeder Vorgang hat Status und Verantwortlichen."
+        },
+        {
+          "kicker": "ERGEBNIS",
+          "headline": "WENIGER UNTERBRECHUNGEN.",
+          "body": "Mehr Selbstständigkeit im Team."
+        }
+      ],
+      "caption": "Viele Rückfragen entstehen nicht, weil Mitarbeiter schlecht arbeiten – sondern weil Informationen schlecht organisiert sind.\\n\\n#handwerk #team #prozesse #digitalisierung #unternehmer"
+    },
+    {
+      "id": "viral-2026-09-27-05",
+      "scheduled_at": "2026-09-27T20:30:00+02:00",
+      "format": "offer",
+      "title": "Wenn du morgen strukturierter starten willst #Shorts",
+      "scenes": [
+        {
+          "kicker": "MORGEN 08:00",
+          "headline": "WAS IST OFFEN?",
+          "body": "Anfragen, Angebote, Nachfassen – alles an einem Ort."
+        },
+        {
+          "kicker": "DANN",
+          "headline": "3 PRIORITÄTEN.",
+          "body": "Nicht 30 Tabs. Nicht alles gleichzeitig."
+        },
+        {
+          "kicker": "DAFÜR",
+          "headline": "HABEN WIR DAS KIT GEBAUT.",
+          "body": "Tracker, Vorlagen, Prompts, Workflow."
+        },
+        {
+          "kicker": "START",
+          "headline": "LINK IM PROFIL",
+          "body": "Handwerker KI-Office Kit • 79 € einmalig."
+        }
+      ],
+      "caption": "Wenn du nicht noch mehr Tools, sondern einen klaren Startablauf willst: Das KI-Office Kit ist über den Link im Profil verfügbar.\\n\\n#handwerk #handwerker #kifürhandwerker #büro #automatisierung"
+    },
+    {
+      "id": "viral-2026-09-28-01",
+      "scheduled_at": "2026-09-28T06:45:00+02:00",
+      "format": "pain",
+      "title": "Schnelle Antworten sind ein Wettbewerbsvorteil #Shorts",
+      "scenes": [
+        {
+          "kicker": "KUNDE FRAGT 3 FIRMEN AN.",
+          "headline": "WER REAGIERT ZUERST?",
+          "body": "Nicht immer gewinnt der billigste Betrieb."
+        },
+        {
+          "kicker": "ABER",
+          "headline": "SCHNELLIGKEIT SCHAFFT VERTRAUEN.",
+          "body": "Vor allem, wenn die Antwort klar und professionell ist."
+        },
+        {
+          "kicker": "DESHALB",
+          "headline": "KI KANN VORBEREITEN.",
+          "body": "Zusammenfassen, fehlende Infos erkennen, Entwurf erstellen."
+        },
+        {
+          "kicker": "DANN",
+          "headline": "DU PRÜFST & SENDEST.",
+          "body": "Schneller reagieren, ohne blind zu automatisieren."
+        }
+      ],
+      "caption": "Schnelle, klare Reaktionen können ein Wettbewerbsvorteil sein. KI kann vorbereiten – die Entscheidung bleibt beim Menschen.\\n\\n#handwerk #kundenservice #ki #automatisierung #handwerker"
+    },
+    {
+      "id": "viral-2026-09-28-02",
+      "scheduled_at": "2026-09-28T10:00:00+02:00",
+      "format": "tip",
+      "title": "3 sinnvolle Zeitpunkte zum Nachfassen #Shorts",
+      "scenes": [
+        {
+          "kicker": "NACH ANGEBOT",
+          "headline": "NICHT EINFACH WARTEN.",
+          "body": "Setze direkt einen nächsten Kontaktpunkt."
+        },
+        {
+          "kicker": "BEISPIEL",
+          "headline": "TAG 2–3",
+          "body": "Kurzer Check: angekommen? offene Fragen?"
+        },
+        {
+          "kicker": "DANN",
+          "headline": "TAG 7",
+          "body": "Entscheidungsstand prüfen und Hilfestellung anbieten."
+        },
+        {
+          "kicker": "SPÄTER",
+          "headline": "INDIVIDUELL ENTSCHEIDEN.",
+          "body": "Je nach Projekt, Kunde und Reaktion."
+        }
+      ],
+      "caption": "Nachfassen braucht keine starre Wahrheit. Aber ohne festen nächsten Kontaktpunkt wird es oft vergessen.\\n\\n#handwerk #nachfassen #vertrieb #angebote #handwerker"
+    },
+    {
+      "id": "viral-2026-09-28-03",
+      "scheduled_at": "2026-09-28T13:15:00+02:00",
+      "format": "demo",
+      "title": "So würde ich einen SHK-Betrieb strukturieren #Shorts",
+      "scenes": [
+        {
+          "kicker": "SHK-BETRIEB",
+          "headline": "ANFRAGE KOMMT REIN.",
+          "body": "Heizung, Bad, Wärmepumpe – unterschiedliche Dringlichkeiten."
+        },
+        {
+          "kicker": "SYSTEM",
+          "headline": "KLASSIFIZIERT ZUERST.",
+          "body": "Art der Anfrage, Ort, Dringlichkeit, fehlende Angaben."
+        },
+        {
+          "kicker": "DANN",
+          "headline": "NÄCHSTER SCHRITT.",
+          "body": "Rückfrage, Vor-Ort-Termin oder Angebotsvorbereitung."
+        },
+        {
+          "kicker": "WICHTIG",
+          "headline": "MENSCH PRÜFT.",
+          "body": "Fachliche Entscheidung bleibt beim Betrieb."
+        }
+      ],
+      "caption": "Bei SHK-Anfragen ist die richtige Einordnung entscheidend. Struktur zuerst, dann Automatisierung.\\n\\n#shk #handwerk #wärmepumpe #automatisierung #kifürhandwerker"
+    },
+    {
+      "id": "viral-2026-09-28-04",
+      "scheduled_at": "2026-09-28T17:00:00+02:00",
+      "format": "contrarian",
+      "title": "Diese 3 Dinge sollte KI im Handwerk nicht blind machen #Shorts",
+      "scenes": [
+        {
+          "kicker": "1",
+          "headline": "PREISE FESTLEGEN.",
+          "body": "Ohne echte Kalkulation und menschliche Prüfung."
+        },
+        {
+          "kicker": "2",
+          "headline": "FACHLICH ZUSAGEN.",
+          "body": "Wenn Sicherheit, Normen oder Haftung betroffen sind."
+        },
+        {
+          "kicker": "3",
+          "headline": "KUNDEN AUTOMATISCH ABBÜGELN.",
+          "body": "Ohne Kontext oder Eskalationsweg."
+        },
+        {
+          "kicker": "BESSER",
+          "headline": "KI BEREITET VOR.",
+          "body": "Der Mensch entscheidet."
+        }
+      ],
+      "caption": "KI kann viel vorbereiten. Preis, Fachentscheidung und sensible Kundenkommunikation sollten aber nicht blind automatisiert werden.\\n\\n#handwerk #ki #automatisierung #sicherheit #kifürhandwerker"
+    },
+    {
+      "id": "viral-2026-09-28-05",
+      "scheduled_at": "2026-09-28T20:30:00+02:00",
+      "format": "offer",
+      "title": "Das steckt im 79-Euro-KI-Office Kit #Shorts",
+      "scenes": [
+        {
+          "kicker": "79 € EINMALIG",
+          "headline": "KEIN ABO.",
+          "body": "Du bekommst die Dateien direkt digital."
+        },
+        {
+          "kicker": "ENTHALTEN",
+          "headline": "TRACKER + DOCX + PDF",
+          "body": "Dazu KI-Prompts und Nachfassvorlagen."
+        },
+        {
+          "kicker": "ZIEL",
+          "headline": "KLARERER BÜRO-ABLAUF",
+          "body": "Anfrage → Angebot → Nachfassen."
+        },
+        {
+          "kicker": "MEHR INFOS",
+          "headline": "LINK IM PROFIL",
+          "body": "Handwerker KI-Office Kit."
+        }
+      ],
+      "caption": "Tracker, Vorlagen, Prompts und Workflow in einem Paket. Handwerker KI-Office Kit: 79 € einmalig.\\n\\nLink im Profil.\\n\\n#handwerk #handwerker #kifürhandwerker #büro #digitalisierung"
+    },
+    {
+      "id": "viral-2026-09-29-01",
+      "scheduled_at": "2026-09-29T06:45:00+02:00",
+      "format": "insight",
+      "title": "Die wichtigste Erkenntnis nach einer Woche KI fürs Handwerk #Shorts",
+      "scenes": [
+        {
+          "kicker": "ERKENNTNIS",
+          "headline": "NICHT ALLES AUTOMATISIEREN.",
+          "body": "Die größten Hebel sind oft kleine, wiederkehrende Büroaufgaben."
+        },
+        {
+          "kicker": "ZUERST",
+          "headline": "SUCHEN • KOPIEREN • NACHFRAGEN",
+          "body": "Alles, was jede Woche mehrfach passiert."
+        },
+        {
+          "kicker": "DANN",
+          "headline": "VORBEREITEN LASSEN.",
+          "body": "KI hilft bei Struktur, Entwürfen und Zusammenfassungen."
+        },
+        {
+          "kicker": "REGEL",
+          "headline": "MENSCH BLEIBT IM LOOP.",
+          "body": "Das macht Automation nützlicher und sicherer."
+        }
+      ],
+      "caption": "Die besten KI-Einsätze sind oft nicht spektakulär. Sie nehmen wiederkehrende Kleinarbeit aus dem Alltag.\\n\\n#handwerk #ki #automatisierung #prozesse #digitalisierung"
+    },
+    {
+      "id": "viral-2026-09-29-02",
+      "scheduled_at": "2026-09-29T10:00:00+02:00",
+      "format": "prompt",
+      "title": "Mein nützlichster Handwerker-Prompt der Woche #Shorts",
+      "scenes": [
+        {
+          "kicker": "PROMPT",
+          "headline": "„PRÜFE DIESE ANFRAGE.“",
+          "body": "Und finde nur Informationen, die wirklich fehlen."
+        },
+        {
+          "kicker": "DANN",
+          "headline": "„ORDNE NACH WICHTIGKEIT.“",
+          "body": "Was blockiert Angebot oder Termin?"
+        },
+        {
+          "kicker": "DANN",
+          "headline": "„FORMULIERE EINE KURZE RÜCKFRAGE.“",
+          "body": "Freundlich, konkret, ohne Fachchinesisch."
+        },
+        {
+          "kicker": "ZUM SCHLUSS",
+          "headline": "„NICHTS ERFINDEN.“",
+          "body": "Unklare Punkte ausdrücklich markieren."
+        }
+      ],
+      "caption": "Ein guter Prompt sollte die KI ausdrücklich anweisen, nichts zu erfinden und Unklarheiten zu markieren.\\n\\n#chatgpt #handwerk #prompt #ki #kifürhandwerker"
+    },
+    {
+      "id": "viral-2026-09-29-03",
+      "scheduled_at": "2026-09-29T13:15:00+02:00",
+      "format": "demo",
+      "title": "Der komplette Anfrage-Prozess in 20 Sekunden #Shorts",
+      "scenes": [
+        {
+          "kicker": "1",
+          "headline": "ANFRAGE REIN",
+          "body": "E-Mail, Website, Telefon oder Plattform."
+        },
+        {
+          "kicker": "2",
+          "headline": "KI BEREITET VOR",
+          "body": "Zusammenfassung + fehlende Angaben + Entwurf."
+        },
+        {
+          "kicker": "3",
+          "headline": "MENSCH PRÜFT",
+          "body": "Priorität, Fachlichkeit, Preis, nächste Aktion."
+        },
+        {
+          "kicker": "4",
+          "headline": "ANGEBOT + NACHFASSDATUM",
+          "body": "Kein Vorgang ohne nächsten Schritt."
+        }
+      ],
+      "caption": "Der Kernprozess: Anfrage rein → KI vorbereitet → Mensch prüft → Angebot → Nachfassen. Einfach, aber konsequent.\\n\\n#handwerk #prozesse #automatisierung #kifürhandwerker #vertrieb"
+    },
+    {
+      "id": "viral-2026-09-29-04",
+      "scheduled_at": "2026-09-29T17:00:00+02:00",
+      "format": "community",
+      "title": "Was soll ich als Nächstes fürs Handwerk automatisieren? #Shorts",
+      "scenes": [
+        {
+          "kicker": "DU ENTSCHEIDEST",
+          "headline": "WAS SOLL ALS NÄCHSTES KOMMEN?",
+          "body": "Ich baue die nächste Demo nach euren Kommentaren."
+        },
+        {
+          "kicker": "A",
+          "headline": "ANGEBOTE",
+          "body": "Aus Anfrage ein sauberes Angebots-Briefing."
+        },
+        {
+          "kicker": "B",
+          "headline": "TERMINE & RÜCKRUFE",
+          "body": "Kein offener Kontakt ohne Reminder."
+        },
+        {
+          "kicker": "C",
+          "headline": "RECHNUNGEN & DOKU",
+          "body": "Struktur statt Dateichaos. Schreib A, B oder C."
+        }
+      ],
+      "caption": "Welche Demo soll als Nächstes kommen? A Angebote, B Termine/Rückrufe oder C Rechnungen/Dokumentation.\\n\\n#handwerk #automatisierung #ki #handwerker #digitalisierung"
+    },
+    {
+      "id": "viral-2026-09-29-05",
+      "scheduled_at": "2026-09-29T20:30:00+02:00",
+      "format": "offer",
+      "title": "Wenn dein Büroprozess Zeit frisst hast du zwei Wege #Shorts",
+      "scenes": [
+        {
+          "kicker": "WEG 1",
+          "headline": "SELBST UMSETZEN.",
+          "body": "Mit dem Handwerker KI-Office Kit."
+        },
+        {
+          "kicker": "WEG 2",
+          "headline": "UMSETZEN LASSEN.",
+          "body": "Individuelles Sleiman Systems Setup."
+        },
+        {
+          "kicker": "SELBST STARTEN",
+          "headline": "LINK IM PROFIL",
+          "body": "Kit: 79 € einmalig."
+        },
+        {
+          "kicker": "INDIVIDUELL",
+          "headline": "DM: SETUP",
+          "body": "Dann schauen wir uns deinen Betrieb konkret an."
+        }
+      ],
+      "caption": "Selbst starten: KI-Office Kit über den Link im Profil. Individuelle Umsetzung: Schreib „SETUP“.\\n\\n#handwerk #kifürhandwerker #automatisierung #prozesse #unternehmer"
+    }
+  ]
+}
