@@ -1,0 +1,165 @@
+{
+  "date": "2026-09-27",
+  "reels": [
+    {
+      "id": "premium-2026-09-27-01",
+      "accent": "red",
+      "format": "pain",
+      "scenes": [
+        {
+          "tag": "WARNUNG",
+          "headline": "„ICH RUF SPÄTER ZURÜCK.“",
+          "sub": "Der Satz wirkt harmlos. Für den Kunden ist er oft das Ende der Anfrage.",
+          "visual": "status"
+        },
+        {
+          "tag": "48 STUNDEN",
+          "headline": "DER KUNDE WARTET NICHT.",
+          "sub": "Ohne Status und nächsten Termin verschwindet der Rückruf im Alltag.",
+          "visual": "pipeline"
+        },
+        {
+          "tag": "DEMO",
+          "headline": "STATUS + OWNER + DATUM",
+          "sub": "Jede Anfrage bekommt sofort einen Verantwortlichen und einen nächsten Schritt.",
+          "visual": "status"
+        },
+        {
+          "tag": "CHECK",
+          "headline": "WO VERLIERT IHR ZEIT?",
+          "sub": "Die kostenlose Prozessanalyse prüft 9 Bereiche eures Betriebs.",
+          "visual": "score",
+          "cta": "PROZESSANALYSE • LINK IM PROFIL"
+        }
+      ]
+    },
+    {
+      "id": "premium-2026-09-27-02",
+      "accent": "blue",
+      "format": "prompt",
+      "scenes": [
+        {
+          "tag": "ELEKTRIKER?",
+          "headline": "KOPIER DIESEN PROMPT.",
+          "sub": "Er macht aus einer chaotischen Anfrage eine brauchbare Checkliste.",
+          "visual": "prompt"
+        },
+        {
+          "tag": "SCHRITT 1",
+          "headline": "WAS IST SCHON KLAR?",
+          "sub": "Kunde, Leistung, Objekt, Termin, Fotos, Budget.",
+          "visual": "inbox"
+        },
+        {
+          "tag": "SCHRITT 2",
+          "headline": "WAS FEHLT NOCH?",
+          "sub": "Die KI markiert Lücken – sie soll nichts erfinden.",
+          "visual": "prompt"
+        },
+        {
+          "tag": "ERGEBNIS",
+          "headline": "3 NÄCHSTE SCHRITTE.",
+          "sub": "So wird aus Nachricht → Briefing → Aktion.",
+          "visual": "pipeline",
+          "cta": "SPEICHERN & SPÄTER TESTEN"
+        }
+      ]
+    },
+    {
+      "id": "premium-2026-09-27-03",
+      "accent": "amber",
+      "format": "demo",
+      "scenes": [
+        {
+          "tag": "30 MIN × 40",
+          "headline": "20 STUNDEN NUR FÜR ANGEBOTE.",
+          "sub": "Noch ohne Rückfragen und Nachfassen.",
+          "visual": "bar"
+        },
+        {
+          "tag": "VORHER",
+          "headline": "ANFRAGE → SUCHEN → RÜCKFRAGEN",
+          "sub": "Jeder Vorgang startet fast wieder bei null.",
+          "visual": "inbox"
+        },
+        {
+          "tag": "DEMO",
+          "headline": "ANFRAGE → BRIEFING → ANGEBOT",
+          "sub": "Informationen werden einmal sauber strukturiert und dann weiterverwendet.",
+          "visual": "pipeline"
+        },
+        {
+          "tag": "ANALYSE",
+          "headline": "ERST DEN ENGPASS FINDEN.",
+          "sub": "Nicht blind automatisieren. Erst messen, wo Zeit verloren geht.",
+          "visual": "score",
+          "cta": "KOSTENLOSE PROZESSANALYSE"
+        }
+      ]
+    },
+    {
+      "id": "premium-2026-09-27-04",
+      "accent": "red",
+      "format": "contrarian",
+      "scenes": [
+        {
+          "tag": "ANGEBOT RAUS",
+          "headline": "UND DANN?",
+          "sub": "Genau hier endet bei vielen Betrieben der Prozess.",
+          "visual": "status"
+        },
+        {
+          "tag": "TAG 3",
+          "headline": "NOCH KEINE ANTWORT.",
+          "sub": "Ohne nächsten Kontaktpunkt passiert: nichts.",
+          "visual": "bar"
+        },
+        {
+          "tag": "SYSTEM",
+          "headline": "NACHFASSEN MIT DATUM.",
+          "sub": "Nicht aggressiv. Einfach sichtbar, planbar und nachvollziehbar.",
+          "visual": "status"
+        },
+        {
+          "tag": "MERKSATZ",
+          "headline": "FOLLOW-UP IST KEIN ZUFALL.",
+          "sub": "Ein offenes Angebot braucht immer einen nächsten Schritt.",
+          "visual": "pipeline",
+          "cta": "FOLGE FÜR MEHR HANDWERKS-PROZESSE"
+        }
+      ]
+    },
+    {
+      "id": "premium-2026-09-27-05",
+      "accent": "blue",
+      "format": "offer",
+      "scenes": [
+        {
+          "tag": "79 € EINMALIG",
+          "headline": "KEIN KURS. EIN ARBEITSSYSTEM.",
+          "sub": "Für Handwerksbetriebe, die morgen strukturierter starten wollen.",
+          "visual": "kit"
+        },
+        {
+          "tag": "DRIN",
+          "headline": "TRACKER • PROMPTS • VORLAGEN",
+          "sub": "Plus ein klarer Workflow für Anfrage, Angebot und Nachfassen.",
+          "visual": "kit"
+        },
+        {
+          "tag": "ZIEL",
+          "headline": "WENIGER SUCHEN. KLARER ARBEITEN.",
+          "sub": "Das Kit ersetzt nicht den Chef – es gibt dem Büro Struktur.",
+          "visual": "pipeline"
+        },
+        {
+          "tag": "START",
+          "headline": "KI-OFFICE KIT",
+          "sub": "79 € einmalig. Kein Abo.",
+          "visual": "kit",
+          "cta": "LINK IM PROFIL"
+        }
+      ]
+    }
+  ]
+}
