@@ -31,7 +31,12 @@
           "visual": "score",
           "cta": "PROZESSANALYSE • LINK IM PROFIL"
         }
-      ]
+      ],
+      "voiceover": {
+        "text": "„Ich ruf später zurück“ klingt harmlos. Genau da gehen Anfragen verloren. Kein Status. Kein Verantwortlicher. Kein nächster Schritt. Dein Büro braucht System.",
+        "url": "https://storage.googleapis.com/adm--audio-playback--7d--public/mcp-preview/efef859b-4de0-4eed-aaca-856a4f1f2471.mp3",
+        "voice_id": "crisp"
+      }
     },
     {
       "id": "premium-2026-09-27-02",
@@ -63,7 +68,12 @@
           "visual": "pipeline",
           "cta": "SPEICHERN & SPÄTER TESTEN"
         }
-      ]
+      ],
+      "voiceover": {
+        "text": "Kopier diesen Prompt: Fasse die Anfrage zusammen, markiere fehlende Angaben und nenne die nächsten drei Schritte. So wird Chaos sofort zur Checkliste.",
+        "url": "https://storage.googleapis.com/adm--audio-playback--7d--public/mcp-preview/eae7b5b9-ade5-43a0-a64b-76f7f77c7b84.mp3",
+        "voice_id": "crisp"
+      }
     },
     {
       "id": "premium-2026-09-27-03",
@@ -95,7 +105,12 @@
           "visual": "score",
           "cta": "KOSTENLOSE PROZESSANALYSE"
         }
-      ]
+      ],
+      "voiceover": {
+        "text": "Vierzig Angebote mal dreißig Minuten: zwanzig Stunden Bürozeit. Und Rückfragen fehlen noch. Erst der Prozess macht dein Angebot wirklich schnell.",
+        "url": "https://storage.googleapis.com/adm--audio-playback--7d--public/mcp-preview/a1ae7d9f-ce87-41e4-a69a-384ffd5cdb52.mp3",
+        "voice_id": "crisp"
+      }
     },
     {
       "id": "premium-2026-09-27-04",
@@ -127,7 +142,12 @@
           "visual": "pipeline",
           "cta": "FOLGE FÜR MEHR HANDWERKS-PROZESSE"
         }
-      ]
+      ],
+      "voiceover": {
+        "text": "Angebot raus und fertig? Falsch. Ohne Nachfassdatum, Status und Verantwortlichen bleibt Umsatz liegen. Follow-up ist kein Zufall. Es ist ein Prozess.",
+        "url": "https://storage.googleapis.com/adm--audio-playback--7d--public/mcp-preview/e0e78dce-bffa-48a7-81d0-e3f68342e23c.mp3",
+        "voice_id": "crisp"
+      }
     },
     {
       "id": "premium-2026-09-27-05",
@@ -159,8 +179,13 @@
           "visual": "kit",
           "cta": "LINK IM PROFIL"
         }
-      ]
+      ],
+      "voiceover": {
+        "text": "Kein Kurs. Ein Arbeitssystem. Tracker, Prompts, Vorlagen und Workflow für Anfrage, Angebot und Nachfassen. Neunundsiebzig Euro einmalig. Kein Abo.",
+        "url": "https://storage.googleapis.com/adm--audio-playback--7d--public/mcp-preview/f137f9c6-9f10-4459-bca9-7aa498c0b207.mp3",
+        "voice_id": "crisp"
+      }
     }
   ],
-  "render_version": "premium-v1.1"
+  "render_version": "premium-v2-voice"
 }
