@@ -1,0 +1,25 @@
+name: Build 0645 audio preview
+
+on:
+  push:
+    branches: ["main"]
+    paths:
+      - ".github/workflows/build-0645-audio-preview.yml"
+  workflow_dispatch:
+
+jobs:
+  preview:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Download Ibrahim warning voice
+        run: |
+          python - <<'PY'
+          import urllib.request
+          url = "https://resource2.heygen.ai/text_to_speech/95fe2f05f075434e99f1831f4c60d8e4/a6c8e374b40a4c4eac1182b05ef1bf1e/id=3521dbfe-2721-4a22-9bca-30c92d37150c.wav"
+          urllib.request.urlretrieve(url, "0645-warning-voice.wav")
+          PY
+      - uses: actions/upload-artifact@v4
+        with:
+          name: 0645-warning-voice
+          path: 0645-warning-voice.wav
+          retention-days: 3
