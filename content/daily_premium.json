@@ -33,9 +33,12 @@
         }
       ],
       "voiceover": {
-        "text": "„Ich ruf später zurück“ klingt harmlos. Genau da gehen Anfragen verloren. Kein Status. Kein Verantwortlicher. Kein nächster Schritt. Dein Büro braucht System.",
-        "url": "https://storage.googleapis.com/adm--audio-playback--7d--public/mcp-preview/efef859b-4de0-4eed-aaca-856a4f1f2471.mp3",
-        "voice_id": "crisp"
+        "text": "„Ich ruf später zurück“? Genau hier gehen Anfragen verloren. Kein Status. Kein Verantwortlicher. Kein nächster Schritt. Dein Büro braucht ein System.",
+        "url": "https://resource2.heygen.ai/text_to_speech/95fe2f05f075434e99f1831f4c60d8e4/a6c8e374b40a4c4eac1182b05ef1bf1e/id=1e58e893-d09f-450c-b45d-c86604a81a31.wav",
+        "provider": "heygen",
+        "voice_id": "a6c8e374b40a4c4eac1182b05ef1bf1e",
+        "voice_name": "Ibrahim",
+        "speed": 1.12
       }
     },
     {
@@ -70,9 +73,12 @@
         }
       ],
       "voiceover": {
-        "text": "Kopier diesen Prompt: Fasse die Anfrage zusammen, markiere fehlende Angaben und nenne die nächsten drei Schritte. So wird Chaos sofort zur Checkliste.",
-        "url": "https://storage.googleapis.com/adm--audio-playback--7d--public/mcp-preview/eae7b5b9-ade5-43a0-a64b-76f7f77c7b84.mp3",
-        "voice_id": "crisp"
+        "text": "Kopier diesen Prompt: Anfrage zusammenfassen. Fehlende Infos markieren. Drei nächste Schritte nennen. So wird aus einer chaotischen Nachricht sofort eine klare Checkliste.",
+        "url": "https://resource2.heygen.ai/text_to_speech/95fe2f05f075434e99f1831f4c60d8e4/a6c8e374b40a4c4eac1182b05ef1bf1e/id=e5dd169b-f951-4b02-950a-a4bcce3c0951.wav",
+        "provider": "heygen",
+        "voice_id": "a6c8e374b40a4c4eac1182b05ef1bf1e",
+        "voice_name": "Ibrahim",
+        "speed": 1.12
       }
     },
     {
@@ -107,9 +113,12 @@
         }
       ],
       "voiceover": {
-        "text": "Vierzig Angebote mal dreißig Minuten: zwanzig Stunden Bürozeit. Und Rückfragen fehlen noch. Erst der Prozess macht dein Angebot wirklich schnell.",
-        "url": "https://storage.googleapis.com/adm--audio-playback--7d--public/mcp-preview/a1ae7d9f-ce87-41e4-a69a-384ffd5cdb52.mp3",
-        "voice_id": "crisp"
+        "text": "Vierzig Angebote mal dreißig Minuten sind zwanzig Stunden Bürozeit. Rückfragen noch nicht mitgerechnet. Der Hebel ist nicht schneller tippen, sondern ein sauberer Prozess.",
+        "url": "https://resource2.heygen.ai/text_to_speech/95fe2f05f075434e99f1831f4c60d8e4/a6c8e374b40a4c4eac1182b05ef1bf1e/id=1d7a0d1b-77e2-40ff-8420-460ae209b798.wav",
+        "provider": "heygen",
+        "voice_id": "a6c8e374b40a4c4eac1182b05ef1bf1e",
+        "voice_name": "Ibrahim",
+        "speed": 1.12
       }
     },
     {
@@ -144,9 +153,12 @@
         }
       ],
       "voiceover": {
-        "text": "Angebot raus und fertig? Falsch. Ohne Nachfassdatum, Status und Verantwortlichen bleibt Umsatz liegen. Follow-up ist kein Zufall. Es ist ein Prozess.",
-        "url": "https://storage.googleapis.com/adm--audio-playback--7d--public/mcp-preview/e0e78dce-bffa-48a7-81d0-e3f68342e23c.mp3",
-        "voice_id": "crisp"
+        "text": "Angebot raus – fertig? Nein. Ohne Nachfassdatum, Status und Verantwortlichen bleibt Umsatz liegen. Follow-up ist kein Zufall. Es braucht einen Prozess.",
+        "url": "https://resource2.heygen.ai/text_to_speech/95fe2f05f075434e99f1831f4c60d8e4/a6c8e374b40a4c4eac1182b05ef1bf1e/id=e7cc7c25-f318-4816-b766-b85c9bca3b90.wav",
+        "provider": "heygen",
+        "voice_id": "a6c8e374b40a4c4eac1182b05ef1bf1e",
+        "voice_name": "Ibrahim",
+        "speed": 1.12
       }
     },
     {
@@ -182,10 +194,13 @@
       ],
       "voiceover": {
         "text": "Kein Kurs. Ein Arbeitssystem. Tracker, Prompts, Vorlagen und Workflow für Anfrage, Angebot und Nachfassen. Neunundsiebzig Euro einmalig. Kein Abo.",
-        "url": "https://storage.googleapis.com/adm--audio-playback--7d--public/mcp-preview/f137f9c6-9f10-4459-bca9-7aa498c0b207.mp3",
-        "voice_id": "crisp"
+        "url": "https://resource2.heygen.ai/text_to_speech/95fe2f05f075434e99f1831f4c60d8e4/a6c8e374b40a4c4eac1182b05ef1bf1e/id=feda2294-47c1-4b44-88b7-703dae4c0412.wav",
+        "provider": "heygen",
+        "voice_id": "a6c8e374b40a4c4eac1182b05ef1bf1e",
+        "voice_name": "Ibrahim",
+        "speed": 1.12
       }
     }
   ],
-  "render_version": "premium-v2-voice"
+  "render_version": "premium-v3-ibrahim-voice"
 }
