@@ -1,0 +1,73 @@
+{
+  "version": "1.0",
+  "canva": {
+    "role": "design_system_and_asset_reference",
+    "design_id": "DAHWVKU3Gcc",
+    "title": "Sleiman Systems – Visual System V1",
+    "pages": [
+      "Hook Warning",
+      "Number Hook",
+      "Anfrage Briefing Demo",
+      "Follow-up Dashboard",
+      "Prozessanalyse",
+      "Office Kit",
+      "Prompt Value",
+      "Brand Rules"
+    ],
+    "rule": "Use Canva for visual system, covers, UI mockups and reusable layouts. Daily final MP4 is rendered by the internal GitHub renderer so publishing never depends on Canva export or paid AI credits."
+  },
+  "explain": {
+    "role": "demo_storyboard_and_process_explainer",
+    "reference_url": "https://scrimba.com/explain/guide00q2i80mi?claim=p08h11uk81etsv1e&fullscreen=1",
+    "mode": "portrait",
+    "preferred_slots": [
+      "13:15_demo",
+      "10:00_value_when_process_explanation_is_better_than_static_prompt"
+    ],
+    "rule": "Use Explain to prototype process explanations and narration. If no direct MP4 handoff is available, rebuild the winning structure in the internal motion renderer before publishing."
+  },
+  "renderer": {
+    "repo": "sibrahim2001-create/sleiman-media",
+    "manifest": "content/daily_premium.json",
+    "script": "scripts/render_daily_premium.py",
+    "workflow": ".github/workflows/render-daily-premium.yml",
+    "output": "media/daily-premium/",
+    "format": "1080x1920 mp4",
+    "watermark_free": true
+  },
+  "daily_slots": [
+    {
+      "time": "06:45",
+      "purpose": "pain_trust_reach"
+    },
+    {
+      "time": "10:00",
+      "purpose": "saveable_value_prompt_template"
+    },
+    {
+      "time": "13:15",
+      "purpose": "demo_proof"
+    },
+    {
+      "time": "17:00",
+      "purpose": "contrarian_discussion"
+    },
+    {
+      "time": "20:30",
+      "purpose": "conversion_offer"
+    }
+  ],
+  "quality_gate": {
+    "minimum_score": 6,
+    "criteria": [
+      "first frame understood in under one second",
+      "target customer or pain immediately clear",
+      "hook creates tension via loss, number, contrast, question or surprise",
+      "visible motion in first three seconds",
+      "proof/demo/value within five to eight seconds",
+      "reason to save/share/comment",
+      "payoff fulfills hook",
+      "original, watermark-free, mobile-readable"
+    ]
+  }
+}
