@@ -69,5 +69,13 @@
       "payoff fulfills hook",
       "original, watermark-free, mobile-readable"
     ]
+  },
+  "voice_system": {
+    "config": "content/voice_system.json",
+    "required_for_publication": true,
+    "provider": "HeyGen",
+    "voice_name": "Ibrahim",
+    "voice_id": "a6c8e374b40a4c4eac1182b05ef1bf1e",
+    "rule": "Public reels must use the private Ibrahim voice clone. Generic stock TTS is blocked from publishing."
   }
 }
