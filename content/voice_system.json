@@ -1,19 +1,22 @@
 {
-  "version": "1.0",
+  "version": "2.0",
   "required": true,
   "objective": "Energetic German voiceover that leads the viewer through every reel and improves retention without sounding like a generic commercial.",
   "primary_voice": {
-    "provider": "AI Voice Generator",
-    "voice_id": "crisp",
-    "language": "de-DE",
+    "provider": "HeyGen",
+    "voice_id": "a6c8e374b40a4c4eac1182b05ef1bf1e",
+    "voice_name": "Ibrahim",
+    "type": "private_clone",
+    "language": "German",
+    "locale": "de-DE",
+    "speed": 1.12,
     "qualities": [
+      "natural",
       "energetic",
-      "clear",
       "direct",
-      "confident",
-      "fast but understandable",
-      "non-advertising",
-      "founder/performance-content feel"
+      "founder-like",
+      "brand-consistent",
+      "non-generic"
     ]
   },
   "writing_rules": [
@@ -43,11 +46,16 @@
     "20:30": "confident conversion, useful not salesy"
   },
   "qa": [
-    "No reel may publish without an audible voiceover unless explicitly approved.",
-    "Pronunciation of Handwerk terms, numbers, Umlaute and brand names must sound clean.",
-    "Voice must be clearly louder than music/sound design.",
-    "No clipping, distortion or long dead-air before first word.",
-    "If the voice duration exceeds the video, speed it up only enough to fit while staying intelligible.",
-    "Reject robotic or sleepy delivery."
+    "No reel may publish with a generic stock voice.",
+    "Prefer the private Ibrahim clone for every public voiceover.",
+    "Hook must begin immediately and sound conversational, not announcer-like.",
+    "Pronunciation of Handwerk terms, numbers, Umlaute and Sleiman Systems must be clean.",
+    "Voice must be clearly louder than the sound bed.",
+    "No clipping, distortion, dead air or forced time-stretch that damages naturalness."
+  ],
+  "fallback_policy": [
+    "Never use generic stock TTS for publishing.",
+    "If Ibrahim private voice is unavailable or generation would require paid credits not explicitly approved, publish no new voiceover version and keep the post blocked for voice QA.",
+    "A temporary stock voice may be used only for internal preview, never for scheduled public content."
   ]
 }
