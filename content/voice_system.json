@@ -57,5 +57,27 @@
     "Never use generic stock TTS for publishing.",
     "If Ibrahim private voice is unavailable or generation would require paid credits not explicitly approved, publish no new voiceover version and keep the post blocked for voice QA.",
     "A temporary stock voice may be used only for internal preview, never for scheduled public content."
-  ]
+  ],
+  "approved_profiles": {
+    "06:45_warning": {
+      "status": "approved_by_user",
+      "voice_name": "Ibrahim",
+      "voice_id": "a6c8e374b40a4c4eac1182b05ef1bf1e",
+      "provider": "HeyGen",
+      "locale": "de-DE",
+      "speed": 1.04,
+      "pitch": -2,
+      "delivery": "serious, energetic, direct, controlled warning tone",
+      "pacing": "short hard sentences with deliberate micro-pauses",
+      "approved_example": "Ich ruf später zurück? Genau hier gehen Anfragen verloren. Kein Status. Kein Verantwortlicher. Kein nächster Schritt. Dein Büro braucht ein System.",
+      "ssml_pause_pattern_seconds": [
+        0.28,
+        0.22,
+        0.14,
+        0.18,
+        0.26
+      ],
+      "rule": "Use this profile as the default for the 06:45 Pain/Trust/Reach slot unless performance data or explicit user feedback justifies a controlled variant."
+    }
+  }
 }
