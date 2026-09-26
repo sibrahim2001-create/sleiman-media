@@ -1,181 +1,246 @@
 #!/usr/bin/env python3
-import json, os, subprocess, textwrap, shutil
+import math
+import shutil
+import subprocess
 from pathlib import Path
 from PIL import Image, ImageDraw, ImageFont
 
-ROOT=Path(__file__).resolve().parents[1]
-MANIFEST=ROOT/"content/viral_week_2026-09-23.json"
-OUT=ROOT/"media/viral-week-2026-09-23"
-TMP=ROOT/".render_tmp"
-W,H=1080,1920
-BG_TOP=(7,10,15)
-BG_BOTTOM=(12,18,28)
-BLUE=(47,124,255)
-BLUE2=(117,160,255)
-WHITE=(246,248,252)
-MUTED=(170,181,196)
-CARD=(17,25,37)
-LINE=(39,52,73)
+ROOT = Path(__file__).resolve().parents[1]
+OUT = ROOT / "media/viral-week-2026-09-23"
+TMP = ROOT / ".fast_cut_tmp"
+W, H = 1080, 1920
+FPS = 30
 
-FONT_BOLD="/usr/share/fonts/truetype/dejavu/DejaVuSans-Bold.ttf"
-FONT_REG="/usr/share/fonts/truetype/dejavu/DejaVuSans.ttf"
+FONT_B = "/usr/share/fonts/truetype/dejavu/DejaVuSans-Bold.ttf"
+FONT_R = "/usr/share/fonts/truetype/dejavu/DejaVuSans.ttf"
 
-def font(size,bold=True):
-    return ImageFont.truetype(FONT_BOLD if bold else FONT_REG,size)
+WHITE = (248, 250, 252)
+MUTED = (172, 184, 200)
+BLUE = (40, 116, 255)
+RED = (255, 72, 72)
+DARK = (5, 8, 13)
+DARK2 = (11, 17, 27)
+CARD = (18, 27, 41)
 
-def wrap(draw,text,f,max_width):
-    words=text.split()
-    lines=[]; cur=""
-    for w in words:
-        test=(cur+" "+w).strip()
-        if draw.textbbox((0,0),test,font=f)[2] <= max_width:
-            cur=test
+REELS = [
+    {
+        "id": "viral-2026-09-27-01",
+        "accent": "red",
+        "scenes": [
+            ("STOPP.", "ICH RUF SPÄTER ZURÜCK.", "Der teuerste Satz im Handwerk?"),
+            ("48H", "SPÄTER.", "Der Kunde wartet nicht ewig."),
+            ("3", "OFFENE RÜCKRUFE.", "Und keiner hat einen Termin."),
+            ("CRM", "GEDÄCHTNIS IST KEINS.", "Jeder Kontakt braucht Status."),
+            ("NEXT", "NÄCHSTER SCHRITT.", "Mit Datum. Sofort."),
+            ("SYSTEM", "STATT GEDÄCHTNIS.", "@sleimansystems"),
+        ],
+    },
+    {
+        "id": "viral-2026-09-27-02",
+        "accent": "blue",
+        "scenes": [
+            ("ELEKTRIKER?", "KOPIER DAS.", "Für die nächste Kundenanfrage."),
+            ("1", "STRUKTURIERE.", "Was will der Kunde wirklich?"),
+            ("2", "FINDE LÜCKEN.", "Welche Angaben fehlen?"),
+            ("3", "3 RÜCKFRAGEN.", "Kurz. Klar. Kundentauglich."),
+            ("REGEL", "NICHTS ERFINDEN.", "Unklarheiten markieren."),
+            ("SAVE", "SPÄTER TESTEN.", "@sleimansystems"),
+        ],
+    },
+    {
+        "id": "viral-2026-09-27-03",
+        "accent": "blue",
+        "scenes": [
+            ("30 MIN", "PRO ANGEBOT.", "Klingt erstmal wenig."),
+            ("× 40", "ANGEBOTE.", "Im Monat."),
+            ("=", "20 STUNDEN.", "Nur Angebotserstellung."),
+            ("PLUS", "RÜCKFRAGEN.", "Noch nicht eingerechnet."),
+            ("PLUS", "NACHFASSEN.", "Auch noch nicht."),
+            ("PROZESS", "NICHT FLEISS.", "Erst Ablauf verbessern."),
+        ],
+    },
+    {
+        "id": "viral-2026-09-27-04",
+        "accent": "red",
+        "scenes": [
+            ("ANGEBOT", "RAUS. UND DANN?", "Genau hier geht es oft verloren."),
+            ("TAG 1", "GESENDET.", "Alles gut."),
+            ("TAG 3", "FUNKSTILLE.", "Noch kein nächster Schritt."),
+            ("TAG 7", "VERGESSEN.", "Weil keiner erinnert."),
+            ("FIX", "TERMIN SETZEN.", "Direkt beim Versand."),
+            ("FOLLOW-UP", "NICHT ZUFALL.", "@sleimansystems"),
+        ],
+    },
+    {
+        "id": "viral-2026-09-27-05",
+        "accent": "blue",
+        "scenes": [
+            ("CHEF", "ALLES LANDET BEI DIR?", "Dann bist du der Flaschenhals."),
+            ("ANFRAGE", "→ CHEF", "Jedes Mal."),
+            ("ANGEBOT", "→ CHEF", "Jedes Mal."),
+            ("RÜCKRUF", "→ CHEF", "Jedes Mal."),
+            ("SYSTEM", "STATUS + OWNER + DATUM", "Aufgaben brauchen Struktur."),
+            ("START", "ERST SYSTEMISIEREN.", "KI-Office Kit • Link im Profil"),
+        ],
+    },
+]
+
+def font(size, bold=True):
+    return ImageFont.truetype(FONT_B if bold else FONT_R, size)
+
+def wrap(draw, text, fnt, width):
+    words = text.split()
+    lines, cur = [], ""
+    for word in words:
+        test = (cur + " " + word).strip()
+        if draw.textbbox((0, 0), test, font=fnt)[2] <= width:
+            cur = test
         else:
-            if cur: lines.append(cur)
-            cur=w
-    if cur: lines.append(cur)
+            if cur:
+                lines.append(cur)
+            cur = word
+    if cur:
+        lines.append(cur)
     return "\n".join(lines)
 
-def gradient():
-    im=Image.new("RGB",(W,H))
-    px=im.load()
+def bg(accent, idx):
+    im = Image.new("RGB", (W, H), DARK)
+    d = ImageDraw.Draw(im)
+    # diagonal depth bands
     for y in range(H):
-        r=y/(H-1)
-        c=tuple(int(BG_TOP[i]*(1-r)+BG_BOTTOM[i]*r) for i in range(3))
-        for x in range(W):
-            px[x,y]=c
+        t = y / H
+        c = (
+            int(DARK[0] * (1-t) + DARK2[0] * t),
+            int(DARK[1] * (1-t) + DARK2[1] * t),
+            int(DARK[2] * (1-t) + DARK2[2] * t),
+        )
+        d.line((0, y, W, y), fill=c)
+    a = RED if accent == "red" else BLUE
+    # huge cropped accent circle adds motion-friendly depth
+    cx = W + 120 - (idx % 3) * 70
+    cy = 270 + (idx % 2) * 150
+    d.ellipse((cx-380, cy-380, cx+380, cy+380), fill=tuple(max(0, x//5) for x in a))
+    # small grid / dashboard feeling
+    for x in range(0, W, 135):
+        d.line((x, 0, x, H), fill=(13, 20, 31), width=1)
+    for y in range(0, H, 135):
+        d.line((0, y, W, y), fill=(13, 20, 31), width=1)
     return im
 
-def rounded(draw,xy,r,fill,outline=None,width=1):
-    draw.rounded_rectangle(xy,radius=r,fill=fill,outline=outline,width=width)
+def make_scene(reel, idx, scene, path):
+    kicker, headline, body = scene
+    im = bg(reel["accent"], idx)
+    d = ImageDraw.Draw(im)
+    a = RED if reel["accent"] == "red" else BLUE
 
-def scene_image(scene,fmt,idx,total,path):
-    im=gradient(); d=ImageDraw.Draw(im)
-    # subtle grid
-    for x in range(0,W,120): d.line((x,0,x,H),fill=(12,18,27),width=1)
-    for y in range(0,H,120): d.line((0,y,W,y),fill=(12,18,27),width=1)
+    # top identity — deliberately tiny, hook dominates
+    d.rounded_rectangle((60, 66, 82, 88), radius=6, fill=a)
+    d.text((101, 60), "SLEIMAN SYSTEMS", font=font(29), fill=WHITE)
 
-    # top brand
-    d.rounded_rectangle((62,70,88,96),radius=7,fill=BLUE)
-    d.text((108,67),"SLEIMAN SYSTEMS",font=font(34),fill=WHITE)
-    d.text((108,110),"KI-SYSTEME FÜRS HANDWERK",font=font(24,False),fill=MUTED)
+    # sequence indicator
+    for i in range(6):
+        x0 = 62 + i * 154
+        d.rounded_rectangle((x0, 125, x0 + 128, 135), radius=5,
+                            fill=a if i == idx else (45, 55, 70))
 
-    # right progress
-    gap=18; dot=13
-    start=W-62-(total*dot+(total-1)*gap)
-    for i in range(total):
-        fill=BLUE if i==idx else (64,74,90)
-        d.ellipse((start+i*(dot+gap),80,start+i*(dot+gap)+dot,80+dot),fill=fill)
-
-    kicker=scene.get("kicker","").upper()
-    headline=scene.get("headline","")
-    body=scene.get("body","")
-
-    # format accent
-    accent_y=265
-    if fmt=="number":
-        rounded(d,(62,250,W-62,360),28,(11,25,49),outline=(35,74,135),width=2)
-    elif fmt in ("prompt","template","tip"):
-        d.rectangle((62,245,72,1430),fill=BLUE)
-    elif fmt=="demo":
-        rounded(d,(62,245,W-62,1435),34,CARD,outline=LINE,width=2)
-    elif fmt=="contrarian":
-        rounded(d,(62,245,W-62,380),34,(22,24,31),outline=(74,82,99),width=2)
-    elif fmt=="offer":
-        rounded(d,(62,245,W-62,1435),34,(12,24,43),outline=(44,89,158),width=2)
-    elif fmt=="community":
-        rounded(d,(62,245,W-62,1435),34,(14,22,36),outline=LINE,width=2)
-
-    # kicker
-    kf=font(34)
-    d.text((82,285),kicker,font=kf,fill=BLUE2)
+    # kicker chip
+    kf = font(50)
+    kw = d.textbbox((0,0), kicker, font=kf)[2] + 56
+    d.rounded_rectangle((64, 260, min(W-64, 64+kw), 348), radius=25,
+                        fill=a)
+    d.text((92, 275), kicker, font=kf, fill=WHITE)
 
     # headline
-    hf=font(92)
-    htxt=wrap(d,headline,hf,900)
-    hb=d.multiline_textbbox((0,0),htxt,font=hf,spacing=14)
-    hheight=hb[3]-hb[1]
-    h_y=410
-    d.multiline_text((82,h_y),htxt,font=hf,fill=WHITE,spacing=14)
+    hf = font(105)
+    htxt = wrap(d, headline, hf, 930)
+    bbox = d.multiline_textbbox((0,0), htxt, font=hf, spacing=12)
+    hh = bbox[3] - bbox[1]
+    hy = 455
+    d.multiline_text((64, hy), htxt, font=hf, fill=WHITE, spacing=12)
 
-    # body
-    bf=font(47,False)
-    btxt=wrap(d,body,bf,880)
-    body_y=min(1120,h_y+hheight+80)
-    d.multiline_text((82,body_y),btxt,font=bf,fill=MUTED,spacing=18)
+    # body card
+    by = min(1260, hy + hh + 100)
+    d.rounded_rectangle((64, by, W-64, by+250), radius=34, fill=CARD,
+                        outline=(43, 57, 78), width=2)
+    bf = font(48, False)
+    btxt = wrap(d, body, bf, 840)
+    d.multiline_text((100, by+58), btxt, font=bf, fill=MUTED, spacing=14)
 
-    # visual accents / CTA style
-    if fmt=="offer":
-        rounded(d,(82,1475,W-82,1595),28,BLUE)
-        d.text((W//2,1535),"LINK IM PROFIL",font=font(42),fill=WHITE,anchor="mm")
-    elif fmt=="demo":
-        # small faux UI chips
-        labels=["ANFRAGE","PRÜFEN","NÄCHSTER SCHRITT"]
-        x=82
-        for lab in labels:
-            ww=d.textbbox((0,0),lab,font=font(24))[2]+44
-            rounded(d,(x,1485,x+ww,1550),20,(23,34,50),outline=(50,67,92),width=1)
-            d.text((x+22,1501),lab,font=font(24),fill=BLUE2)
-            x+=ww+14
-    else:
-        d.line((82,1500,W-82,1500),fill=(44,57,77),width=2)
-        d.text((82,1530),"WENIGER BÜRO. MEHR STRUKTUR.",font=font(32),fill=WHITE)
+    # punchy bottom stripe
+    d.rectangle((0, H-165, W, H), fill=a)
+    bottom = "WENIGER BÜRO. MEHR STRUKTUR." if idx < 5 else "@sleimansystems"
+    d.text((W//2, H-82), bottom, font=font(38), fill=WHITE, anchor="mm")
+    im.save(path)
 
-    # bottom handle
-    d.text((82,1760),"@sleimansystems",font=font(32),fill=BLUE2)
-    d.text((W-82,1760),"sleiman-systems.de",font=font(28,False),fill=MUTED,anchor="ra")
-    im.save(path,quality=95)
+def render(reel):
+    work = TMP / reel["id"]
+    shutil.rmtree(work, ignore_errors=True)
+    work.mkdir(parents=True, exist_ok=True)
 
-def render_one(reel):
-    rid=reel["id"]
-    work=TMP/rid
-    if work.exists(): shutil.rmtree(work)
-    work.mkdir(parents=True,exist_ok=True)
-    scene_files=[]
-    for i,sc in enumerate(reel["scenes"]):
-        p=work/f"scene_{i}.png"
-        scene_image(sc,reel.get("format",""),i,len(reel["scenes"]),p)
-        scene_files.append(p)
+    pngs = []
+    for i, scene in enumerate(reel["scenes"]):
+        p = work / f"s{i}.png"
+        make_scene(reel, i, scene, p)
+        pngs.append(p)
 
-    seg=3.25
-    trans=0.25
-    args=["ffmpeg","-y"]
-    for p in scene_files:
-        args += ["-loop","1","-framerate","30","-t",str(seg),"-i",str(p)]
-    total=seg*len(scene_files)-trans*(len(scene_files)-1)
-    # audio: two very quiet synthetic tones, mixed
-    args += ["-f","lavfi","-t",f"{total:.3f}","-i","sine=frequency=95:sample_rate=44100",
-             "-f","lavfi","-t",f"{total:.3f}","-i","sine=frequency=190:sample_rate=44100"]
+    # 0.95 sec per card; quick 0.12 sec wipes: around 5.2 sec total.
+    seg, trans = 0.95, 0.12
+    args = ["ffmpeg", "-y"]
+    for p in pngs:
+        args += ["-loop", "1", "-framerate", str(FPS), "-t", str(seg), "-i", str(p)]
 
-    filters=[]
-    for i in range(len(scene_files)):
-        filters.append(f"[{i}:v]scale={W}:{H},format=yuv420p,setsar=1[v{i}]")
-    prev="v0"
-    offset=seg-trans
-    for i in range(1,len(scene_files)):
-        out=f"x{i}"
-        filters.append(f"[{prev}][v{i}]xfade=transition=fade:duration={trans}:offset={offset:.2f}[{out}]")
-        prev=out
-        offset += seg-trans
-    a0=len(scene_files); a1=len(scene_files)+1
-    filters.append(f"[{a0}:a]volume=0.018[a0q]")
-    filters.append(f"[{a1}:a]volume=0.009[a1q]")
-    filters.append("[a0q][a1q]amix=inputs=2:duration=longest,afade=t=in:st=0:d=0.3,afade=t=out:st="+f"{max(0,total-0.5):.2f}"+":d=0.5[a]")
+    total = seg * len(pngs) - trans * (len(pngs)-1)
+    # zero-cost generated tick + low bass pulse
+    args += [
+        "-f", "lavfi", "-t", f"{total:.3f}", "-i",
+        "sine=frequency=95:sample_rate=44100",
+        "-f", "lavfi", "-t", f"{total:.3f}", "-i",
+        "sine=frequency=880:sample_rate=44100",
+    ]
 
-    outfile=OUT/(rid+".mp4")
-    args += ["-filter_complex",";".join(filters),"-map",f"[{prev}]","-map","[a]",
-             "-t",f"{total:.3f}","-r","30","-c:v","libx264","-preset","veryfast","-crf","24",
-             "-pix_fmt","yuv420p","-c:a","aac","-b:a","96k","-movflags","+faststart",str(outfile)]
-    subprocess.run(args,check=True,stdout=subprocess.DEVNULL,stderr=subprocess.DEVNULL)
-    print(outfile.relative_to(ROOT))
+    filters = []
+    # slight different zoom/crop per scene -> more perspective change
+    for i in range(len(pngs)):
+        z = "min(zoom+0.0025,1.08)" if i % 2 == 0 else "min(zoom+0.0015,1.05)"
+        filters.append(
+            f"[{i}:v]scale=1200:2133,zoompan=z='{z}':x='iw/2-(iw/zoom/2)':"
+            f"y='ih/2-(ih/zoom/2)':d={int(seg*FPS)}:s={W}x{H}:fps={FPS},"
+            f"format=yuv420p,setsar=1[v{i}]"
+        )
+
+    transitions = ["slideleft", "slideright", "wipeleft", "slideup", "wiperight"]
+    prev = "v0"
+    offset = seg - trans
+    for i in range(1, len(pngs)):
+        out = f"x{i}"
+        tr = transitions[(i-1) % len(transitions)]
+        filters.append(f"[{prev}][v{i}]xfade=transition={tr}:duration={trans}:offset={offset:.2f}[{out}]")
+        prev = out
+        offset += seg - trans
+
+    a0, a1 = len(pngs), len(pngs)+1
+    filters.append(f"[{a0}:a]volume=0.028,apulsator=hz=2.0[a0]")
+    filters.append(f"[{a1}:a]volume=0.010,apulsator=hz=4.0[a1]")
+    filters.append("[a0][a1]amix=inputs=2:duration=longest,afade=t=in:st=0:d=0.08[a]")
+
+    outfile = OUT / f"{reel['id']}.mp4"
+    args += [
+        "-filter_complex", ";".join(filters),
+        "-map", f"[{prev}]", "-map", "[a]",
+        "-t", f"{total:.3f}", "-r", str(FPS),
+        "-c:v", "libx264", "-preset", "veryfast", "-crf", "23",
+        "-pix_fmt", "yuv420p", "-c:a", "aac", "-b:a", "96k",
+        "-movflags", "+faststart", str(outfile),
+    ]
+    subprocess.run(args, check=True)
+    print(f"rendered {outfile.relative_to(ROOT)} ({total:.2f}s)")
 
 def main():
-    OUT.mkdir(parents=True,exist_ok=True)
-    TMP.mkdir(parents=True,exist_ok=True)
-    data=json.loads(MANIFEST.read_text(encoding="utf-8"))
-    for reel in data["reels"]:
-        render_one(reel)
-    shutil.rmtree(TMP,ignore_errors=True)
+    OUT.mkdir(parents=True, exist_ok=True)
+    TMP.mkdir(parents=True, exist_ok=True)
+    for reel in REELS:
+        render(reel)
+    shutil.rmtree(TMP, ignore_errors=True)
 
-if __name__=="__main__":
+if __name__ == "__main__":
     main()
