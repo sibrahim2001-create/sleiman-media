@@ -1,0 +1,53 @@
+{
+  "version": "1.0",
+  "required": true,
+  "objective": "Energetic German voiceover that leads the viewer through every reel and improves retention without sounding like a generic commercial.",
+  "primary_voice": {
+    "provider": "AI Voice Generator",
+    "voice_id": "crisp",
+    "language": "de-DE",
+    "qualities": [
+      "energetic",
+      "clear",
+      "direct",
+      "confident",
+      "fast but understandable",
+      "non-advertising",
+      "founder/performance-content feel"
+    ]
+  },
+  "writing_rules": [
+    "Start speaking immediately; no greeting, no brand intro.",
+    "Hook must be spoken in the first 1.0 second.",
+    "Use short sentences and punch words.",
+    "One spoken idea per visual beat.",
+    "No filler phrases such as 'Viele Handwerksbetriebe haben das Problem'.",
+    "Prefer direct language: du/dein Betrieb/dein Büro.",
+    "Voiceover should usually fit 7–11 seconds for the current shortform format.",
+    "Keep on-screen text shorter than the spoken sentence; voice leads, text supports.",
+    "One CTA maximum."
+  ],
+  "audio_mix": {
+    "voice_leads": true,
+    "bed_volume": 0.13,
+    "voice_volume": 1.18,
+    "voice_delay_ms": 70,
+    "compressor": true,
+    "limiter": true
+  },
+  "slot_tone": {
+    "06:45": "urgent warning, controlled pressure",
+    "10:00": "fast practical teacher, saveable value",
+    "13:15": "confident demo guide, show-dont-tell",
+    "17:00": "contrarian, punchy, discussion-provoking",
+    "20:30": "confident conversion, useful not salesy"
+  },
+  "qa": [
+    "No reel may publish without an audible voiceover unless explicitly approved.",
+    "Pronunciation of Handwerk terms, numbers, Umlaute and brand names must sound clean.",
+    "Voice must be clearly louder than music/sound design.",
+    "No clipping, distortion or long dead-air before first word.",
+    "If the voice duration exceeds the video, speed it up only enough to fit while staying intelligible.",
+    "Reject robotic or sleepy delivery."
+  ]
+}
