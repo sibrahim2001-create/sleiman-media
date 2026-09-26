@@ -5,7 +5,9 @@ on:
     branches: ["main"]
     paths:
       - "content/daily_premium.json"
+      - "content/voice_system.json"
       - "scripts/render_daily_premium.py"
+      - "scripts/add_voiceovers.py"
       - ".github/workflows/render-daily-premium.yml"
   workflow_dispatch:
 
@@ -26,7 +28,7 @@ jobs:
           sudo apt-get update -qq
           sudo apt-get install -y ffmpeg fonts-dejavu-core
           python -m pip install pillow
-      - name: Apply FFmpeg compatibility fixes
+      - name: Apply FFmpeg compatibility and pacing fixes
         run: |
           python - <<'PY'
           from pathlib import Path
@@ -35,10 +37,16 @@ jobs:
           s = s.replace("scale=1210:2151", "scale=1210:2150")
           s = s.replace("d=max(1,int(seg*FPS))", "d=max(1,math.ceil(seg*FPS))")
           s = s.replace("d=.08", "d=0.08").replace("d=.3", "d=0.3")
+          s = s.replace(
+              "segs=[1.75]+[2.05]*(len(pngs)-1)",
+              "segs=[2.15]+[2.75]*(len(pngs)-1)"
+          )
           p.write_text(s, encoding="utf-8")
           PY
       - name: Render premium reels
         run: python scripts/render_daily_premium.py
+      - name: Add energetic voiceovers
+        run: python scripts/add_voiceovers.py
       - name: Upload preview artifact
         uses: actions/upload-artifact@v4
         with:
@@ -55,6 +63,6 @@ jobs:
           if git diff --cached --quiet; then
             echo "No media changes."
           else
-            git commit -m "Render daily premium reels"
+            git commit -m "Render premium reels with voiceover"
             git push
           fi
