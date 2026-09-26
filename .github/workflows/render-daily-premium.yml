@@ -39,6 +39,13 @@ jobs:
           PY
       - name: Render premium reels
         run: python scripts/render_daily_premium.py
+      - name: Upload preview artifact
+        uses: actions/upload-artifact@v4
+        with:
+          name: sleiman-premium-preview
+          path: media/daily-premium/*.mp4
+          if-no-files-found: error
+          retention-days: 3
       - name: Commit media only
         run: |
           git restore scripts/render_daily_premium.py
