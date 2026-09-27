@@ -1,356 +1,391 @@
 {
   "date": "2026-09-27",
-  "batch": "attention-v6-meme-sfx",
-  "research_basis": {
-    "own_profile_observation": "Recent strongest visible TikTok posts on the profile are concrete utility/message formats (e.g. 5 Basis-Infos, WhatsApp quote, 4 Dinge reichen) rather than abstract corporate slides.",
-    "platform_principles": [
-      "Hook or value proposition in first 1-3 seconds.",
-      "Use movement, surprise, humor and fast cuts.",
-      "Show the product/solution early instead of only explaining it.",
-      "Use sound effects/dialogue while keeping on-screen text understandable muted."
-    ]
-  },
+  "batch": "attention-v8-kinetic-captions",
+  "objective": "Maximize first-3-second stop rate, watchtime and qualified inbound with three visually different formats, natural Ibrahim delivery, original SFX and kinetic subtitles.",
+  "render_version": "attention-v8-kinetic-captions",
   "reels": [
     {
-      "id": "attention-2026-09-27-01",
-      "format": "whatsapp_pattern_interrupt",
-      "goal": "reach_and_saves",
-      "accent": "cyan",
-      "scene_durations": [
-        0.7,
-        0.6,
-        0.8,
-        2.5,
-        2.8,
-        2.8
-      ],
+      "id": "attention-v8-2026-09-27-01",
+      "format": "challenge",
+      "duration": 12.3,
+      "caption_accent": "yellow",
+      "bed_mix_gain": 0.024,
+      "sfx_mix_gain": 0.88,
       "sfx": [
         {
-          "type": "notification",
+          "type": "bass_hit",
           "at": 0.02,
-          "gain": 1.15
+          "gain": 0.82
         },
         {
-          "type": "record_scratch",
-          "at": 0.62,
+          "type": "notification",
+          "at": 1.2,
           "gain": 1
         },
         {
+          "type": "click",
+          "at": 2.2,
+          "gain": 0.75
+        },
+        {
+          "type": "record_scratch",
+          "at": 3.18,
+          "gain": 0.78
+        },
+        {
           "type": "stamp",
-          "at": 1.2,
-          "gain": 1.05
+          "at": 3.62,
+          "gain": 0.74
+        },
+        {
+          "type": "stamp",
+          "at": 4.12,
+          "gain": 0.72
+        },
+        {
+          "type": "stamp",
+          "at": 4.62,
+          "gain": 0.72
         },
         {
           "type": "whoosh",
-          "at": 2,
-          "gain": 0.95
+          "at": 5.3,
+          "gain": 0.72
         },
         {
           "type": "cash",
-          "at": 6.85,
-          "gain": 0.65
-        }
-      ],
-      "scenes": [
-        {
-          "accent": "green",
-          "hide_brand": true,
-          "hide_hook_badge": true,
-          "tag": "WHATSAPP",
-          "headline": "„KÖNNT IHR MORGEN KOMMEN?“",
-          "sub": "Eine Nachricht. Sofort klar?",
-          "visual": "chat_hook"
-        },
-        {
-          "accent": "red",
-          "hide_brand": true,
-          "tag": "STOP",
-          "headline": "NICHT BLIND ANTWORTEN.",
-          "sub": "Erst prüfen, was fehlt.",
-          "visual": "stop_stamp"
-        },
-        {
-          "accent": "yellow",
-          "hide_brand": true,
-          "tag": "3 INFOS",
-          "headline": "ORT. FOTO. TERMIN.",
-          "sub": "Genau hier entstehen Rückfragen.",
-          "visual": "chat_hook"
-        },
-        {
-          "accent": "cyan",
-          "tag": "DEMO",
-          "headline": "KI MARKIERT, WAS FEHLT.",
-          "sub": "Die Anfrage wird strukturiert, ohne Angaben zu erfinden.",
-          "visual": "transform_demo"
-        },
-        {
-          "accent": "blue",
-          "tag": "BRIEFING",
-          "headline": "KLARER NÄCHSTER SCHRITT.",
-          "sub": "Leistung • Objekt • fehlende Infos • Zuständigkeit",
-          "visual": "seven_demo"
-        },
-        {
-          "accent": "green",
-          "tag": "ERGEBNIS",
-          "headline": "DU PRÜFST. FERTIG.",
-          "sub": "So soll sich Büroarbeit anfühlen.",
-          "visual": "system_card",
-          "cta": "KOSTENLOSE PROZESSANALYSE • LINK IM PROFIL"
+          "at": 9.1,
+          "gain": 0.5
         }
       ],
       "voiceover": {
-        "text": "Stopp. Auf dieser WhatsApp fehlen drei Infos: Ort. Foto. Termin. Mein System erkennt das sofort und baut dir ein klares Briefing.",
-        "url": "https://resource2.heygen.ai/text_to_speech/95fe2f05f075434e99f1831f4c60d8e4/a6c8e374b40a4c4eac1182b05ef1bf1e/id=009fb406-332d-42b6-b15e-b0112dd34d4f.wav",
+        "text": "Drei-Sekunden-Test. Was fehlt hier? „Könnt ihr morgen kommen?“ Ort. Foto. Termin. Genau. Mein System markiert das sofort, bevor aus einer Nachricht zehn Rückfragen werden.",
+        "url": "https://resource2.heygen.ai/text_to_speech/95fe2f05f075434e99f1831f4c60d8e4/a6c8e374b40a4c4eac1182b05ef1bf1e/id=428b12ae-5439-4e2f-a645-0b30104a7ab5.wav",
         "provider": "heygen",
-        "voice_name": "Ibrahim",
         "voice_id": "a6c8e374b40a4c4eac1182b05ef1bf1e",
-        "speed": 1.07,
-        "profile": "fast_direct_founder"
+        "voice_name": "Ibrahim",
+        "speed": 1.01,
+        "mix_gain": 2.34,
+        "profile": "challenge_playful"
       },
-      "caption": "Eine kurze WhatsApp ist noch kein vollständiger Auftrag. Wenn Ort, Foto oder Termin fehlen, entstehen Rückfragen. Genau deshalb strukturiert Sleiman Systems die Anfrage zuerst – und du entscheidest danach.",
+      "captions": [
+        {
+          "start": 0.1,
+          "end": 1.1,
+          "text": "Drei-Sekunden-Test.",
+          "highlight": "Test",
+          "accent": "yellow"
+        },
+        {
+          "start": 1.1,
+          "end": 1.95,
+          "text": "Was fehlt hier?",
+          "highlight": "fehlt",
+          "accent": "red"
+        },
+        {
+          "start": 1.95,
+          "end": 3.3,
+          "text": "Könnt ihr morgen kommen?",
+          "highlight": "morgen",
+          "accent": "green"
+        },
+        {
+          "start": 3.3,
+          "end": 3.95,
+          "text": "Ort.",
+          "highlight": "Ort",
+          "accent": "orange"
+        },
+        {
+          "start": 3.95,
+          "end": 4.55,
+          "text": "Foto.",
+          "highlight": "Foto",
+          "accent": "purple"
+        },
+        {
+          "start": 4.55,
+          "end": 5.15,
+          "text": "Termin.",
+          "highlight": "Termin",
+          "accent": "red"
+        },
+        {
+          "start": 5.15,
+          "end": 5.85,
+          "text": "Genau.",
+          "highlight": "Genau",
+          "accent": "green"
+        },
+        {
+          "start": 5.85,
+          "end": 8.35,
+          "text": "Mein System markiert das sofort.",
+          "highlight": "sofort",
+          "accent": "cyan"
+        },
+        {
+          "start": 8.35,
+          "end": 10.15,
+          "text": "Bevor aus einer Nachricht",
+          "highlight": "Nachricht",
+          "accent": "blue"
+        },
+        {
+          "start": 10.15,
+          "end": 12.25,
+          "text": "zehn Rückfragen werden.",
+          "highlight": "zehn",
+          "accent": "red"
+        }
+      ],
+      "caption": "3-Sekunden-Test: Was fehlt bei „Könnt ihr morgen kommen?“ Genau diese Lücken erzeugen Rückfragen. Der Prozess sollte fehlende Infos sichtbar machen, bevor jemand antwortet.",
       "hashtags": [
         "#handwerk",
         "#elektriker",
-        "#ki",
-        "#automatisierung",
+        "#kiimhandwerk",
+        "#büro",
         "#sleimansystems"
       ]
     },
     {
-      "id": "attention-2026-09-27-02",
-      "format": "original_meme_boss_exe",
-      "goal": "comments_shares",
-      "accent": "purple",
-      "scene_durations": [
-        0.65,
-        0.65,
-        0.9,
-        2.8,
-        2.9,
-        2.9
-      ],
+      "id": "attention-v8-2026-09-27-02",
+      "format": "tabs_meme",
+      "duration": 13.4,
+      "caption_accent": "purple",
+      "bed_mix_gain": 0.022,
+      "sfx_mix_gain": 0.84,
       "sfx": [
         {
           "type": "notification",
-          "at": 0.02,
-          "gain": 1
+          "at": 0.1,
+          "gain": 0.82
         },
         {
           "type": "notification",
-          "at": 0.28,
-          "gain": 0.85
+          "at": 0.38,
+          "gain": 0.74
         },
         {
           "type": "notification",
-          "at": 0.52,
-          "gain": 0.72
+          "at": 0.66,
+          "gain": 0.68
         },
         {
           "type": "error",
-          "at": 0.78,
-          "gain": 0.95
+          "at": 1.35,
+          "gain": 0.82
         },
         {
           "type": "bass_hit",
-          "at": 1.75,
-          "gain": 1.05
+          "at": 3.2,
+          "gain": 0.82
+        },
+        {
+          "type": "record_scratch",
+          "at": 4.8,
+          "gain": 0.64
         },
         {
           "type": "whoosh",
-          "at": 4.2,
-          "gain": 0.8
-        }
-      ],
-      "scenes": [
-        {
-          "accent": "yellow",
-          "hide_brand": true,
-          "hide_hook_badge": true,
-          "tag": "MITARBEITER",
-          "headline": "„CHEF, WO IST ANGEBOT MÜLLER?“",
-          "sub": "Kennst du diesen Satz?",
-          "visual": "boss_meme"
+          "at": 5.2,
+          "gain": 0.68
         },
         {
-          "accent": "purple",
-          "hide_brand": true,
-          "tag": "CHEF.EXE",
-          "headline": "LÄDT ...",
-          "sub": "Rückruf? Termin? Angebot? Nachfassen?",
-          "visual": "boss_meme"
-        },
-        {
-          "accent": "red",
-          "hide_brand": true,
-          "tag": "PROBLEM",
-          "headline": "ALLES NUR IM KOPF?",
-          "sub": "Dann hängt der Ablauf an einer Person.",
-          "visual": "memory_overload"
-        },
-        {
-          "accent": "blue",
-          "tag": "DIE LÖSUNG",
-          "headline": "STATUS MUSS SICHTBAR SEIN.",
-          "sub": "Jeder sieht, was offen ist und wer übernimmt.",
-          "visual": "system_card"
-        },
-        {
-          "accent": "cyan",
-          "tag": "3 FELDER",
-          "headline": "STATUS. DATUM. OWNER.",
-          "sub": "Mehr braucht der nächste Schritt oft nicht.",
-          "visual": "followup"
-        },
-        {
-          "accent": "green",
-          "tag": "ERGEBNIS",
-          "headline": "WENIGER NACHFRAGEN.",
-          "sub": "Mehr Klarheit im Tagesgeschäft.",
-          "visual": "system_card",
-          "cta": "STIMMT ODER NICHT? • SCHREIB'S IN DIE KOMMENTARE"
+          "type": "stamp",
+          "at": 8.95,
+          "gain": 0.6
         }
       ],
       "voiceover": {
-        "text": "Chef, wo ist Angebot Müller? Wenn diese Frage ständig bei dir landet, fehlt kein Fleiß. Es fehlt ein sichtbarer Status. Datum. Verantwortlicher. Fertig.",
-        "url": "https://resource2.heygen.ai/text_to_speech/95fe2f05f075434e99f1831f4c60d8e4/a6c8e374b40a4c4eac1182b05ef1bf1e/id=d53ca677-82da-4972-97a9-a21059025935.wav",
+        "text": "Wenn dein Betrieb siebzehn offene Tabs im Kopf des Chefs hat, brauchst du keinen besseren Kalender. Du brauchst Status, Verantwortlichen und nächsten Schritt. Sonst ist jeder Rückruf ein Gedächtnistest.",
+        "url": "https://resource2.heygen.ai/text_to_speech/95fe2f05f075434e99f1831f4c60d8e4/a6c8e374b40a4c4eac1182b05ef1bf1e/id=939e9aaa-7be4-4a6a-8f00-a7c8d10db967.wav",
         "provider": "heygen",
-        "voice_name": "Ibrahim",
         "voice_id": "a6c8e374b40a4c4eac1182b05ef1bf1e",
-        "speed": 1.06,
-        "profile": "meme_founder"
+        "voice_name": "Ibrahim",
+        "speed": 0.99,
+        "mix_gain": 2.3,
+        "profile": "dry_humor_founder"
       },
-      "caption": "Wenn der Status nur im Kopf des Chefs existiert, muss das Team ständig nachfragen. Sichtbarer Status + Datum + Verantwortlicher macht den nächsten Schritt für alle klar.",
+      "captions": [
+        {
+          "start": 0.1,
+          "end": 2.35,
+          "text": "17 offene Tabs im Kopf des Chefs.",
+          "highlight": "17",
+          "accent": "purple"
+        },
+        {
+          "start": 2.35,
+          "end": 4.55,
+          "text": "Du brauchst keinen besseren Kalender.",
+          "highlight": "keinen",
+          "accent": "red"
+        },
+        {
+          "start": 4.55,
+          "end": 6.65,
+          "text": "Du brauchst Status,",
+          "highlight": "Status",
+          "accent": "blue"
+        },
+        {
+          "start": 6.65,
+          "end": 8.35,
+          "text": "Verantwortlichen",
+          "highlight": "Verantwortlichen",
+          "accent": "purple"
+        },
+        {
+          "start": 8.35,
+          "end": 9.75,
+          "text": "und nächsten Schritt.",
+          "highlight": "nächsten",
+          "accent": "green"
+        },
+        {
+          "start": 9.75,
+          "end": 13.35,
+          "text": "Sonst ist jeder Rückruf ein Gedächtnistest.",
+          "highlight": "Gedächtnistest",
+          "accent": "yellow"
+        }
+      ],
+      "caption": "Wenn Rückruf, Termin, Angebot und Nachfassen nur im Kopf des Chefs hängen, ist jeder Tag ein Gedächtnistest. Sichtbarer Status macht Verantwortung für alle klar.",
       "hashtags": [
         "#handwerksbetrieb",
         "#unternehmer",
-        "#büro",
+        "#meme",
         "#prozessoptimierung",
         "#sleimansystems"
       ]
     },
     {
-      "id": "attention-2026-09-27-03",
-      "format": "seven_second_product_demo",
-      "goal": "qualified_inbound_and_revenue",
-      "accent": "orange",
-      "scene_durations": [
-        0.65,
-        0.65,
-        0.75,
-        2.6,
-        3,
-        3
-      ],
+      "id": "attention-v8-2026-09-27-03",
+      "format": "race_demo",
+      "duration": 12.8,
+      "caption_accent": "cyan",
+      "bed_mix_gain": 0.025,
+      "sfx_mix_gain": 0.9,
       "sfx": [
         {
           "type": "bass_hit",
-          "at": 0.01,
-          "gain": 0.9
-        },
-        {
-          "type": "click",
-          "at": 0.55,
-          "gain": 0.9
+          "at": 0.02,
+          "gain": 0.85
         },
         {
           "type": "whoosh",
-          "at": 1.1,
-          "gain": 0.85
+          "at": 1.2,
+          "gain": 0.78
         },
         {
-          "type": "notification",
-          "at": 1.75,
-          "gain": 0.85
+          "type": "click",
+          "at": 2.15,
+          "gain": 0.66
+        },
+        {
+          "type": "click",
+          "at": 3.2,
+          "gain": 0.66
+        },
+        {
+          "type": "click",
+          "at": 4.45,
+          "gain": 0.66
         },
         {
           "type": "stamp",
-          "at": 4.1,
-          "gain": 0.75
+          "at": 6.65,
+          "gain": 0.64
         },
         {
           "type": "cash",
-          "at": 7.6,
-          "gain": 0.62
-        }
-      ],
-      "scenes": [
-        {
-          "accent": "orange",
-          "hide_brand": true,
-          "hide_hook_badge": true,
-          "tag": "7-SEKUNDEN-DEMO",
-          "headline": "WAS MACHT SLEIMAN SYSTEMS?",
-          "sub": "Nicht erklären. Zeigen.",
-          "visual": "seven_demo"
+          "at": 8.85,
+          "gain": 0.55
         },
         {
-          "accent": "cyan",
-          "hide_brand": true,
-          "tag": "1",
-          "headline": "ANFRAGE REIN.",
-          "sub": "WhatsApp • Mail • Formular",
-          "visual": "chat_hook"
-        },
-        {
-          "accent": "purple",
-          "hide_brand": true,
-          "tag": "2",
-          "headline": "KI STRUKTURIERT.",
-          "sub": "Bekanntes raus. Fehlendes sichtbar.",
-          "visual": "transform_demo"
-        },
-        {
-          "accent": "blue",
-          "tag": "3",
-          "headline": "OWNER + NÄCHSTER SCHRITT.",
-          "sub": "Der Vorgang bekommt Verantwortung und Status.",
-          "visual": "system_card"
-        },
-        {
-          "accent": "green",
-          "tag": "4",
-          "headline": "DU PRÜFST.",
-          "sub": "Keine blinde Vollautomation. Entscheidung bleibt bei dir.",
-          "visual": "seven_demo"
-        },
-        {
-          "accent": "green",
-          "tag": "DAS IST DER PUNKT",
-          "headline": "WENIGER SUCHEN. SCHNELLER HANDELN.",
-          "sub": "Genau solche Engpässe finden wir in deiner Prozessanalyse.",
-          "visual": "pipeline",
-          "cta": "KOSTENLOSE PROZESSANALYSE • LINK IM PROFIL"
+          "type": "whoosh",
+          "at": 10.15,
+          "gain": 0.56
         }
       ],
       "voiceover": {
-        "text": "Ich zeig dir in sieben Sekunden, was Sleiman Systems macht. Anfrage rein. KI strukturiert. Owner und nächster Schritt stehen fest. Du prüfst. Fertig.",
-        "url": "https://resource2.heygen.ai/text_to_speech/95fe2f05f075434e99f1831f4c60d8e4/a6c8e374b40a4c4eac1182b05ef1bf1e/id=39d8a515-ec0e-4228-b5f2-87f931e5cbbb.wav",
+        "text": "Links: suchen, nachfragen, erinnern. Rechts: Anfrage rein, KI strukturiert, Verantwortlicher steht fest, nächster Schritt klar. Welcher Ablauf gewinnt? Du siehst es selbst.",
+        "url": "https://resource2.heygen.ai/text_to_speech/95fe2f05f075434e99f1831f4c60d8e4/a6c8e374b40a4c4eac1182b05ef1bf1e/id=b04d78df-ce2a-49d4-9d2a-eff1565a5bb1.wav",
         "provider": "heygen",
-        "voice_name": "Ibrahim",
         "voice_id": "a6c8e374b40a4c4eac1182b05ef1bf1e",
-        "speed": 1.08,
-        "profile": "demo_founder"
+        "voice_name": "Ibrahim",
+        "speed": 1.02,
+        "mix_gain": 2.34,
+        "profile": "confident_demo"
       },
-      "caption": "Was bekommt ein Handwerksbetrieb bei Sleiman Systems eigentlich konkret? Nicht einfach 'KI', sondern einen klareren Ablauf: Anfrage strukturieren, fehlende Infos erkennen, Verantwortung sichtbar machen und den nächsten Schritt vorbereiten.",
+      "captions": [
+        {
+          "start": 0.1,
+          "end": 2.25,
+          "text": "Links: suchen, nachfragen, erinnern.",
+          "highlight": "suchen",
+          "accent": "red"
+        },
+        {
+          "start": 2.25,
+          "end": 3.35,
+          "text": "Rechts: Anfrage rein.",
+          "highlight": "Anfrage",
+          "accent": "green"
+        },
+        {
+          "start": 3.35,
+          "end": 4.65,
+          "text": "KI strukturiert.",
+          "highlight": "KI",
+          "accent": "cyan"
+        },
+        {
+          "start": 4.65,
+          "end": 6.55,
+          "text": "Verantwortlicher steht fest.",
+          "highlight": "fest",
+          "accent": "purple"
+        },
+        {
+          "start": 6.55,
+          "end": 8.2,
+          "text": "Nächster Schritt klar.",
+          "highlight": "klar",
+          "accent": "green"
+        },
+        {
+          "start": 8.2,
+          "end": 10.25,
+          "text": "Welcher Ablauf gewinnt?",
+          "highlight": "gewinnt",
+          "accent": "yellow"
+        },
+        {
+          "start": 10.25,
+          "end": 12.75,
+          "text": "Du siehst es selbst.",
+          "highlight": "selbst",
+          "accent": "cyan"
+        }
+      ],
+      "caption": "Gleiche Anfrage, zwei Abläufe: einmal suchen, nachfragen und erinnern – einmal strukturieren, Verantwortung festlegen und den nächsten Schritt sichtbar machen.",
       "hashtags": [
         "#handwerk",
         "#digitalisierung",
-        "#kiimhandwerk",
-        "#vertrieb",
+        "#automatisierung",
+        "#ki",
         "#sleimansystems"
       ]
     }
   ],
-  "render_version": "attention-v7-frame-animated-meme-sfx-loud",
   "qa_targets": {
-    "audio": "Final full mix target -13 LUFS integrated, max true peak -1 dB.",
-    "first_3_seconds": "At least 3 distinct visual/audio beats before second 3.",
-    "product_visibility": "Concrete workflow visible no later than second 4.",
-    "muted_viewing": "Core message understandable without sound.",
-    "originality": "Only original/synthesized meme-style SFX; no copied copyrighted meme audio.",
-    "motion": "First 3 seconds use real frame-by-frame animation: sliding/bouncing UI, shake, pop-ins, glitch, timer motion and animated progress — not static slideshow cards.",
-    "attention": "Three or more distinct visual/audio beats before second 3; brand is intentionally de-emphasized during the initial hook."
+    "first_3_seconds": "Interactive challenge, original meme or visual race — never three static title cards.",
+    "subtitles": "Kinetic captions are large, safe-zone positioned, 2–5 words per beat where possible, and use semantic color highlights.",
+    "audio": "Warm Ibrahim voice in front of mix, final target -12.5 LUFS integrated, true peak below -0.8 dB.",
+    "originality": "No ripped meme clips or copyrighted trend audio; meme language and SFX are original/synthesized.",
+    "conversion": "At least one clip demonstrates what the customer actually gets before asking for the process analysis."
   }
 }
