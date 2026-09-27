@@ -1,5 +1,5 @@
 {
-  "version": "2.5-views-revenue-engine",
+  "version": "3.0-premise-first-creator-native",
   "canva": {
     "role": "design_system_and_asset_reference",
     "design_id": "DAHWVKU3Gcc",
@@ -439,5 +439,63 @@
   "human_presence": {
     "priority": "Increase real founder/human presence as soon as clean Ibrahim footage is available.",
     "rule": "Use real Ibrahim footage for some hooks, reactions, POV intros and CTA moments; combine it with UI/process overlays rather than replacing all content with synthetic visuals."
+  },
+  "core_attention_model": {
+    "principle": "Attention is earned by relevance, tension and anticipated payoff — not by visual noise.",
+    "frame_zero": "The viewer must instantly understand either: this is my problem, I want the answer, or I want to see what happens next.",
+    "hook_formula": "recognizable situation + specific tension/stakes + open loop",
+    "first_seconds": "Use only as many cuts/effects as improve comprehension and curiosity. Three beats are not a magic rule.",
+    "payoff": "Deliver the promised answer, reveal or transformation fast enough to reward continued viewing.",
+    "loop": "Where natural, end in a way that visually or verbally reconnects to the opening without feeling forced."
+  },
+  "feed_test": {
+    "before_render": [
+      "Would a Handwerk owner understand the premise from the first frame with sound off?",
+      "Is there one obvious unresolved question or outcome worth waiting for?",
+      "Does this look like something a creator would post, not a software company ad?",
+      "Can at least 30% of the text be removed without losing meaning?",
+      "Is the product/process shown as proof rather than described abstractly?"
+    ],
+    "fail_rule": "If any of the first three answers is no, rebuild the concept before rendering."
+  },
+  "human_first": {
+    "priority": "Use real Ibrahim/founder footage, hands, phone, desk, workshop, van, jobsite or believable real-world capture whenever available.",
+    "rule": "Motion graphics support the story; they are not the story.",
+    "fallback": "If human footage is unavailable, use screen-demo or object-led real-life simulation before abstract cards."
+  },
+  "viral_signals": {
+    "primary": [
+      "viewed_vs_swiped_or_equivalent",
+      "average_watch_duration",
+      "average_percentage_viewed",
+      "completion_or_rewatch_when_available"
+    ],
+    "secondary": [
+      "shares",
+      "saves",
+      "comments",
+      "profile_actions",
+      "qualified_inbound",
+      "booked_analysis",
+      "sales"
+    ],
+    "rule": "Do not optimize for raw views alone and do not call a concept viral from aesthetics."
+  },
+  "niche_content_model": {
+    "audience": "German Elektro/SHK/HVAC/Gebäudetechnik owner or managing director with office/coordination load.",
+    "strongest_promises": [
+      "show where a real inquiry gets stuck",
+      "show exactly what the system changes",
+      "show a recognizable owner/office moment",
+      "give one immediately usable prompt/checklist/template",
+      "challenge a common belief with a concrete example"
+    ],
+    "avoid": [
+      "generic AI claims",
+      "abstract 'more efficiency' language",
+      "too many captions competing with the hook",
+      "constant dark tech look",
+      "effects without narrative purpose"
+    ]
   }
 }
