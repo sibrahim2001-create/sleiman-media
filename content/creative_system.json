@@ -1,5 +1,5 @@
 {
-  "version": "2.1-retention-first",
+  "version": "2.2-color-psychology-social-native",
   "canva": {
     "role": "design_system_and_asset_reference",
     "design_id": "DAHWVKU3Gcc",
@@ -163,5 +163,108 @@
     "topic",
     "posting time"
   ],
-  "viral_candidate_rule": "Never call a video viral or a viral candidate from views alone. Require clear platform-relative improvement in retention plus at least one secondary signal such as shares, saves, comments, profile actions, qualified inbound, or unusually strong view velocity."
+  "viral_candidate_rule": "Never call a video viral or a viral candidate from views alone. Require clear platform-relative improvement in retention plus at least one secondary signal such as shares, saves, comments, profile actions, qualified inbound, or unusually strong view velocity.",
+  "color_psychology": {
+    "principle": "Color is functional, not decorative. Use one dominant emotional color plus one support color per reel; keep typography and motion consistent enough to preserve brand recognition.",
+    "palette": {
+      "red": {
+        "meaning": "loss, danger, missed revenue, urgency",
+        "use_for": [
+          "lost leads",
+          "missed follow-up",
+          "warning hooks"
+        ]
+      },
+      "orange": {
+        "meaning": "action, urgency, energy",
+        "use_for": [
+          "deadline",
+          "next step",
+          "call to action"
+        ]
+      },
+      "yellow": {
+        "meaning": "attention, curiosity, saveable tip",
+        "use_for": [
+          "checklists",
+          "3 mistakes",
+          "prompt/value posts"
+        ]
+      },
+      "green": {
+        "meaning": "result, money, efficiency, done-state",
+        "use_for": [
+          "before/after",
+          "conversion",
+          "workflow completed"
+        ]
+      },
+      "cyan": {
+        "meaning": "AI, technology, transformation",
+        "use_for": [
+          "demos",
+          "automation",
+          "data extraction"
+        ]
+      },
+      "purple": {
+        "meaning": "innovation, premium, contrarian thinking",
+        "use_for": [
+          "opinion",
+          "future of handwork",
+          "unexpected insight"
+        ]
+      },
+      "blue": {
+        "meaning": "trust, system, clarity",
+        "use_for": [
+          "process views",
+          "dashboards",
+          "proof"
+        ]
+      },
+      "offwhite": {
+        "meaning": "clarity, reset, human/editorial feel",
+        "use_for": [
+          "founder POV",
+          "text-led pattern interrupts"
+        ]
+      }
+    },
+    "background_rotation": [
+      "charcoal + red",
+      "warm off-white + black + yellow",
+      "deep green + cream",
+      "cobalt + white + cyan",
+      "deep purple + white + orange",
+      "black + neon cyan"
+    ],
+    "rules": [
+      "Do not render five consecutive dark-navy reels.",
+      "Do not use more than two strong accent colors in one scene.",
+      "Use red only when the message contains a real loss/warning, not as decoration.",
+      "Use green for visible resolution/result moments.",
+      "Use off-white/light scenes as pattern interrupts between dark scenes.",
+      "Maintain Sleiman Systems identity through typography, spacing, motion language, and logo treatment rather than one background color."
+    ]
+  },
+  "creator_standard": {
+    "target": "Top-tier niche creator quality for German Handwerk process/AI content.",
+    "priorities": [
+      "social-native before corporate",
+      "human tension before feature explanation",
+      "show the workflow before naming the product",
+      "one memorable visual metaphor per reel",
+      "one emotional beat per scene",
+      "clear benefit to owner/office within 5 seconds",
+      "content must work muted and still become stronger with voice"
+    ],
+    "disallow": [
+      "generic dark-blue corporate slideshow",
+      "same composition in every reel",
+      "AI buzzword openings",
+      "logo intro",
+      "text-heavy cards with no visual action"
+    ]
+  }
 }
