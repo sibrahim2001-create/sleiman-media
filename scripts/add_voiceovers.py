@@ -64,7 +64,8 @@ def main():
             f"[1:a]{tempo},highpass=f=75,"
             f"acompressor=threshold=-18dB:ratio=3:attack=5:release=70,"
             f"volume=2.35,adelay=40|40,loudnorm=I=-15.5:TP=-1.2:LRA=6[vo];"
-            f"[bed][vo]sidechaincompress=threshold=0.03:ratio=8:attack=5:release=180[ducked];[ducked][vo]amix=inputs=2:duration=first:dropout_transition=0,
+            f"[bed][vo]sidechaincompress=threshold=0.03:ratio=8:attack=5:release=180[ducked];"
+            f"[ducked][vo]amix=inputs=2:duration=first:dropout_transition=0,"
             f"alimiter=limit=0.95[a]"
         )
 
