@@ -533,5 +533,30 @@
     "Reject missing/quiet audio or clipped peaks.",
     "Reject any reel that looks like a cosmetic reskin of another daily reel.",
     "Do not claim virality before actual retention plus secondary engagement/inbound data confirms it."
-  ]
+  ],
+  "societal_content_pillar": {
+    "purpose": "Use broader social/industry tensions to increase relevance and shareability without losing the Handwerk ICP.",
+    "cadence": "1-2 main reels per week, not every day.",
+    "themes": [
+      "Fachkräftemangel vs. skilled workers losing evenings to office/admin",
+      "24/7 WhatsApp availability and the expectation of instant replies",
+      "AI-will-replace-jobs debate vs. AI removing repetitive office work",
+      "self-employment freedom vs. owner being permanently tied to the phone",
+      "good craftsmanship vs. poor process visibility",
+      "customers expecting Amazon-like speed from small local businesses"
+    ],
+    "rules": [
+      "Always connect the societal tension back to a concrete Handwerk workflow or business pain.",
+      "No party politics or partisan framing.",
+      "Use concrete situations and questions rather than broad ideological statements.",
+      "Avoid unsupported statistics; if a number is used, source it or label it as an example.",
+      "The payoff must show what changes operationally, not merely complain."
+    ],
+    "hook_examples": [
+      "Alle reden über Fachkräftemangel. Aber warum sitzt der beste Monteur abends noch am Laptop?",
+      "KI nimmt Handwerkern nicht den Job. Vielleicht nimmt sie ihnen endlich den Papierkram.",
+      "Selbstständig sein sollte Freiheit heißen. Warum klingelt dann um 21:47 noch WhatsApp?",
+      "Kunden erwarten Antworten wie bei Amazon. Dein Betrieb arbeitet aber nicht mit Amazon-Prozessen."
+    ]
+  }
 }
