@@ -1,5 +1,5 @@
 {
-  "version": "2.4-kinetic-captioning",
+  "version": "2.5-views-revenue-engine",
   "canva": {
     "role": "design_system_and_asset_reference",
     "design_id": "DAHWVKU3Gcc",
@@ -338,5 +338,106 @@
       "Do not cover the key demo interaction or CTA.",
       "Every reel must remain understandable when muted."
     ]
+  },
+  "dual_objective": {
+    "principle": "Every piece of content has a primary reach job and a secondary business job. A high-view clip with no qualified business movement is not automatically a winner.",
+    "reach_score_inputs": [
+      "0-1s stop behavior / viewed-vs-swiped when available",
+      "0-3s retention",
+      "average watch time and average percentage viewed",
+      "rewatches / engaged views when available",
+      "shares, saves, sends and comments",
+      "view velocity relative to the account baseline"
+    ],
+    "revenue_score_inputs": [
+      "profile visits",
+      "website/link clicks when available",
+      "process-analysis starts/completions",
+      "qualified inbound DMs",
+      "booked calls",
+      "Office Kit purchases",
+      "cash collected attributable to content when verifiable"
+    ],
+    "decision_rule": "Promote concepts that improve either reach or revenue without materially damaging the other. Build variants of clips that score high on both."
+  },
+  "signature_series": [
+    {
+      "name": "3-Sekunden-Test",
+      "job": "reach + saves",
+      "mechanic": "Viewer must answer or notice something before the reveal.",
+      "examples": [
+        "Was fehlt in dieser WhatsApp?",
+        "Welches Angebot würdest du zuerst nachfassen?",
+        "Findest du den Fehler im Prozess?"
+      ]
+    },
+    {
+      "name": "CHEF.EXE",
+      "job": "shares + comments + relatability",
+      "mechanic": "Original meme-style exaggeration of real owner bottlenecks.",
+      "examples": [
+        "17 offene Tabs im Kopf",
+        "Chef als Reminder-App",
+        "Wenn jeder Rückruf ein Gedächtnistest ist"
+      ]
+    },
+    {
+      "name": "Chaos vs System",
+      "job": "proof + qualified inbound",
+      "mechanic": "Split-screen race or before/after where Sleiman Systems visibly changes the workflow.",
+      "examples": [
+        "Suchen vs sichtbarer Status",
+        "Chat vs Briefing",
+        "Offenes Angebot vs Owner + Nachfassdatum"
+      ]
+    },
+    {
+      "name": "In 7 Sekunden",
+      "job": "product understanding + conversion",
+      "mechanic": "Show a complete micro-workflow with a timer and no abstract explanation.",
+      "examples": [
+        "Anfrage -> KI-Struktur -> Owner -> nächster Schritt",
+        "Angebot -> Nachfassdatum -> Status"
+      ]
+    },
+    {
+      "name": "Unbequeme Wahrheit",
+      "job": "discussion + authority",
+      "mechanic": "Specific contrarian claim that a Handwerkschef can agree or disagree with.",
+      "examples": [
+        "Mehr Leads können dein Chaos vergrößern",
+        "Der Chef darf nicht das Betriebsgedächtnis sein"
+      ]
+    }
+  ],
+  "content_mix_rules": {
+    "daily_five": [
+      "1 interactive challenge / pattern interrupt",
+      "1 saveable utility / prompt / checklist",
+      "1 real workflow demo / before-after",
+      "1 meme or contrarian discussion piece",
+      "1 conversion-oriented proof/offer piece"
+    ],
+    "anti_fatigue": [
+      "Never use the same first-frame composition twice in one day.",
+      "Never use the same dominant color in more than two daily posts.",
+      "Rotate light, dark, split-screen, phone simulation, dashboard, founder/UGC footage when available.",
+      "At least two daily posts must show a concrete Sleiman Systems workflow, not only talk about problems."
+    ]
+  },
+  "revenue_bridge": {
+    "rule": "Do not hard-sell in every reel. Give the viewer a reason to care first, then bridge naturally to the next step.",
+    "cta_rotation": [
+      "soft follow / save",
+      "comment with opinion",
+      "DM keyword only when a real response flow exists",
+      "free process analysis",
+      "Office Kit 79 EUR one-time"
+    ],
+    "offer_visibility": "For demo and conversion formats, show what the customer gets before naming the offer."
+  },
+  "human_presence": {
+    "priority": "Increase real founder/human presence as soon as clean Ibrahim footage is available.",
+    "rule": "Use real Ibrahim footage for some hooks, reactions, POV intros and CTA moments; combine it with UI/process overlays rather than replacing all content with synthetic visuals."
   }
 }
