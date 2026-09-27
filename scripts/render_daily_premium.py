@@ -13,6 +13,7 @@ FONT_B="/usr/share/fonts/truetype/dejavu/DejaVuSans-Bold.ttf"
 FONT_R="/usr/share/fonts/truetype/dejavu/DejaVuSans.ttf"
 WHITE=(248,250,252); MUTED=(164,178,198); BLUE=(49,124,255); CYAN=(58,214,255)
 RED=(255,78,86); GREEN=(55,211,153); AMBER=(255,185,72)
+ORANGE=(255,132,56); YELLOW=(255,214,74); PURPLE=(166,92,255); CYAN=(58,214,255); BLUE=(49,124,255)
 BG=(5,8,14); BG2=(9,16,27); CARD=(15,24,39); LINE=(38,55,79)
 
 def font(n,b=True): return ImageFont.truetype(FONT_B if b else FONT_R,n)
@@ -29,15 +30,26 @@ def wrap(d,t,f,mw):
     return "\n".join(out)
 
 def base(accent):
-    im=Image.new("RGB",(W,H),BG); d=ImageDraw.Draw(im)
+    palettes={
+        "blue":   ((5,8,14),(9,16,27),BLUE),
+        "red":    ((18,5,9),(38,9,16),RED),
+        "green":  ((4,16,12),(7,39,28),GREEN),
+        "amber":  ((18,12,4),(39,27,8),AMBER),
+        "orange": ((20,9,4),(45,20,7),ORANGE),
+        "yellow": ((17,15,5),(40,34,8),YELLOW),
+        "purple": ((12,6,22),(31,12,52),PURPLE),
+        "cyan":   ((3,14,18),(5,32,41),CYAN),
+    }
+    bg1,bg2,a=palettes.get(accent,palettes["blue"])
+    im=Image.new("RGB",(W,H),bg1); d=ImageDraw.Draw(im)
     for y in range(H):
-        t=y/(H-1); c=tuple(int(BG[i]*(1-t)+BG2[i]*t) for i in range(3))
+        t=y/(H-1); c=tuple(int(bg1[i]*(1-t)+bg2[i]*t) for i in range(3))
         d.line((0,y,W,y),fill=c)
-    for x in range(0,W,120): d.line((x,0,x,H),fill=(11,19,31),width=1)
-    for y in range(0,H,120): d.line((0,y,W,y),fill=(11,19,31),width=1)
-    a={"red":RED,"green":GREEN,"amber":AMBER}.get(accent,BLUE)
-    d.ellipse((760,-240,1320,320),fill=tuple(v//7 for v in a))
-    d.ellipse((-260,1480,320,2060),fill=(8,31,62))
+    grid=tuple(min(255,int(v*1.35+5)) for v in bg2)
+    for x in range(0,W,120): d.line((x,0,x,H),fill=grid,width=1)
+    for y in range(0,H,120): d.line((0,y,W,y),fill=grid,width=1)
+    d.ellipse((760,-240,1320,320),fill=tuple(v//6 for v in a))
+    d.ellipse((-260,1480,320,2060),fill=tuple(max(3,v//10) for v in a))
     return im,a
 
 def brand(d,a):
