@@ -1,132 +1,161 @@
 {
   "date": "2026-09-27",
-  "batch": "late-optimized-exception",
-  "research_basis": {
-    "own_data": [
-      "Loss/pain framing produced the strongest YouTube result so far.",
-      "Prompt/value formats produced the strongest TikTok result so far."
-    ],
-    "market_patterns": [
-      "evening-office pain",
-      "show the workflow instead of explaining it",
-      "follow-up/status visibility",
-      "POV and concrete before/after framing"
-    ]
-  },
+  "batch": "creative-color-voice-v2",
+  "objective": "Maximize stop-rate, retention, memorable demo value and qualified inbound while showing Sleiman Systems more concretely.",
   "reels": [
     {
-      "id": "optimized-2026-09-27-01",
+      "id": "creative-2026-09-27-01",
       "accent": "red",
-      "format": "pov_pain",
-      "goal": "reach_and_identification",
+      "format": "micro_drama_loss",
+      "goal": "reach",
+      "scene_durations": [
+        3.8,
+        4.6,
+        4.6
+      ],
       "scenes": [
         {
-          "tag": "POV • 20:47",
-          "headline": "JETZT BEGINNT DEIN 2. JOB.",
-          "sub": "Baustelle fertig. Büro noch lange nicht.",
-          "visual": "pov_clock"
+          "tag": "BEISPIEL • ANFRAGE",
+          "headline": "DIESEN AUFTRAG VERLIERST DU LEISE.",
+          "sub": "Kein Alarm. Kein großes Problem. Er bleibt einfach liegen.",
+          "visual": "lost_lead"
         },
         {
-          "tag": "ABENDS",
-          "headline": "ANGEBOTE. RÜCKRUFE. NACHFASSEN.",
-          "sub": "Nicht das Handwerk ist das Problem. Der Ablauf dahinter ist es.",
-          "visual": "status"
+          "tag": "3 TAGE SPÄTER",
+          "headline": "KUNDE WEG.",
+          "sub": "Nicht wegen deiner Arbeit. Weil niemand den nächsten Schritt übernommen hat.",
+          "visual": "lost_lead"
         },
         {
-          "tag": "SYSTEM",
-          "headline": "RAUS AUS DEM KOPF.",
-          "sub": "Status, Verantwortlicher, nächster Schritt.",
+          "tag": "DER FIX",
+          "headline": "STATUS. OWNER. NÄCHSTER SCHRITT.",
+          "sub": "Damit offene Anfragen nicht nur im Kopf existieren.",
           "visual": "pipeline",
-          "cta": "FOLGE FÜR MEHR HANDWERKS-PROZESSE"
+          "cta": "FOLGE FÜR MEHR SYSTEME IM HANDWERK"
         }
       ],
       "voiceover": {
-        "text": "POV: 20 Uhr 47. Baustelle fertig. Und jetzt: Angebote, Rückrufe, Nachfassen. Wenn dein Feierabend zum Büro wird, fehlt dir ein System.",
-        "url": "https://resource2.heygen.ai/text_to_speech/95fe2f05f075434e99f1831f4c60d8e4/a6c8e374b40a4c4eac1182b05ef1bf1e/id=af5835c2-aec1-4445-8d7b-4ad84fcfa2e6.wav",
+        "text": "Der gefährlichste Auftrag? Der, den du nie als verloren bemerkst. Anfrage rein. Keiner übernimmt. Drei Tage später: Kunde weg. Status. Verantwortlicher. Nächster Schritt.",
+        "url": "https://resource2.heygen.ai/text_to_speech/95fe2f05f075434e99f1831f4c60d8e4/a6c8e374b40a4c4eac1182b05ef1bf1e/id=556aef0f-fd25-43be-a4d7-5924c4dc87b5.wav",
         "provider": "heygen",
-        "voice_id": "a6c8e374b40a4c4eac1182b05ef1bf1e",
         "voice_name": "Ibrahim",
-        "speed": 1.04,
-        "profile": "warning_social_native"
-      }
+        "voice_id": "a6c8e374b40a4c4eac1182b05ef1bf1e",
+        "speed": 1.02,
+        "profile": "serious_founder"
+      },
+      "caption": "Die meisten verlorenen Aufträge fühlen sich nicht wie verlorene Aufträge an. Sie bleiben einfach liegen. Genau deshalb braucht jede Anfrage einen Status, einen Verantwortlichen und einen nächsten Schritt.",
+      "hashtags": [
+        "#handwerk",
+        "#elektriker",
+        "#shk",
+        "#automatisierung",
+        "#sleimansystems"
+      ]
     },
     {
-      "id": "optimized-2026-09-27-02",
-      "accent": "blue",
-      "format": "demo",
-      "goal": "proof_and_inbound",
+      "id": "creative-2026-09-27-02",
+      "accent": "cyan",
+      "format": "show_dont_tell_demo",
+      "goal": "proof_and_leads",
+      "scene_durations": [
+        2.4,
+        2.8,
+        2.8
+      ],
       "scenes": [
         {
-          "tag": "DEMO",
-          "headline": "WHATSAPP REIN.",
+          "tag": "LIVE-DEMO",
+          "headline": "SCHAU. WHATSAPP REIN.",
           "sub": "„Wallbox nächste Woche möglich?“",
-          "visual": "demo_flow"
+          "visual": "transform_demo"
         },
         {
-          "tag": "2 SEKUNDEN SPÄTER",
-          "headline": "KLARES BRIEFING.",
-          "sub": "Leistung • Objekt • fehlende Infos • nächster Schritt",
-          "visual": "demo_flow"
+          "tag": "KI STRUKTURIERT",
+          "headline": "LEISTUNG. OBJEKT. WAS FEHLT.",
+          "sub": "Aus Chat-Chaos wird ein verwertbares Briefing.",
+          "visual": "transform_demo"
         },
         {
           "tag": "ERGEBNIS",
-          "headline": "CHAT → ANGEBOTS-VORBEREITUNG",
-          "sub": "KI strukturiert. Du prüfst und entscheidest.",
+          "headline": "DU PRÜFST. SYSTEM BEREITET VOR.",
+          "sub": "Keine erfundenen Angaben. Fehlendes bleibt sichtbar.",
           "visual": "pipeline",
           "cta": "KOSTENLOSE PROZESSANALYSE • LINK IM PROFIL"
         }
       ],
       "voiceover": {
-        "text": "WhatsApp rein. Die KI zieht Leistung, Objekt und fehlende Infos raus. Daraus wird ein klares Angebots-Briefing. Nicht mehr Chat-Chaos.",
-        "url": "https://resource2.heygen.ai/text_to_speech/95fe2f05f075434e99f1831f4c60d8e4/a6c8e374b40a4c4eac1182b05ef1bf1e/id=6f761f54-1b74-465b-9730-5536f7476f4a.wav",
+        "text": "Schau. WhatsApp rein. Die KI erkennt Leistung, Objekt und was noch fehlt. Daraus wird sofort ein Angebots-Briefing. Du prüfst nur noch.",
+        "url": "https://resource2.heygen.ai/text_to_speech/95fe2f05f075434e99f1831f4c60d8e4/a6c8e374b40a4c4eac1182b05ef1bf1e/id=640822bc-dded-443c-b33f-eed445351798.wav",
         "provider": "heygen",
-        "voice_id": "a6c8e374b40a4c4eac1182b05ef1bf1e",
         "voice_name": "Ibrahim",
-        "speed": 1.06,
+        "voice_id": "a6c8e374b40a4c4eac1182b05ef1bf1e",
+        "speed": 1.04,
         "profile": "demo_precise"
-      }
+      },
+      "caption": "Nicht 'KI' erklären. Zeigen, was sie im Büro konkret tut: Anfrage strukturieren, fehlende Angaben markieren und den nächsten Schritt vorbereiten. Genau solche Abläufe prüfen wir in der kostenlosen Prozessanalyse.",
+      "hashtags": [
+        "#handwerk",
+        "#ki",
+        "#digitalisierung",
+        "#prozessoptimierung",
+        "#sleimansystems"
+      ]
     },
     {
-      "id": "optimized-2026-09-27-03",
-      "accent": "amber",
-      "format": "contrarian_conversion",
-      "goal": "discussion_and_revenue",
+      "id": "creative-2026-09-27-03",
+      "accent": "purple",
+      "format": "contrarian_visual_metaphor",
+      "goal": "discussion_and_conversion",
+      "scene_durations": [
+        3.6,
+        4,
+        4
+      ],
       "scenes": [
         {
-          "tag": "MEHR LEADS?",
-          "headline": "VIELLEICHT DAS FALSCHE ZIEL.",
-          "sub": "Erst die offenen Angebote sauber führen.",
+          "tag": "UNBEQUEME WAHRHEIT",
+          "headline": "DEIN CHEF IST KEINE REMINDER-APP.",
+          "sub": "Wenn alles nur läuft, weil einer sich alles merkt, ist das kein System.",
+          "visual": "memory_overload"
+        },
+        {
+          "tag": "RAUS AUS DEM KOPF",
+          "headline": "STATUS. DATUM. OWNER.",
+          "sub": "Offene Angebote brauchen einen sichtbaren nächsten Schritt.",
           "visual": "followup"
         },
         {
-          "tag": "3 FELDER",
-          "headline": "STATUS • DATUM • OWNER",
-          "sub": "Damit jedes offene Angebot einen nächsten Schritt hat.",
-          "visual": "followup"
-        },
-        {
-          "tag": "CHECK",
-          "headline": "WO BLEIBT BEI EUCH UMSATZ LIEGEN?",
-          "sub": "Wir prüfen Anfrage, Angebot und Nachfassen im Ablauf.",
+          "tag": "SKALIERBAR",
+          "headline": "ERST PROZESS. DANN MEHR LEADS.",
+          "sub": "Sonst wächst mit der Nachfrage auch das Chaos.",
           "visual": "score",
-          "cta": "KOSTENLOSE PROZESSANALYSE • LINK IM PROFIL"
+          "cta": "PROZESSANALYSE • LINK IM PROFIL"
         }
       ],
       "voiceover": {
-        "text": "Mehr Leads? Vielleicht das falsche Ziel. Wenn offene Angebote keinen Status, kein Nachfassdatum und keinen Verantwortlichen haben, brauchst du zuerst einen besseren Prozess.",
-        "url": "https://resource2.heygen.ai/text_to_speech/95fe2f05f075434e99f1831f4c60d8e4/a6c8e374b40a4c4eac1182b05ef1bf1e/id=58ccfdc5-e4cd-49a4-8aa8-677f0175a9e5.wav",
+        "text": "Dein Chef ist keine Reminder-App. Wenn Angebote nur weiterlaufen, weil er sich alles merkt, fehlt ein System. Status. Datum. Verantwortlicher. Fertig.",
+        "url": "https://resource2.heygen.ai/text_to_speech/95fe2f05f075434e99f1831f4c60d8e4/a6c8e374b40a4c4eac1182b05ef1bf1e/id=fc6ad50b-4134-4fc0-a4db-57eb0e8653d3.wav",
         "provider": "heygen",
-        "voice_id": "a6c8e374b40a4c4eac1182b05ef1bf1e",
         "voice_name": "Ibrahim",
-        "speed": 1.08,
-        "profile": "contrarian_dynamic"
-      }
+        "voice_id": "a6c8e374b40a4c4eac1182b05ef1bf1e",
+        "speed": 1.05,
+        "profile": "contrarian_founder"
+      },
+      "caption": "Wenn der Chef gleichzeitig Vertrieb, Reminder, Angebotsliste und Gedächtnis des Betriebs ist, wird Wachstum irgendwann zum Engpass. Prozesse machen Verantwortung sichtbar.",
+      "hashtags": [
+        "#handwerksbetrieb",
+        "#unternehmer",
+        "#vertrieb",
+        "#automatisierung",
+        "#sleimansystems"
+      ]
     }
   ],
-  "render_version": "premium-v4-retention-social-native",
+  "render_version": "premium-v5-color-psychology-voice-front",
   "notes": [
-    "One-time late batch requested by user.",
-    "Three-scene structure with earlier payoff and demo-first framing.",
-    "No unsupported savings or conversion claims."
+    "Three distinct emotional color spaces: red loss, cyan demo/AI, purple contrarian/innovation.",
+    "Voice is mixed front-and-center with much quieter ducked music.",
+    "Scene durations are matched to natural voice pacing to avoid forced speech acceleration.",
+    "Demo shows concrete workflow value before the CTA."
   ]
 }
