@@ -1,0 +1,53 @@
+{
+  "date": "2026-09-27",
+  "evidence_window": {
+    "note": "Latest metrics available in Buffer queue; platform freshness differs.",
+    "tiktok": {
+      "observations": [
+        "25 Sep 20:30: 195 views, 3.18s average watch time",
+        "26 Sep 06:45: 169 views, 2.48s average watch time",
+        "26 Sep 10:00: 262 views, 2.58s average watch time",
+        "26 Sep 13:15: 98 views, 2.69s average watch time",
+        "26 Sep 17:00: 58 views, 2.31s average watch time",
+        "26 Sep 20:30: 21 views, 1.06s average watch time"
+      ],
+      "learning": "Retention remains the clearest measurable weakness; shares and comments are near zero. The 20:30 result is early and low-sample, so it is not treated as a stable loser yet."
+    },
+    "youtube": {
+      "observations": [
+        "25 Sep videos: 132–280 views in available queue metrics",
+        "26 Sep metrics are incomplete/early"
+      ],
+      "learning": "Do not infer a winner from 26 Sep yet."
+    },
+    "instagram": {
+      "observations": [
+        "25 Sep videos: 13–19 views in available queue metrics",
+        "26 Sep 13:15, 17:00 and 20:30 show error status"
+      ],
+      "learning": "Distribution reliability must be separated from creative performance."
+    }
+  },
+  "experiment": {
+    "hypothesis": "A spoken hook that begins immediately, stronger voice dynamics and a lower-friction CTA in reach slots should improve early retention before changing the core topic mix.",
+    "controlled_variables": [
+      "opening 0–2 seconds",
+      "voice delivery",
+      "CTA pressure"
+    ],
+    "hold_stable": [
+      "five-slot structure",
+      "dark premium visual system",
+      "core ICP",
+      "short-form duration band"
+    ],
+    "next_decision": "After today's posts accumulate comparable data, compare each slot against its own recent platform baseline before changing the next batch."
+  },
+  "qa_gate": {
+    "06:45": 8,
+    "10:00": 8,
+    "13:15": 7,
+    "17:00": 7,
+    "20:30": 7
+  }
+}
