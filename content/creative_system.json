@@ -1,5 +1,5 @@
 {
-  "version": "1.0",
+  "version": "2.1-retention-first",
   "canva": {
     "role": "design_system_and_asset_reference",
     "design_id": "DAHWVKU3Gcc",
@@ -77,5 +77,91 @@
     "voice_name": "Ibrahim",
     "voice_id": "a6c8e374b40a4c4eac1182b05ef1bf1e",
     "rule": "Public reels must use the private Ibrahim voice clone. Generic stock TTS is blocked from publishing."
-  }
+  },
+  "retention_first_rules": {
+    "objective": "Improve 0-3s retention and share/comment behavior before increasing complexity.",
+    "default_duration_seconds": {
+      "reach_slots": "6-9",
+      "demo_slot": "7-11",
+      "conversion_slot": "8-12"
+    },
+    "max_primary_scenes": 3,
+    "first_frame": {
+      "comprehension_target_seconds": 0.5,
+      "rule": "The pain, surprise, number, or useful promise must be understandable without audio."
+    },
+    "opening": {
+      "speech_starts_immediately": true,
+      "no_logo_intro": true,
+      "no_setup_sentence": true,
+      "rule": "No 'Heute zeige ich', no greeting, no context preamble. Start with the strongest sentence."
+    },
+    "payoff": {
+      "reach_slots_by_second": 4,
+      "demo_by_second": 5,
+      "rule": "Show proof, answer, transformation, or usable takeaway before explanation."
+    },
+    "density": {
+      "one_core_idea_per_video": true,
+      "max_on_screen_words_first_frame": 8,
+      "rule": "Delete explanations that can be inferred visually."
+    }
+  },
+  "social_native_rules": {
+    "priority": "native founder/handwerk feel over polished corporate ad feel",
+    "use_real_human_material_when_available": true,
+    "preferred_mix": [
+      "real Ibrahim/founder footage or realistic work-context footage",
+      "fast punch-in or crop changes",
+      "UI/process overlay",
+      "large single-purpose text",
+      "micro-movement every 0.5-1.5s"
+    ],
+    "avoid": [
+      "four similar corporate slides in sequence",
+      "static centered cards",
+      "long paragraphs",
+      "generic AI-ad pacing",
+      "visuals that feel like a website presentation"
+    ]
+  },
+  "slot_optimization": {
+    "06:45": {
+      "primary_metric": "early retention",
+      "structure": "loss hook -> concrete consequence -> one fix",
+      "cta": "none or very soft",
+      "voice_profile": "06:45_warning",
+      "rule": "Use the exact user-approved voice profile from voice_system.json; regenerate voice, never reuse an older 1.12 legacy file."
+    },
+    "10:00": {
+      "primary_metric": "saves/shares",
+      "structure": "usable promise -> exact prompt/template -> result",
+      "rule": "Give the useful artifact on-screen fast enough that a viewer has a reason to save."
+    },
+    "13:15": {
+      "primary_metric": "proof/understanding",
+      "structure": "before -> visible transformation -> after",
+      "rule": "Demonstrate, do not narrate four explanatory slides."
+    },
+    "17:00": {
+      "primary_metric": "comments/shares",
+      "structure": "specific contrarian claim -> reason -> direct question",
+      "rule": "The opinion must be concrete enough to agree/disagree with."
+    },
+    "20:30": {
+      "primary_metric": "conversion",
+      "structure": "problem -> product/demo -> one CTA",
+      "rule": "Do not optimize this slot primarily for virality."
+    }
+  },
+  "learning_priority": [
+    "0-2s hook/first frame",
+    "0-3s pacing and voice",
+    "payoff timing",
+    "social-native visual feel",
+    "share/comment reason",
+    "topic",
+    "posting time"
+  ],
+  "viral_candidate_rule": "Never call a video viral or a viral candidate from views alone. Require clear platform-relative improvement in retention plus at least one secondary signal such as shares, saves, comments, profile actions, qualified inbound, or unusually strong view velocity."
 }
