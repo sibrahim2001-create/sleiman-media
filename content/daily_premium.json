@@ -343,12 +343,14 @@
       ]
     }
   ],
-  "render_version": "premium-v6-attention-meme-sfx-loud",
+  "render_version": "attention-v7-frame-animated-meme-sfx-loud",
   "qa_targets": {
     "audio": "Final full mix target -13 LUFS integrated, max true peak -1 dB.",
     "first_3_seconds": "At least 3 distinct visual/audio beats before second 3.",
     "product_visibility": "Concrete workflow visible no later than second 4.",
     "muted_viewing": "Core message understandable without sound.",
-    "originality": "Only original/synthesized meme-style SFX; no copied copyrighted meme audio."
+    "originality": "Only original/synthesized meme-style SFX; no copied copyrighted meme audio.",
+    "motion": "First 3 seconds use real frame-by-frame animation: sliding/bouncing UI, shake, pop-ins, glitch, timer motion and animated progress — not static slideshow cards.",
+    "attention": "Three or more distinct visual/audio beats before second 3; brand is intentionally de-emphasized during the initial hook."
   }
 }
