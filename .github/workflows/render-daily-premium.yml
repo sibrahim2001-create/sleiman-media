@@ -9,7 +9,9 @@ on:
       - "scripts/render_daily_premium.py"
       - "scripts/render_attention_v7.py"
       - "scripts/render_attention_v8.py"
+      - "scripts/render_attention_v9.py"
       - "scripts/add_voiceovers.py"
+      - "scripts/add_voiceovers_v9.py"
       - ".github/workflows/render-daily-premium.yml"
   workflow_dispatch:
 
@@ -52,12 +54,21 @@ jobs:
           from pathlib import Path
           data=json.loads(Path("content/daily_premium.json").read_text(encoding="utf-8"))
           rv=str(data.get("render_version",""))
-          script="scripts/render_attention_v8.py" if "attention-v8" in rv else ("scripts/render_attention_v7.py" if "attention-v7" in rv else "scripts/render_daily_premium.py")
+          script="scripts/render_attention_v9.py" if "attention-v9" in rv else ("scripts/render_attention_v8.py" if "attention-v8" in rv else ("scripts/render_attention_v7.py" if "attention-v7" in rv else "scripts/render_daily_premium.py"))
           print("renderer:", script)
           subprocess.run(["python",script],check=True)
           PY
       - name: Add energetic voiceovers
-        run: python scripts/add_voiceovers.py
+        run: |
+          python - <<'PY'
+          import json, subprocess
+          from pathlib import Path
+          data=json.loads(Path("content/daily_premium.json").read_text(encoding="utf-8"))
+          rv=str(data.get("render_version",""))
+          script="scripts/add_voiceovers_v9.py" if "attention-v9" in rv else "scripts/add_voiceovers.py"
+          print("voice mixer:", script)
+          subprocess.run(["python",script],check=True)
+          PY
       - name: Upload preview artifact
         uses: actions/upload-artifact@v4
         with:
