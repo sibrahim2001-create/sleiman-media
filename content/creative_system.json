@@ -1,5 +1,5 @@
 {
-  "version": "2.3-attention-v7",
+  "version": "2.4-kinetic-captioning",
   "canva": {
     "role": "design_system_and_asset_reference",
     "design_id": "DAHWVKU3Gcc",
@@ -324,6 +324,19 @@
       "green result",
       "purple contrarian",
       "orange action"
+    ]
+  },
+  "kinetic_subtitles": {
+    "mandatory": true,
+    "purpose": "Subtitles are part of the creative, not accessibility text pasted on top.",
+    "rules": [
+      "Keep each caption beat short: usually 2-5 words, never a paragraph.",
+      "Place captions in the vertical safe zone above platform controls.",
+      "Highlight one semantic keyword per beat with color psychology.",
+      "Use pop-in or bounce timing at phrase changes; captions should visually follow the spoken rhythm.",
+      "Loss/warning keywords use red; urgency orange/yellow; AI cyan; clarity/trust blue; result/money/relief green; contrarian/innovation purple.",
+      "Do not cover the key demo interaction or CTA.",
+      "Every reel must remain understandable when muted."
     ]
   }
 }
