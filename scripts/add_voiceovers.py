@@ -60,11 +60,11 @@ def main():
         tempo = atempo_chain(speed)
 
         filt = (
-            f"[0:a]volume=0.13[bed];"
+            f"[0:a]volume=0.055[bed];"
             f"[1:a]{tempo},highpass=f=75,"
             f"acompressor=threshold=-18dB:ratio=3:attack=5:release=70,"
-            f"volume=1.18,adelay=70|70[vo];"
-            f"[bed][vo]amix=inputs=2:duration=first:dropout_transition=0,"
+            f"volume=2.35,adelay=40|40,loudnorm=I=-15.5:TP=-1.2:LRA=6[vo];"
+            f"[bed][vo]sidechaincompress=threshold=0.03:ratio=8:attack=5:release=180[ducked];[ducked][vo]amix=inputs=2:duration=first:dropout_transition=0,
             f"alimiter=limit=0.95[a]"
         )
 
