@@ -101,7 +101,7 @@ def draw_caption(im,reel,t):
     y=int(830+(1-p)*16)
     text=cue["text"].upper()
     highlight=(cue.get("highlight") or "").upper()
-    f=font(32)
+    f=font(31)
     words=text.split()
     # break into at most two balanced lines
     line1=[]; line2=[]; target=max(1,(len(words)+1)//2)
@@ -111,7 +111,7 @@ def draw_caption(im,reel,t):
     for line in lines:
         w=sum(d.textbbox((0,0),wd,font=f)[2]+12 for wd in line)-12
         widths.append(w)
-    card_w=min(570,max(widths)+46)
+    card_w=min(540,max(widths)+44)
     card_h=82 if len(lines)==1 else 124
     x0=(RW-card_w)//2
     d.rounded_rectangle((x0,y,x0+card_w,y+card_h),radius=22,fill=(5,7,11,228),outline=(*accent,235),width=3)
@@ -225,7 +225,7 @@ def frame_challenge(t,total):
         headline(d,"AUS 1 NACHRICHT",145,size=62)
         headline(d,"WIRD 1 KLARER NÄCHSTER SCHRITT.",245,color=GREEN,size=52)
         briefing(d,500,1.0)
-        pill(d,(52,1135,668,1205),"KOSTENLOSE PROZESSANALYSE",GREEN,BLACK,19)
+        pill(d,(70,990,650,1058),"KOSTENLOSE PROZESSANALYSE",GREEN,BLACK,18)
     return im
 
 def tab_window(d,x,y,w,h,title,color,angle=0):
@@ -242,8 +242,8 @@ def frame_tabs(t,total):
         im=grid(BG["white"].copy(),(205,214,224)); d=ImageDraw.Draw(im)
         progress_bar(d,t,total,PURPLE)
         pill(d,(34,104,230,154),"HANDWERKSBÜRO",BLUE,WHITE,16)
-        headline(d,"17 OFFENE TABS.",180,color=BLACK,size=76)
-        sub(d,"Im Kopf des Chefs.",280,color=(55,60,70),size=29)
+        headline(d,"17 OFFENE TABS.",170,color=BLACK,size=70)
+        sub(d,"Im Kopf des Chefs.",335,color=(55,60,70),size=28)
         labs=["RÜCKRUF","ANGEBOT","TERMIN","WHATSAPP","RECHNUNG","MATERIAL"]
         for i,lab in enumerate(labs):
             q=back(clamp((t-i*0.12)/0.55))
@@ -291,10 +291,10 @@ def frame_tabs(t,total):
     else:
         im=grid(BG["green"].copy(),(28,96,68)); d=ImageDraw.Draw(im); brand(d)
         progress_bar(d,t,total,GREEN)
-        headline(d,"KEIN GEDÄCHTNISTEST MEHR.",145,size=61)
-        headline(d,"JEDER SIEHT DEN STATUS.",250,color=GREEN,size=54)
-        dashboard(d,500,1.0)
-        pill(d,(52,1135,668,1205),"PROZESSANALYSE • LINK IM PROFIL",YELLOW,BLACK,18)
+        headline(d,"STATUS STATT GEDÄCHTNIS.",145,size=61)
+        sub(d,"Jeder sieht, was offen ist und wer übernimmt.",255,color=WHITE,size=25)
+        dashboard(d,430,1.0)
+        pill(d,(70,990,650,1058),"PROZESSANALYSE • LINK IM PROFIL",YELLOW,BLACK,17)
     return im
 
 def lane(d,x0,y0,w,label,color,progress,steps):
