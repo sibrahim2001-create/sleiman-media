@@ -1,206 +1,132 @@
 {
   "date": "2026-09-27",
+  "batch": "late-optimized-exception",
+  "research_basis": {
+    "own_data": [
+      "Loss/pain framing produced the strongest YouTube result so far.",
+      "Prompt/value formats produced the strongest TikTok result so far."
+    ],
+    "market_patterns": [
+      "evening-office pain",
+      "show the workflow instead of explaining it",
+      "follow-up/status visibility",
+      "POV and concrete before/after framing"
+    ]
+  },
   "reels": [
     {
-      "id": "premium-2026-09-27-01",
+      "id": "optimized-2026-09-27-01",
       "accent": "red",
-      "format": "pain",
+      "format": "pov_pain",
+      "goal": "reach_and_identification",
       "scenes": [
         {
-          "tag": "WARNUNG",
-          "headline": "„ICH RUF SPÄTER ZURÜCK.“",
-          "sub": "Der Satz wirkt harmlos. Für den Kunden ist er oft das Ende der Anfrage.",
+          "tag": "POV • 20:47",
+          "headline": "JETZT BEGINNT DEIN 2. JOB.",
+          "sub": "Baustelle fertig. Büro noch lange nicht.",
+          "visual": "pov_clock"
+        },
+        {
+          "tag": "ABENDS",
+          "headline": "ANGEBOTE. RÜCKRUFE. NACHFASSEN.",
+          "sub": "Nicht das Handwerk ist das Problem. Der Ablauf dahinter ist es.",
           "visual": "status"
-        },
-        {
-          "tag": "48 STUNDEN",
-          "headline": "DER KUNDE WARTET NICHT.",
-          "sub": "Ohne Status und nächsten Termin verschwindet der Rückruf im Alltag.",
-          "visual": "pipeline"
-        },
-        {
-          "tag": "DEMO",
-          "headline": "STATUS + OWNER + DATUM",
-          "sub": "Jede Anfrage bekommt sofort einen Verantwortlichen und einen nächsten Schritt.",
-          "visual": "status"
-        },
-        {
-          "tag": "CHECK",
-          "headline": "WO VERLIERT IHR ZEIT?",
-          "sub": "Die kostenlose Prozessanalyse prüft 9 Bereiche eures Betriebs.",
-          "visual": "score",
-          "cta": "PROZESSANALYSE • LINK IM PROFIL"
-        }
-      ],
-      "voiceover": {
-        "text": "„Ich ruf später zurück“? Genau hier gehen Anfragen verloren. Kein Status. Kein Verantwortlicher. Kein nächster Schritt. Dein Büro braucht ein System.",
-        "url": "https://resource2.heygen.ai/text_to_speech/95fe2f05f075434e99f1831f4c60d8e4/a6c8e374b40a4c4eac1182b05ef1bf1e/id=1e58e893-d09f-450c-b45d-c86604a81a31.wav",
-        "provider": "heygen",
-        "voice_id": "a6c8e374b40a4c4eac1182b05ef1bf1e",
-        "voice_name": "Ibrahim",
-        "speed": 1.12
-      }
-    },
-    {
-      "id": "premium-2026-09-27-02",
-      "accent": "blue",
-      "format": "prompt",
-      "scenes": [
-        {
-          "tag": "ELEKTRIKER?",
-          "headline": "KOPIER DIESEN PROMPT.",
-          "sub": "Er macht aus einer chaotischen Anfrage eine brauchbare Checkliste.",
-          "visual": "prompt"
-        },
-        {
-          "tag": "SCHRITT 1",
-          "headline": "WAS IST SCHON KLAR?",
-          "sub": "Kunde, Leistung, Objekt, Termin, Fotos, Budget.",
-          "visual": "inbox"
-        },
-        {
-          "tag": "SCHRITT 2",
-          "headline": "WAS FEHLT NOCH?",
-          "sub": "Die KI markiert Lücken – sie soll nichts erfinden.",
-          "visual": "prompt"
-        },
-        {
-          "tag": "ERGEBNIS",
-          "headline": "3 NÄCHSTE SCHRITTE.",
-          "sub": "So wird aus Nachricht → Briefing → Aktion.",
-          "visual": "pipeline",
-          "cta": "SPEICHERN & SPÄTER TESTEN"
-        }
-      ],
-      "voiceover": {
-        "text": "Kopier diesen Prompt: Anfrage zusammenfassen. Fehlende Infos markieren. Drei nächste Schritte nennen. So wird aus einer chaotischen Nachricht sofort eine klare Checkliste.",
-        "url": "https://resource2.heygen.ai/text_to_speech/95fe2f05f075434e99f1831f4c60d8e4/a6c8e374b40a4c4eac1182b05ef1bf1e/id=e5dd169b-f951-4b02-950a-a4bcce3c0951.wav",
-        "provider": "heygen",
-        "voice_id": "a6c8e374b40a4c4eac1182b05ef1bf1e",
-        "voice_name": "Ibrahim",
-        "speed": 1.12
-      }
-    },
-    {
-      "id": "premium-2026-09-27-03",
-      "accent": "amber",
-      "format": "demo",
-      "scenes": [
-        {
-          "tag": "30 MIN × 40",
-          "headline": "20 STUNDEN NUR FÜR ANGEBOTE.",
-          "sub": "Noch ohne Rückfragen und Nachfassen.",
-          "visual": "bar"
-        },
-        {
-          "tag": "VORHER",
-          "headline": "ANFRAGE → SUCHEN → RÜCKFRAGEN",
-          "sub": "Jeder Vorgang startet fast wieder bei null.",
-          "visual": "inbox"
-        },
-        {
-          "tag": "DEMO",
-          "headline": "ANFRAGE → BRIEFING → ANGEBOT",
-          "sub": "Informationen werden einmal sauber strukturiert und dann weiterverwendet.",
-          "visual": "pipeline"
-        },
-        {
-          "tag": "ANALYSE",
-          "headline": "ERST DEN ENGPASS FINDEN.",
-          "sub": "Nicht blind automatisieren. Erst messen, wo Zeit verloren geht.",
-          "visual": "score",
-          "cta": "KOSTENLOSE PROZESSANALYSE"
-        }
-      ],
-      "voiceover": {
-        "text": "Vierzig Angebote mal dreißig Minuten sind zwanzig Stunden Bürozeit. Rückfragen noch nicht mitgerechnet. Der Hebel ist nicht schneller tippen, sondern ein sauberer Prozess.",
-        "url": "https://resource2.heygen.ai/text_to_speech/95fe2f05f075434e99f1831f4c60d8e4/a6c8e374b40a4c4eac1182b05ef1bf1e/id=1d7a0d1b-77e2-40ff-8420-460ae209b798.wav",
-        "provider": "heygen",
-        "voice_id": "a6c8e374b40a4c4eac1182b05ef1bf1e",
-        "voice_name": "Ibrahim",
-        "speed": 1.12
-      }
-    },
-    {
-      "id": "premium-2026-09-27-04",
-      "accent": "red",
-      "format": "contrarian",
-      "scenes": [
-        {
-          "tag": "ANGEBOT RAUS",
-          "headline": "UND DANN?",
-          "sub": "Genau hier endet bei vielen Betrieben der Prozess.",
-          "visual": "status"
-        },
-        {
-          "tag": "TAG 3",
-          "headline": "NOCH KEINE ANTWORT.",
-          "sub": "Ohne nächsten Kontaktpunkt passiert: nichts.",
-          "visual": "bar"
         },
         {
           "tag": "SYSTEM",
-          "headline": "NACHFASSEN MIT DATUM.",
-          "sub": "Nicht aggressiv. Einfach sichtbar, planbar und nachvollziehbar.",
-          "visual": "status"
-        },
-        {
-          "tag": "MERKSATZ",
-          "headline": "FOLLOW-UP IST KEIN ZUFALL.",
-          "sub": "Ein offenes Angebot braucht immer einen nächsten Schritt.",
+          "headline": "RAUS AUS DEM KOPF.",
+          "sub": "Status, Verantwortlicher, nächster Schritt.",
           "visual": "pipeline",
           "cta": "FOLGE FÜR MEHR HANDWERKS-PROZESSE"
         }
       ],
       "voiceover": {
-        "text": "Angebot raus – fertig? Nein. Ohne Nachfassdatum, Status und Verantwortlichen bleibt Umsatz liegen. Follow-up ist kein Zufall. Es braucht einen Prozess.",
-        "url": "https://resource2.heygen.ai/text_to_speech/95fe2f05f075434e99f1831f4c60d8e4/a6c8e374b40a4c4eac1182b05ef1bf1e/id=e7cc7c25-f318-4816-b766-b85c9bca3b90.wav",
+        "text": "POV: 20 Uhr 47. Baustelle fertig. Und jetzt: Angebote, Rückrufe, Nachfassen. Wenn dein Feierabend zum Büro wird, fehlt dir ein System.",
+        "url": "https://resource2.heygen.ai/text_to_speech/95fe2f05f075434e99f1831f4c60d8e4/a6c8e374b40a4c4eac1182b05ef1bf1e/id=af5835c2-aec1-4445-8d7b-4ad84fcfa2e6.wav",
         "provider": "heygen",
         "voice_id": "a6c8e374b40a4c4eac1182b05ef1bf1e",
         "voice_name": "Ibrahim",
-        "speed": 1.12
+        "speed": 1.04,
+        "profile": "warning_social_native"
       }
     },
     {
-      "id": "premium-2026-09-27-05",
+      "id": "optimized-2026-09-27-02",
       "accent": "blue",
-      "format": "offer",
+      "format": "demo",
+      "goal": "proof_and_inbound",
       "scenes": [
         {
-          "tag": "79 € EINMALIG",
-          "headline": "KEIN KURS. EIN ARBEITSSYSTEM.",
-          "sub": "Für Handwerksbetriebe, die morgen strukturierter starten wollen.",
-          "visual": "kit"
+          "tag": "DEMO",
+          "headline": "WHATSAPP REIN.",
+          "sub": "„Wallbox nächste Woche möglich?“",
+          "visual": "demo_flow"
         },
         {
-          "tag": "DRIN",
-          "headline": "TRACKER • PROMPTS • VORLAGEN",
-          "sub": "Plus ein klarer Workflow für Anfrage, Angebot und Nachfassen.",
-          "visual": "kit"
+          "tag": "2 SEKUNDEN SPÄTER",
+          "headline": "KLARES BRIEFING.",
+          "sub": "Leistung • Objekt • fehlende Infos • nächster Schritt",
+          "visual": "demo_flow"
         },
         {
-          "tag": "ZIEL",
-          "headline": "WENIGER SUCHEN. KLARER ARBEITEN.",
-          "sub": "Das Kit ersetzt nicht den Chef – es gibt dem Büro Struktur.",
-          "visual": "pipeline"
-        },
-        {
-          "tag": "START",
-          "headline": "KI-OFFICE KIT",
-          "sub": "79 € einmalig. Kein Abo.",
-          "visual": "kit",
-          "cta": "LINK IM PROFIL"
+          "tag": "ERGEBNIS",
+          "headline": "CHAT → ANGEBOTS-VORBEREITUNG",
+          "sub": "KI strukturiert. Du prüfst und entscheidest.",
+          "visual": "pipeline",
+          "cta": "KOSTENLOSE PROZESSANALYSE • LINK IM PROFIL"
         }
       ],
       "voiceover": {
-        "text": "Kein Kurs. Ein Arbeitssystem. Tracker, Prompts, Vorlagen und Workflow für Anfrage, Angebot und Nachfassen. Neunundsiebzig Euro einmalig. Kein Abo.",
-        "url": "https://resource2.heygen.ai/text_to_speech/95fe2f05f075434e99f1831f4c60d8e4/a6c8e374b40a4c4eac1182b05ef1bf1e/id=feda2294-47c1-4b44-88b7-703dae4c0412.wav",
+        "text": "WhatsApp rein. Die KI zieht Leistung, Objekt und fehlende Infos raus. Daraus wird ein klares Angebots-Briefing. Nicht mehr Chat-Chaos.",
+        "url": "https://resource2.heygen.ai/text_to_speech/95fe2f05f075434e99f1831f4c60d8e4/a6c8e374b40a4c4eac1182b05ef1bf1e/id=6f761f54-1b74-465b-9730-5536f7476f4a.wav",
         "provider": "heygen",
         "voice_id": "a6c8e374b40a4c4eac1182b05ef1bf1e",
         "voice_name": "Ibrahim",
-        "speed": 1.12
+        "speed": 1.06,
+        "profile": "demo_precise"
+      }
+    },
+    {
+      "id": "optimized-2026-09-27-03",
+      "accent": "amber",
+      "format": "contrarian_conversion",
+      "goal": "discussion_and_revenue",
+      "scenes": [
+        {
+          "tag": "MEHR LEADS?",
+          "headline": "VIELLEICHT DAS FALSCHE ZIEL.",
+          "sub": "Erst die offenen Angebote sauber führen.",
+          "visual": "followup"
+        },
+        {
+          "tag": "3 FELDER",
+          "headline": "STATUS • DATUM • OWNER",
+          "sub": "Damit jedes offene Angebot einen nächsten Schritt hat.",
+          "visual": "followup"
+        },
+        {
+          "tag": "CHECK",
+          "headline": "WO BLEIBT BEI EUCH UMSATZ LIEGEN?",
+          "sub": "Wir prüfen Anfrage, Angebot und Nachfassen im Ablauf.",
+          "visual": "score",
+          "cta": "KOSTENLOSE PROZESSANALYSE • LINK IM PROFIL"
+        }
+      ],
+      "voiceover": {
+        "text": "Mehr Leads? Vielleicht das falsche Ziel. Wenn offene Angebote keinen Status, kein Nachfassdatum und keinen Verantwortlichen haben, brauchst du zuerst einen besseren Prozess.",
+        "url": "https://resource2.heygen.ai/text_to_speech/95fe2f05f075434e99f1831f4c60d8e4/a6c8e374b40a4c4eac1182b05ef1bf1e/id=58ccfdc5-e4cd-49a4-8aa8-677f0175a9e5.wav",
+        "provider": "heygen",
+        "voice_id": "a6c8e374b40a4c4eac1182b05ef1bf1e",
+        "voice_name": "Ibrahim",
+        "speed": 1.08,
+        "profile": "contrarian_dynamic"
       }
     }
   ],
-  "render_version": "premium-v3-ibrahim-voice"
+  "render_version": "premium-v4-retention-social-native",
+  "notes": [
+    "One-time late batch requested by user.",
+    "Three-scene structure with earlier payoff and demo-first framing.",
+    "No unsupported savings or conversion claims."
+  ]
 }
