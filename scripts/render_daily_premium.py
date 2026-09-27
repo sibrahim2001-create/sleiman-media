@@ -265,15 +265,18 @@ def visual(d,kind,a,y0=980):
 def make_scene(reel,i,sc,path):
     im,a=base(sc.get("accent",reel.get("accent","blue"))); d=ImageDraw.Draw(im)
     if not sc.get("hide_brand", False): brand(d,a)
-    d.text((60,188),sc.get("tag","").upper(),font=font(28),fill=a)
+    hook_mode=sc.get("hide_brand",False)
+    tag_y=82 if hook_mode else 188
+    head_y=175 if hook_mode else 355
+    d.text((60,tag_y),sc.get("tag","").upper(),font=font(30),fill=a)
     if i==0 and not sc.get("hide_hook_badge", False):
         d.rounded_rectangle((58,246,292,310),radius=18,fill=tuple(max(0,v//2) for v in a))
         d.text((175,278),"0–3 SEKUNDEN",font=font(23),fill=WHITE,anchor="mm")
-    hf=font(98 if i==0 else 86)
+    hf=font(112 if hook_mode else (98 if i==0 else 86))
     ht=wrap(d,sc["headline"],hf,940)
-    d.multiline_text((58,355),ht,font=hf,fill=WHITE,spacing=8)
+    d.multiline_text((58,head_y),ht,font=hf,fill=WHITE,spacing=8)
     hb=d.multiline_textbbox((0,0),ht,font=hf,spacing=8)
-    sy=min(910,355+(hb[3]-hb[1])+58)
+    sy=min(900,head_y+(hb[3]-hb[1])+48)
     sub=wrap(d,sc.get("sub",""),font(35,False),920)
     d.multiline_text((62,sy),sub,font=font(35,False),fill=MUTED,spacing=12)
     visual(d,sc.get("visual","bar"),a,1060)
