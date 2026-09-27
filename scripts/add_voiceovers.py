@@ -141,6 +141,9 @@ def main():
         speed = max(1.0, voice_dur / target)
         tempo = atempo_chain(speed)
         synth_sfx_track(reel, video_dur, sfx)
+        voice_gain = float(vo.get("mix_gain", 2.30))
+        sfx_gain = float(reel.get("sfx_mix_gain", 0.92))
+        bed_gain = float(reel.get("bed_mix_gain", 0.028))
 
         # Voice-first social mix:
         # - bed is deliberately low
@@ -148,16 +151,19 @@ def main():
         # - bed ducks under voice
         # - final whole mix is normalized to a strong short-form target
         filt = (
-            f"[0:a]volume=0.040[bed];"
-            f"[1:a]{tempo},highpass=f=70,"
-            f"equalizer=f=3200:t=q:w=1.2:g=2.6,"
-            f"acompressor=threshold=-20dB:ratio=3.5:attack=4:release=75,"
-            f"volume=2.6,adelay=25|25[vo0];"
+            f"[0:a]volume={bed_gain:.3f}[bed];"
+            f"[1:a]{tempo},highpass=f=65,"
+            f"equalizer=f=180:t=q:w=1.0:g=1.4,"
+            f"equalizer=f=2850:t=q:w=1.3:g=1.8,"
+            f"equalizer=f=6800:t=q:w=1.2:g=-0.7,"
+            f"lowpass=f=15000,"
+            f"acompressor=threshold=-18dB:ratio=2.4:attack=8:release=110,"
+            f"volume={voice_gain:.2f},adelay=18|18[vo0];"
             f"[vo0]asplit=2[side][mix];"
-            f"[bed][side]sidechaincompress=threshold=0.02:ratio=10:attack=3:release=160[ducked];"
-            f"[2:a]volume=1.15[sfx];"
+            f"[bed][side]sidechaincompress=threshold=0.018:ratio=12:attack=3:release=170[ducked];"
+            f"[2:a]volume={sfx_gain:.2f}[sfx];"
             f"[ducked][mix][sfx]amix=inputs=3:duration=first:dropout_transition=0:normalize=0,"
-            f"loudnorm=I=-13:TP=-1:LRA=5,alimiter=limit=0.98[a]"
+            f"loudnorm=I=-12.5:TP=-0.8:LRA=4.5,alimiter=limit=0.985[a]"
         )
 
         subprocess.run([
