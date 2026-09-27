@@ -1,5 +1,5 @@
 {
-  "version": "3.0-premise-first-creator-native",
+  "version": "2.4-attention-v9",
   "canva": {
     "role": "design_system_and_asset_reference",
     "design_id": "DAHWVKU3Gcc",
@@ -497,5 +497,41 @@
       "constant dark tech look",
       "effects without narrative purpose"
     ]
-  }
+  },
+  "research_backed_standard_2026_09_27": {
+    "platform_findings": [
+      "Value proposition should be recognizable inside the first three seconds.",
+      "Movement, quick edits, humor/surprise, expressive voice, sound and on-screen captions support attention.",
+      "Creative variants should be materially different during testing, not cosmetic hook swaps.",
+      "Critical text and logos must stay inside platform safe zones.",
+      "Short-form content should feel native and human rather than like a polished corporate ad."
+    ],
+    "niche_findings": [
+      "Handwerk software competitors consistently sell structured inquiries, fewer interruptions, clearer status/responsibility, less duplicate entry and less after-hours office work.",
+      "Sleiman Systems content should differentiate by visually demonstrating the workflow and operational consequence, not by repeating generic AI claims."
+    ],
+    "execution_rule": "Use external best practices as a starting prior, then let Sleiman Systems 48h/7d performance data decide which hooks, formats and payoffs survive."
+  },
+  "voice_v9": {
+    "architecture": "segment-based",
+    "rule": "Prefer 2-4 short Ibrahim voice segments over one long TTS take when a hook, explanation and payoff need different delivery.",
+    "silence_control": "Trim leading/trailing dead air and compress abnormally long synthetic pauses without speeding the actual words unnaturally.",
+    "mix": "Voice first, low bed, restrained SFX, final loudness technically measured before publishing."
+  },
+  "caption_v9": {
+    "placement": "conservative central safe zone",
+    "max_lines": 2,
+    "typical_words_per_beat": "2-5",
+    "right_ui_clearance": true,
+    "bottom_ui_clearance": true,
+    "semantic_color_highlights": true
+  },
+  "publish_gate_v9": [
+    "Inspect frames around 0.1s, 0.8s, 1.6s and 2.5s.",
+    "Reject overlapping or tiny text.",
+    "Reject generic opening frames that do not reveal Handwerk context or economic value.",
+    "Reject missing/quiet audio or clipped peaks.",
+    "Reject any reel that looks like a cosmetic reskin of another daily reel.",
+    "Do not claim virality before actual retention plus secondary engagement/inbound data confirms it."
+  ]
 }
