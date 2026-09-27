@@ -310,7 +310,7 @@
       "format": "race_demo",
       "duration": 12.4,
       "bed_mix_gain": 0.018,
-      "sfx_mix_gain": 0.72,
+      "sfx_mix_gain": 0.52,
       "sfx": [
         {
           "type": "bass_hit",
