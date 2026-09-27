@@ -189,6 +189,64 @@ def visual(d,kind,a,y0=980):
         for x,y,t in notes:
             d.rounded_rectangle((x,y,x+240,y+115),radius=18,fill=(57,42,13),outline=YELLOW,width=2)
             d.multiline_text((x+120,y+58),t,font=font(22),fill=WHITE,anchor="mm",align="center",spacing=4)
+    elif kind=="chat_hook":
+        card(d,(65,y0-65,1015,y0+470),fill=(13,20,22),outline=(40,96,74),r=36,w=3)
+        d.text((100,y0-25),"NEUE WHATSAPP",font=font(24),fill=GREEN)
+        d.rounded_rectangle((105,y0+55,935,y0+188),radius=30,fill=(31,79,61))
+        d.multiline_text((145,y0+82),"„Könnt ihr morgen\nkommen?“",font=font(38),fill=WHITE,spacing=4)
+        d.ellipse((870,y0-20,955,y0+65),fill=RED)
+        d.text((913,y0+22),"1",font=font(34),fill=WHITE,anchor="mm")
+        d.text((110,y0+245),"ORT ?",font=font(34),fill=AMBER)
+        d.text((390,y0+245),"FOTO ?",font=font(34),fill=AMBER)
+        d.text((690,y0+245),"TERMIN ?",font=font(34),fill=AMBER)
+        d.rounded_rectangle((105,y0+330,935,y0+410),radius=22,fill=(58,24,29))
+        d.text((520,y0+370),"3 INFOS FEHLEN",font=font(34),fill=WHITE,anchor="mm")
+    elif kind=="stop_stamp":
+        d.ellipse((260,y0-20,820,y0+540),fill=(68,14,20),outline=RED,width=18)
+        d.text((540,y0+220),"STOP",font=font(120),fill=WHITE,anchor="mm")
+        d.text((540,y0+335),"NICHT BLIND ANTWORTEN",font=font(30),fill=AMBER,anchor="mm")
+    elif kind=="boss_meme":
+        card(d,(75,y0-40,1005,y0+470),fill=(25,18,42),outline=PURPLE,r=34,w=3)
+        d.rounded_rectangle((115,y0+30,900,y0+125),radius=25,fill=(48,40,60))
+        d.text((145,y0+58),"„CHEF, WO IST ANGEBOT MÜLLER?“",font=font(31),fill=WHITE)
+        d.text((110,y0+180),"CHEF.EXE",font=font(54),fill=YELLOW)
+        d.text((110,y0+245),"LÄDT ...",font=font(54),fill=WHITE)
+        badges=[("RÜCKRUF",3),( "ANGEBOT",7),("TERMIN",4)]
+        xx=110
+        for label,num in badges:
+            d.rounded_rectangle((xx,y0+345,xx+240,y0+425),radius=20,fill=(54,25,71))
+            d.text((xx+120,y0+372),label,font=font(18),fill=MUTED,anchor="mm")
+            d.text((xx+120,y0+400),str(num),font=font(28),fill=RED,anchor="mm")
+            xx+=285
+    elif kind=="system_card":
+        card(d,(70,y0-50,1010,y0+475),fill=(7,31,29),outline=GREEN,r=34,w=3)
+        d.text((105,y0-5),"SICHTBARER STATUS",font=font(25),fill=GREEN)
+        rows=[("MÜLLER","ANGEBOT OFFEN","HEUTE","IBO"),("BAUER","RÜCKFRAGE","10:30","LEA"),("SCHMIDT","NACHFASSEN","FR","IBO")]
+        yy=y0+70
+        for name,status,when,owner in rows:
+            d.text((105,yy),name,font=font(28),fill=WHITE)
+            d.text((330,yy),status,font=font(21,False),fill=MUTED)
+            d.rounded_rectangle((685,yy-8,820,yy+43),radius=14,fill=(18,75,58))
+            d.text((752,yy+17),when,font=font(18),fill=WHITE,anchor="mm")
+            d.rounded_rectangle((845,yy-8,950,yy+43),radius=14,fill=(22,45,67))
+            d.text((897,yy+17),owner,font=font(18),fill=CYAN,anchor="mm")
+            yy+=100
+    elif kind=="seven_demo":
+        card(d,(55,y0-50,1025,y0+480),fill=(8,23,34),outline=CYAN,r=34,w=3)
+        d.text((90,y0-8),"SLEIMAN SYSTEMS • DEMO",font=font(23),fill=CYAN)
+        d.rounded_rectangle((90,y0+55,440,y0+160),radius=25,fill=(30,72,55))
+        d.text((265,y0+108),"ANFRAGE",font=font(32),fill=WHITE,anchor="mm")
+        d.polygon([(470,y0+95),(530,y0+125),(470,y0+155)],fill=ORANGE)
+        d.rounded_rectangle((560,y0+55,950,y0+160),radius=25,fill=(20,51,70))
+        d.text((755,y0+90),"KI",font=font(26),fill=CYAN,anchor="mm")
+        d.text((755,y0+125),"STRUKTURIERT",font=font(29),fill=WHITE,anchor="mm")
+        d.rounded_rectangle((90,y0+230,950,y0+315),radius=22,fill=(18,39,59))
+        d.text((130,y0+255),"OWNER",font=font(18),fill=MUTED)
+        d.text((300,y0+252),"IBO",font=font(25),fill=WHITE)
+        d.text((470,y0+255),"NÄCHSTER SCHRITT",font=font(18),fill=MUTED)
+        d.text((760,y0+252),"RÜCKFRAGE",font=font(25),fill=WHITE)
+        d.rounded_rectangle((90,y0+360,950,y0+435),radius=22,fill=GREEN)
+        d.text((520,y0+397),"DU PRÜFST • FERTIG",font=font(30),fill=(5,20,15),anchor="mm")
     elif kind=="status":
         card(d,(70,y0,1010,y0+430))
         rows=[("Müller GmbH","Angebot offen","HEUTE"),("Schmidt","Rückfrage","10:30"),("Bauer","Nachfassen","FR")]
@@ -205,9 +263,10 @@ def visual(d,kind,a,y0=980):
         d.rounded_rectangle((75,y0+100,710,y0+120),radius=10,fill=a)
 
 def make_scene(reel,i,sc,path):
-    im,a=base(reel.get("accent","blue")); d=ImageDraw.Draw(im); brand(d,a)
+    im,a=base(sc.get("accent",reel.get("accent","blue"))); d=ImageDraw.Draw(im)
+    if not sc.get("hide_brand", False): brand(d,a)
     d.text((60,188),sc.get("tag","").upper(),font=font(28),fill=a)
-    if i==0:
+    if i==0 and not sc.get("hide_hook_badge", False):
         d.rounded_rectangle((58,246,292,310),radius=18,fill=tuple(max(0,v//2) for v in a))
         d.text((175,278),"0–3 SEKUNDEN",font=font(23),fill=WHITE,anchor="mm")
     hf=font(98 if i==0 else 86)
