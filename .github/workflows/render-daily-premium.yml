@@ -8,6 +8,7 @@ on:
       - "content/voice_system.json"
       - "scripts/render_daily_premium.py"
       - "scripts/render_attention_v7.py"
+      - "scripts/render_attention_v8.py"
       - "scripts/add_voiceovers.py"
       - ".github/workflows/render-daily-premium.yml"
   workflow_dispatch:
@@ -51,7 +52,7 @@ jobs:
           from pathlib import Path
           data=json.loads(Path("content/daily_premium.json").read_text(encoding="utf-8"))
           rv=str(data.get("render_version",""))
-          script="scripts/render_attention_v7.py" if "attention-v7" in rv else "scripts/render_daily_premium.py"
+          script="scripts/render_attention_v8.py" if "attention-v8" in rv else ("scripts/render_attention_v7.py" if "attention-v7" in rv else "scripts/render_daily_premium.py")
           print("renderer:", script)
           subprocess.run(["python",script],check=True)
           PY
