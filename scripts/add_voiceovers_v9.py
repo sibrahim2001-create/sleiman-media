@@ -141,7 +141,7 @@ def main():
         filters.append(f"[{sfx_input}:a]volume={sfx_gain:.2f}[sfx]")
         filters.append(
             "[ducked][vox][sfx]amix=inputs=3:duration=first:dropout_transition=0:normalize=0,"
-            "loudnorm=I=-12.8:TP=-0.9:LRA=4.5,alimiter=limit=0.98[a]"
+            "loudnorm=I=-11.8:TP=-0.8:LRA=4.0,alimiter=limit=0.98[a]"
         )
 
         cmd=inputs+[
