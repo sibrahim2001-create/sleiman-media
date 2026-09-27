@@ -66,9 +66,9 @@
       "provider": "HeyGen",
       "locale": "de-DE",
       "speed": 1.04,
-      "pitch": -2,
-      "delivery": "serious, energetic, direct, controlled warning tone",
-      "pacing": "short hard sentences with deliberate micro-pauses",
+      "pitch": 0,
+      "delivery": "serious, energetic, direct, controlled warning tone; natural founder delivery",
+      "pacing": "short hard sentences with deliberate micro-pauses; immediate speech from frame 0",
       "approved_example": "Ich ruf später zurück? Genau hier gehen Anfragen verloren. Kein Status. Kein Verantwortlicher. Kein nächster Schritt. Dein Büro braucht ein System.",
       "ssml_pause_pattern_seconds": [
         0.28,
@@ -77,7 +77,8 @@
         0.18,
         0.26
       ],
-      "rule": "Use this profile as the default for the 06:45 Pain/Trust/Reach slot unless performance data or explicit user feedback justifies a controlled variant."
+      "rule": "Use this profile as the default for the 06:45 Pain/Trust/Reach slot unless performance data or explicit user feedback justifies a controlled variant.",
+      "approved_reference_note": "User-approved preview used speed 1.04 plus SSML micro-pauses and audio cleanup; no verified pitch shift. Do not add a pitch shift unless separately tested and approved."
     }
   }
 }
