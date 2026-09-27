@@ -145,6 +145,50 @@ def visual(d,kind,a,y0=980):
             d.rounded_rectangle((770,yy-5,940,yy+45),radius=14,fill=(27,48,78))
             d.text((855,yy+20),when,font=font(20),fill=CYAN,anchor="mm")
             yy+=100
+    elif kind=="lost_lead":
+        # Phone-style missed lead visualization with escalating urgency
+        card(d,(90,y0-35,990,y0+475),fill=(17,18,24),outline=(92,45,52),r=34,w=3)
+        d.text((130,y0+5),"WHATSAPP",font=font(22),fill=GREEN)
+        d.rounded_rectangle((130,y0+55,835,y0+142),radius=24,fill=(26,58,48))
+        d.text((160,y0+82),"„Können Sie mir ein Angebot schicken?“",font=font(28),fill=WHITE)
+        d.text((135,y0+184),"HEUTE",font=font(21),fill=MUTED)
+        d.rounded_rectangle((130,y0+225,590,y0+292),radius=18,fill=(61,27,31))
+        d.text((155,y0+246),"KEIN VERANTWORTLICHER",font=font(23),fill=RED)
+        d.text((135,y0+328),"+ 3 TAGE",font=font(24),fill=AMBER)
+        d.rounded_rectangle((330,y0+318,905,y0+405),radius=24,fill=(84,22,28))
+        d.text((617,y0+361),"KUNDE WEG",font=font(39),fill=WHITE,anchor="mm")
+    elif kind=="transform_demo":
+        # Left: messy chat. Right: structured AI extraction/result
+        card(d,(60,y0-35,500,y0+455),fill=(18,26,31),outline=(45,93,78),r=30)
+        d.text((90,y0+3),"CHAT",font=font(22),fill=GREEN)
+        d.rounded_rectangle((90,y0+55,445,y0+140),radius=22,fill=(31,66,54))
+        d.text((115,y0+79),"„Wallbox nächste",font=font(25),fill=WHITE)
+        d.text((115,y0+109),"Woche möglich?“",font=font(25),fill=WHITE)
+        d.text((90,y0+190),"?",font=font(66),fill=AMBER)
+        d.text((155,y0+203),"Termin",font=font(26),fill=MUTED)
+        d.text((90,y0+270),"?",font=font(66),fill=AMBER)
+        d.text((155,y0+283),"Fotos",font=font(26),fill=MUTED)
+        d.polygon([(525,y0+195),(585,y0+235),(525,y0+275)],fill=a)
+        card(d,(600,y0-35,1020,y0+455),fill=(10,35,39),outline=(45,135,143),r=30)
+        d.text((630,y0+3),"KI-BRIEFING",font=font(22),fill=CYAN)
+        chips=[("LEISTUNG","Wallbox"),("OBJEKT","EFH"),("FEHLT","Fotos + Termin")]
+        yy=y0+62
+        for k,v in chips:
+            d.rounded_rectangle((630,yy,980,yy+82),radius=18,fill=(17,49,58))
+            d.text((650,yy+12),k,font=font(17),fill=MUTED)
+            d.text((650,yy+40),v,font=font(25),fill=WHITE)
+            yy+=100
+        d.rounded_rectangle((630,y0+372,980,y0+430),radius=18,fill=GREEN)
+        d.text((805,y0+401),"NÄCHSTER SCHRITT ✓",font=font(21),fill=(5,18,13),anchor="mm")
+    elif kind=="memory_overload":
+        # Founder/owner memory overload metaphor
+        d.ellipse((340,y0+50,740,y0+450),fill=(31,22,48),outline=a,width=4)
+        d.text((540,y0+205),"CHEF",font=font(58),fill=WHITE,anchor="mm")
+        d.text((540,y0+270),"= REMINDER?",font=font(30),fill=AMBER,anchor="mm")
+        notes=[(70,y0+10,"MÜLLER\nNACHFASSEN"),(720,y0+20,"BAUER\nRÜCKRUF"),(40,y0+300,"ANGEBOT\nOFFEN"),(770,y0+315,"TERMIN\nFEHLT")]
+        for x,y,t in notes:
+            d.rounded_rectangle((x,y,x+240,y+115),radius=18,fill=(57,42,13),outline=YELLOW,width=2)
+            d.multiline_text((x+120,y+58),t,font=font(22),fill=WHITE,anchor="mm",align="center",spacing=4)
     elif kind=="status":
         card(d,(70,y0,1010,y0+430))
         rows=[("Müller GmbH","Angebot offen","HEUTE"),("Schmidt","Rückfrage","10:30"),("Bauer","Nachfassen","FR")]
@@ -210,7 +254,7 @@ def render(reel):
     pngs=[]
     for i,sc in enumerate(reel["scenes"]):
         p=work/f"s{i}.png"; make_scene(reel,i,sc,p); pngs.append(p)
-    segs=[3.2]+[4.0]*(len(pngs)-1); trans=.14
+    segs=reel.get("scene_durations") or ([3.2]+[4.0]*(len(pngs)-1)); trans=.14
     total=sum(segs)-trans*(len(segs)-1); transition_times=[]
     args=["ffmpeg","-y"]
     for p,seg in zip(pngs,segs): args += ["-loop","1","-framerate",str(FPS),"-t",str(seg),"-i",str(p)]
