@@ -98,6 +98,41 @@ def visual(d,kind,a,y0=980):
             d.ellipse((110,yy+8,132,yy+30),fill=GREEN)
             d.text((160,yy),t,font=font(31),fill=WHITE)
             yy+=67
+    elif kind=="pov_clock":
+        card(d,(70,y0,1010,y0+430),fill=(10,20,35),outline=(48,70,99))
+        d.text((100,y0+34),"FEIERABEND?",font=font(26),fill=MUTED)
+        d.text((100,y0+92),"20:47",font=font(112),fill=a)
+        d.text((100,y0+235),"Baustelle fertig.",font=font(31),fill=WHITE)
+        d.text((100,y0+290),"Angebote  •  Rückrufe  •  Nachfassen",font=font(26,False),fill=MUTED)
+        d.rounded_rectangle((100,y0+350,900,y0+390),radius=18,fill=(22,35,53))
+        d.rounded_rectangle((100,y0+350,690,y0+390),radius=18,fill=a)
+    elif kind=="demo_flow":
+        card(d,(70,y0-10,1010,y0+465),fill=(9,22,38),outline=(45,83,133))
+        d.text((100,y0+25),"WHATSAPP",font=font(23),fill=GREEN)
+        d.rounded_rectangle((100,y0+72,790,y0+155),radius=22,fill=(22,54,44))
+        d.text((130,y0+96),"„Wallbox nächste Woche möglich?“",font=font(28),fill=WHITE)
+        d.text((100,y0+198),"KI-BRIEFING",font=font(23),fill=CYAN)
+        rows=[("Leistung","Wallbox"),("Objekt","Einfamilienhaus"),("Fehlt","Fotos + Termin")]
+        yy=y0+245
+        for k,v in rows:
+            d.text((110,yy),k.upper(),font=font(20),fill=MUTED)
+            d.text((330,yy),v,font=font(27),fill=WHITE)
+            yy+=66
+        d.rounded_rectangle((735,y0+245,940,y0+430),radius=24,fill=(18,42,70),outline=(48,91,160))
+        d.text((837,y0+300),"NÄCHSTER",font=font(18),fill=MUTED,anchor="mm")
+        d.text((837,y0+338),"SCHRITT",font=font(23),fill=WHITE,anchor="mm")
+        d.text((837,y0+385),"→ RÜCKFRAGE",font=font(18),fill=a,anchor="mm")
+    elif kind=="followup":
+        card(d,(70,y0,1010,y0+430),fill=(10,23,39),outline=(46,78,120))
+        d.text((100,y0+30),"OFFENE ANGEBOTE",font=font(24),fill=a)
+        rows=[("Müller","OFFEN","HEUTE"),("Bauer","GESENDET","DO"),("Schmidt","NACHFASSEN","JETZT")]
+        yy=y0+92
+        for name,status,when in rows:
+            d.text((105,yy),name,font=font(28),fill=WHITE)
+            d.text((380,yy),status,font=font(22,False),fill=MUTED)
+            d.rounded_rectangle((770,yy-5,940,yy+45),radius=14,fill=(27,48,78))
+            d.text((855,yy+20),when,font=font(20),fill=CYAN,anchor="mm")
+            yy+=100
     elif kind=="status":
         card(d,(70,y0,1010,y0+430))
         rows=[("Müller GmbH","Angebot offen","HEUTE"),("Schmidt","Rückfrage","10:30"),("Bauer","Nachfassen","FR")]
@@ -163,7 +198,7 @@ def render(reel):
     pngs=[]
     for i,sc in enumerate(reel["scenes"]):
         p=work/f"s{i}.png"; make_scene(reel,i,sc,p); pngs.append(p)
-    segs=[1.75]+[2.05]*(len(pngs)-1); trans=.14
+    segs=[3.2]+[4.0]*(len(pngs)-1); trans=.14
     total=sum(segs)-trans*(len(segs)-1); transition_times=[]
     args=["ffmpeg","-y"]
     for p,seg in zip(pngs,segs): args += ["-loop","1","-framerate",str(FPS),"-t",str(seg),"-i",str(p)]
