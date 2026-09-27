@@ -1,0 +1,47 @@
+{
+  "date": "2026-09-28",
+  "strategy_version": "retention-first-v2.1",
+  "objective": "Increase 0-3s retention and create first meaningful share/comment/save signals while keeping the five-slot funnel.",
+  "rules": [
+    "No legacy 1.12 voice file for 06:45; regenerate using approved 06:45_warning profile.",
+    "Reach videos default to 6-9 seconds and max 3 primary scenes.",
+    "Hook must be understandable in <=0.5s without audio.",
+    "Payoff/proof by second 4 on reach slots and by second 5 on demo.",
+    "Prefer founder/social-native feel over polished corporate slideshow.",
+    "One core idea per video.",
+    "Do not call anything viral from views alone."
+  ],
+  "tests": {
+    "06:45": {
+      "hypothesis": "A sharper loss hook plus the approved natural warning voice will improve early retention versus recent pain-slot baseline.",
+      "structure": "loss hook -> consequence -> one fix",
+      "primary_variable": "hook + approved voice pacing",
+      "hold_constant": [
+        "ICP",
+        "slot",
+        "dark visual identity"
+      ]
+    },
+    "10:00": {
+      "hypothesis": "An immediately usable prompt/template shown on screen will improve saves/shares relative to explanatory tips.",
+      "structure": "usable promise -> exact artifact -> result",
+      "primary_variable": "saveable utility density"
+    },
+    "13:15": {
+      "hypothesis": "A visible before/after process demo will outperform narrated explanation on understanding and watchtime.",
+      "structure": "before -> transformation -> after",
+      "primary_variable": "visual proof"
+    },
+    "17:00": {
+      "hypothesis": "A concrete disagreeable claim plus direct question will increase comments/shares.",
+      "structure": "claim -> reason -> direct question",
+      "primary_variable": "discussion tension"
+    },
+    "20:30": {
+      "hypothesis": "A shorter problem-to-offer bridge will improve conversion intent without optimizing for reach.",
+      "structure": "problem -> product proof -> one CTA",
+      "primary_variable": "conversion clarity"
+    }
+  },
+  "decision_rule": "Compare each slot against its own recent platform baseline after comparable data accumulates. Change only 1-2 creative variables per iteration."
+}
