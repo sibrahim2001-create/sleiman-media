@@ -1,5 +1,5 @@
 {
-  "version": "2.2-color-psychology-social-native",
+  "version": "2.3-attention-v7",
   "canva": {
     "role": "design_system_and_asset_reference",
     "design_id": "DAHWVKU3Gcc",
@@ -265,6 +265,65 @@
       "AI buzzword openings",
       "logo intro",
       "text-heavy cards with no visual action"
+    ]
+  },
+  "first_three_seconds": {
+    "non_negotiable": true,
+    "objective": "Earn the next second before explaining anything.",
+    "requirements": [
+      "At least 3 distinct visual or audio beats inside the first 3 seconds.",
+      "Use a pattern interrupt in frame 0: real-life message, bold contradiction, alarming status, timer, question, or visually obvious before/after.",
+      "No logo intro and no generic brand card before the hook.",
+      "At least one moving UI/object, shake, bounce, pop-in, timer, progress, or rapid scene transition — not only zooming a static slide.",
+      "The core problem or promised benefit must be understandable muted in <=1 second.",
+      "Show the actual workflow/product by second 4 whenever the format is demo/conversion."
+    ]
+  },
+  "meme_and_sfx_rules": {
+    "use": "Original meme-style storytelling and original/synthesized sound effects when they improve attention or comedic timing.",
+    "allowed_examples": [
+      "notification ping",
+      "record scratch",
+      "bass hit",
+      "whoosh",
+      "stamp",
+      "error beep",
+      "cash-style chime",
+      "loading/exe joke",
+      "POV captions",
+      "reaction-style text"
+    ],
+    "rules": [
+      "Do not copy copyrighted meme clips or ripped trend audio.",
+      "Memes must map to a real Handwerk pain point, not random entertainment.",
+      "Sound effects punctuate visual changes; they must not overpower Ibrahim's voice.",
+      "Humor is a delivery mechanism, not the entire value proposition."
+    ]
+  },
+  "audio_mastering": {
+    "target_integrated_lufs": -13,
+    "target_true_peak_db": -1,
+    "voice_priority": "Ibrahim voice sits clearly in front of music on phone speakers.",
+    "bed_rule": "Music ducks under voice; never force natural speech into a shorter edit just to hit duration."
+  },
+  "creative_mix": {
+    "daily_goal": "The five daily pieces should not look like five slides from one template.",
+    "rotate": [
+      "real-message simulation",
+      "original meme",
+      "fast demo",
+      "POV/micro-story",
+      "saveable utility",
+      "contrarian opinion",
+      "conversion demo"
+    ],
+    "visual_variety": [
+      "light and dark backgrounds",
+      "red/yellow urgency",
+      "cyan/blue tech",
+      "green result",
+      "purple contrarian",
+      "orange action"
     ]
   }
 }
