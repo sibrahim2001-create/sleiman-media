@@ -1,450 +1,177 @@
 {
-  "date": "2026-09-27",
-  "batch": "attention-v9-perfect-execution",
-  "render_version": "attention-v9-perfect-execution",
-  "research_basis": {
-    "platform": [
-      "Value proposition visible inside first 3 seconds.",
-      "Fast movement, unexpected visual beats, sound, captions and native short-form pacing.",
-      "Different creative concepts should be materially different, not only hook swaps.",
-      "Captions must remain inside platform safe zones."
-    ],
-    "niche": [
-      "Current Handwerk software messaging repeatedly centers on structured customer inquiries, fewer interruptions, all information in one place, clearer responsibility/status, less duplicate entry and less after-hours office work.",
-      "Sleiman Systems differentiates content by showing the workflow visually instead of making generic AI promises."
-    ],
-    "own_data": [
-      "Concrete pain/loss framing has been stronger than generic brand explanation on YouTube.",
-      "Concrete prompts and usable value have been stronger than abstract messaging on TikTok.",
-      "Historic average watch time around 2 seconds makes first-frame clarity and first-3-second pacing the primary bottleneck."
-    ]
-  },
+  "date": "2026-09-28",
+  "batch": "premise-first-v10",
+  "render_version": "premise-first-v10",
   "reels": [
     {
-      "id": "attention-v9-2026-09-27-01",
-      "format": "challenge",
-      "duration": 12.2,
-      "bed_mix_gain": 0.018,
-      "sfx_mix_gain": 0.72,
-      "sfx": [
+      "id": "premium-2026-09-28-01",
+      "format": "societal_pov",
+      "accent": "amber",
+      "scenes": [
         {
-          "type": "bass_hit",
-          "at": 0.02,
-          "gain": 0.65
+          "hide_brand": true,
+          "hide_hook_badge": true,
+          "tag": "FEIERABEND?",
+          "headline": "21:47.\nNOCH IM BÜRO.",
+          "sub": "Baustelle fertig. Bürotag nicht.",
+          "visual": "pov_clock"
         },
         {
-          "type": "notification",
-          "at": 1.95,
-          "gain": 0.82
+          "tag": "DAS PROBLEM",
+          "headline": "FACHKRÄFTE\nMACHEN BÜRO.",
+          "sub": "Angebote. Rückrufe. Nachfassen.",
+          "visual": "memory_overload"
         },
         {
-          "type": "record_scratch",
-          "at": 3.15,
-          "gain": 0.62
-        },
-        {
-          "type": "stamp",
-          "at": 3.55,
-          "gain": 0.55
-        },
-        {
-          "type": "stamp",
-          "at": 4.15,
-          "gain": 0.55
-        },
-        {
-          "type": "stamp",
-          "at": 4.72,
-          "gain": 0.55
-        },
-        {
-          "type": "whoosh",
-          "at": 5.25,
-          "gain": 0.55
-        },
-        {
-          "type": "cash",
-          "at": 9.2,
-          "gain": 0.35
+          "tag": "DER WECHSEL",
+          "headline": "NICHT ALLES\nBRAUCHT DEN CHEF.",
+          "sub": "Status. Owner. Nächster Schritt.",
+          "visual": "system_card",
+          "cta": "WO VERLIERT DEIN BETRIEB ZEIT?"
         }
       ],
-      "voice_segments": [
-        {
-          "at": 0.03,
-          "url": "https://resource2.heygen.ai/text_to_speech/95fe2f05f075434e99f1831f4c60d8e4/a6c8e374b40a4c4eac1182b05ef1bf1e/id=c3cc1b65-f1c0-486c-bb6f-058bcf99c1c4.wav",
-          "gain": 2.45,
-          "max_duration": 2.15,
-          "delivery": "playful challenge hook"
-        },
-        {
-          "at": 2.15,
-          "url": "https://resource2.heygen.ai/text_to_speech/95fe2f05f075434e99f1831f4c60d8e4/a6c8e374b40a4c4eac1182b05ef1bf1e/id=5e34d989-23d1-4f9b-bd3e-902a4ad5ef0b.wav",
-          "gain": 2.38,
-          "max_duration": 2.95,
-          "delivery": "quick reveal"
-        },
-        {
-          "at": 5.05,
-          "url": "https://resource2.heygen.ai/text_to_speech/95fe2f05f075434e99f1831f4c60d8e4/a6c8e374b40a4c4eac1182b05ef1bf1e/id=d0e0b713-0cca-43e6-b929-6c7112ba4e6c.wav",
-          "gain": 2.34,
-          "max_duration": 5.85,
-          "delivery": "confident explanation"
-        }
-      ],
-      "captions": [
-        {
-          "start": 0.08,
-          "end": 1.1,
-          "text": "Drei-Sekunden-Test.",
-          "highlight": "Test",
-          "accent": "yellow"
-        },
-        {
-          "start": 1.1,
-          "end": 2.12,
-          "text": "Was fehlt hier?",
-          "highlight": "fehlt",
-          "accent": "red"
-        },
-        {
-          "start": 2.15,
-          "end": 3.22,
-          "text": "Könnt ihr morgen kommen?",
-          "highlight": "morgen",
-          "accent": "green"
-        },
-        {
-          "start": 3.22,
-          "end": 3.78,
-          "text": "Ort.",
-          "highlight": "Ort",
-          "accent": "orange"
-        },
-        {
-          "start": 3.78,
-          "end": 4.36,
-          "text": "Foto.",
-          "highlight": "Foto",
-          "accent": "purple"
-        },
-        {
-          "start": 4.36,
-          "end": 5,
-          "text": "Termin.",
-          "highlight": "Termin",
-          "accent": "red"
-        },
-        {
-          "start": 5.05,
-          "end": 5.72,
-          "text": "Genau.",
-          "highlight": "Genau",
-          "accent": "green"
-        },
-        {
-          "start": 5.72,
-          "end": 8.2,
-          "text": "Mein System markiert das sofort.",
-          "highlight": "sofort",
-          "accent": "cyan"
-        },
-        {
-          "start": 8.2,
-          "end": 10.05,
-          "text": "Bevor aus einer Nachricht",
-          "highlight": "Nachricht",
-          "accent": "blue"
-        },
-        {
-          "start": 10.05,
-          "end": 12.15,
-          "text": "zehn Rückfragen werden.",
-          "highlight": "zehn",
-          "accent": "red"
-        }
-      ],
-      "caption": "3-Sekunden-Test fürs Handwerksbüro: Eine Kundenanfrage klingt simpel – bis Ort, Foto oder Termin fehlen. Genau diese Lücken sollte ein Prozess sofort sichtbar machen.",
-      "hashtags": [
-        "#handwerk",
-        "#elektriker",
-        "#kiimhandwerk",
-        "#büro",
-        "#sleimansystems"
-      ],
-      "conversion_intent": "reach_then_process_analysis"
+      "scene_durations": [
+        3.4,
+        3.7,
+        4.7
+      ]
     },
     {
-      "id": "attention-v9-2026-09-27-02",
-      "format": "tabs_meme",
-      "duration": 12.6,
-      "bed_mix_gain": 0.016,
-      "sfx_mix_gain": 0.68,
-      "sfx": [
+      "id": "premium-2026-09-28-02",
+      "format": "saveable_checklist",
+      "accent": "yellow",
+      "scenes": [
         {
-          "type": "notification",
-          "at": 0.08,
-          "gain": 0.65
+          "hide_brand": true,
+          "hide_hook_badge": true,
+          "tag": "SPEICHERN",
+          "headline": "BEVOR DU\nANTWORTEST:",
+          "sub": "Fehlen diese 3 Infos?",
+          "visual": "chat_hook"
         },
         {
-          "type": "notification",
-          "at": 0.33,
-          "gain": 0.58
+          "tag": "3-FRAGEN-CHECK",
+          "headline": "ORT.\nFOTO.\nTERMIN.",
+          "sub": "Fehlt etwas? Erst rückfragen.",
+          "visual": "stop_stamp"
         },
         {
-          "type": "notification",
-          "at": 0.58,
-          "gain": 0.52
-        },
-        {
-          "type": "error",
-          "at": 1.25,
-          "gain": 0.65
-        },
-        {
-          "type": "bass_hit",
-          "at": 3,
-          "gain": 0.62
-        },
-        {
-          "type": "record_scratch",
-          "at": 4.65,
-          "gain": 0.48
-        },
-        {
-          "type": "whoosh",
-          "at": 5.05,
-          "gain": 0.52
-        },
-        {
-          "type": "stamp",
-          "at": 8.3,
-          "gain": 0.45
+          "tag": "BÜROREGEL",
+          "headline": "ERST VOLLSTÄNDIG.\nDANN ANGEBOT.",
+          "sub": "Weniger Rückfragen. Klareres Briefing.",
+          "visual": "transform_demo",
+          "cta": "SPEICHERN FÜRS BÜRO"
         }
       ],
-      "voice_segments": [
-        {
-          "at": 0.03,
-          "url": "https://resource2.heygen.ai/text_to_speech/95fe2f05f075434e99f1831f4c60d8e4/a6c8e374b40a4c4eac1182b05ef1bf1e/id=df2536a7-6f93-4dfa-813a-2665c8418d6e.wav",
-          "gain": 2.38,
-          "max_duration": 2.95,
-          "delivery": "dry humor"
-        },
-        {
-          "at": 3,
-          "url": "https://resource2.heygen.ai/text_to_speech/95fe2f05f075434e99f1831f4c60d8e4/a6c8e374b40a4c4eac1182b05ef1bf1e/id=41bf15a1-1dc5-4aa2-a595-df7348448418.wav",
-          "gain": 2.32,
-          "max_duration": 4.3,
-          "delivery": "matter-of-fact founder"
-        },
-        {
-          "at": 7.4,
-          "url": "https://resource2.heygen.ai/text_to_speech/95fe2f05f075434e99f1831f4c60d8e4/a6c8e374b40a4c4eac1182b05ef1bf1e/id=1abfc29c-112b-4dc0-a3f8-f19713d6a467.wav",
-          "gain": 2.38,
-          "max_duration": 2.65,
-          "delivery": "deadpan punchline"
-        }
-      ],
-      "captions": [
-        {
-          "start": 0.08,
-          "end": 2.9,
-          "text": "17 offene Tabs im Kopf des Chefs.",
-          "highlight": "17",
-          "accent": "purple"
-        },
-        {
-          "start": 3,
-          "end": 4.65,
-          "text": "Du brauchst keinen besseren Kalender.",
-          "highlight": "keinen",
-          "accent": "red"
-        },
-        {
-          "start": 4.65,
-          "end": 5.65,
-          "text": "Du brauchst Status.",
-          "highlight": "Status",
-          "accent": "blue"
-        },
-        {
-          "start": 5.65,
-          "end": 6.55,
-          "text": "Verantwortlichen.",
-          "highlight": "Verantwortlichen",
-          "accent": "purple"
-        },
-        {
-          "start": 6.55,
-          "end": 7.35,
-          "text": "Nächsten Schritt.",
-          "highlight": "Nächsten",
-          "accent": "green"
-        },
-        {
-          "start": 7.4,
-          "end": 10.2,
-          "text": "Sonst ist jeder Rückruf",
-          "highlight": "Rückruf",
-          "accent": "yellow"
-        },
-        {
-          "start": 10.2,
-          "end": 12.55,
-          "text": "ein Gedächtnistest.",
-          "highlight": "Gedächtnistest",
-          "accent": "red"
-        }
-      ],
-      "caption": "Wenn Rückruf, Termin, Angebot und Nachfassen nur im Kopf des Chefs hängen, ist jeder Tag ein Gedächtnistest. Status + Verantwortung + nächster Schritt gehören sichtbar ins System.",
-      "hashtags": [
-        "#handwerksbetrieb",
-        "#unternehmer",
-        "#meme",
-        "#prozessoptimierung",
-        "#sleimansystems"
-      ],
-      "conversion_intent": "discussion_then_profile"
+      "scene_durations": [
+        3.2,
+        3.2,
+        4.5
+      ]
     },
     {
-      "id": "attention-v9-2026-09-27-03",
-      "format": "race_demo",
-      "duration": 12.4,
-      "bed_mix_gain": 0.018,
-      "sfx_mix_gain": 0.52,
-      "sfx": [
+      "id": "premium-2026-09-28-03",
+      "format": "whatsapp_demo",
+      "accent": "cyan",
+      "scenes": [
         {
-          "type": "bass_hit",
-          "at": 0.02,
-          "gain": 0.68
+          "hide_brand": true,
+          "hide_hook_badge": true,
+          "tag": "ECHTE SITUATION",
+          "headline": "WALLBOX NÄCHSTE\nWOCHE MÖGLICH?",
+          "sub": "Klingt simpel. Ist es nicht.",
+          "visual": "chat_hook"
         },
         {
-          "type": "whoosh",
-          "at": 1.15,
-          "gain": 0.55
+          "tag": "SLEIMAN SYSTEMS",
+          "headline": "DAS FEHLT\nSOFORT.",
+          "sub": "Leistung ok. Objekt ok. Fotos + Termin fehlen.",
+          "visual": "transform_demo"
         },
         {
-          "type": "click",
-          "at": 2.05,
-          "gain": 0.48
-        },
-        {
-          "type": "click",
-          "at": 3.25,
-          "gain": 0.48
-        },
-        {
-          "type": "click",
-          "at": 4.55,
-          "gain": 0.48
-        },
-        {
-          "type": "stamp",
-          "at": 6.65,
-          "gain": 0.48
-        },
-        {
-          "type": "cash",
-          "at": 8.45,
-          "gain": 0.36
-        },
-        {
-          "type": "whoosh",
-          "at": 9.65,
-          "gain": 0.42
+          "tag": "NÄCHSTER SCHRITT",
+          "headline": "RÜCKFRAGE\nSTATT SUCHEREI.",
+          "sub": "Owner + Status + nächster Schritt sichtbar.",
+          "visual": "system_card",
+          "cta": "MEHR DEMOS IM PROFIL"
         }
       ],
-      "voice_segments": [
+      "scene_durations": [
+        3.3,
+        4.1,
+        4
+      ]
+    },
+    {
+      "id": "premium-2026-09-28-04",
+      "format": "contrarian_meme",
+      "accent": "purple",
+      "scenes": [
         {
-          "at": 0.03,
-          "url": "https://resource2.heygen.ai/text_to_speech/95fe2f05f075434e99f1831f4c60d8e4/a6c8e374b40a4c4eac1182b05ef1bf1e/id=0b811734-bd8c-4400-a539-40632b24d040.wav",
-          "gain": 2.4,
-          "max_duration": 2.45,
-          "delivery": "fast contrast"
+          "hide_brand": true,
+          "hide_hook_badge": true,
+          "tag": "UNBEQUEME WAHRHEIT",
+          "headline": "DEIN CHEF IST\nKEINE REMINDER-APP.",
+          "sub": "Trotzdem läuft es oft genau so.",
+          "visual": "boss_meme"
         },
         {
-          "at": 2.4,
-          "url": "https://resource2.heygen.ai/text_to_speech/95fe2f05f075434e99f1831f4c60d8e4/a6c8e374b40a4c4eac1182b05ef1bf1e/id=1caa094a-8642-4515-98a9-e43114437211.wav",
-          "gain": 2.3,
-          "max_duration": 5.8,
-          "delivery": "precise demo"
+          "tag": "WENN ALLES HIER HÄNGT",
+          "headline": "RÜCKRUF.\nANGEBOT.\nTERMIN.",
+          "sub": "Dann ist der Chef das Betriebsgedächtnis.",
+          "visual": "memory_overload"
         },
         {
-          "at": 8.3,
-          "url": "https://resource2.heygen.ai/text_to_speech/95fe2f05f075434e99f1831f4c60d8e4/a6c8e374b40a4c4eac1182b05ef1bf1e/id=d59af989-639f-4fc1-b268-412d6f2f26ce.wav",
-          "gain": 2.38,
-          "max_duration": 2.45,
-          "delivery": "confident payoff"
+          "tag": "MEINE THESE",
+          "headline": "STATUS MUSS\nSICHTBAR SEIN.",
+          "sub": "Nicht erinnerbar.",
+          "visual": "system_card",
+          "cta": "STIMMST DU ZU?"
         }
       ],
-      "captions": [
+      "scene_durations": [
+        3.4,
+        3.6,
+        4.2
+      ]
+    },
+    {
+      "id": "premium-2026-09-28-05",
+      "format": "conversion_demo",
+      "accent": "green",
+      "scenes": [
         {
-          "start": 0.08,
-          "end": 2.35,
-          "text": "Links: suchen, nachfragen, erinnern.",
-          "highlight": "suchen",
-          "accent": "red"
+          "hide_brand": true,
+          "hide_hook_badge": true,
+          "tag": "NICHT NOCH EIN KURS",
+          "headline": "SO SIEHT\nDER ABLAUF AUS.",
+          "sub": "Anfrage rein. Struktur raus.",
+          "visual": "seven_demo"
         },
         {
-          "start": 2.4,
-          "end": 3.55,
-          "text": "Rechts: Anfrage rein.",
-          "highlight": "Anfrage",
-          "accent": "green"
+          "tag": "IM KIT",
+          "headline": "TRACKER.\nPROMPTS.\nVORLAGEN.",
+          "sub": "Für Anfrage, Angebot und Nachfassen.",
+          "visual": "kit"
         },
         {
-          "start": 3.55,
-          "end": 4.75,
-          "text": "KI strukturiert.",
-          "highlight": "KI",
-          "accent": "cyan"
-        },
-        {
-          "start": 4.75,
-          "end": 6.35,
-          "text": "Verantwortlicher steht fest.",
-          "highlight": "fest",
-          "accent": "purple"
-        },
-        {
-          "start": 6.35,
-          "end": 8.15,
-          "text": "Nächster Schritt klar.",
-          "highlight": "klar",
-          "accent": "green"
-        },
-        {
-          "start": 8.3,
-          "end": 9.8,
-          "text": "Welcher Ablauf gewinnt?",
-          "highlight": "gewinnt",
-          "accent": "yellow"
-        },
-        {
-          "start": 9.8,
-          "end": 12.35,
-          "text": "Du siehst es selbst.",
-          "highlight": "selbst",
-          "accent": "cyan"
+          "tag": "79 EURO EINMALIG",
+          "headline": "SELBST STARTEN.\nOHNE ABO.",
+          "sub": "Erst Nutzen. Dann entscheiden.",
+          "visual": "system_card",
+          "cta": "KI-OFFICE KIT IM PROFIL"
         }
       ],
-      "caption": "Gleiche Anfrage, zwei Abläufe. Links: suchen, nachfragen, erinnern. Rechts: strukturieren, Verantwortung setzen, nächsten Schritt sichtbar machen. Genau diesen Unterschied muss ein gutes System liefern.",
-      "hashtags": [
-        "#handwerk",
-        "#digitalisierung",
-        "#automatisierung",
-        "#ki",
-        "#sleimansystems"
-      ],
-      "conversion_intent": "demo_then_process_analysis"
+      "scene_durations": [
+        4,
+        3.6,
+        4.4
+      ]
     }
   ],
   "qa_targets": {
-    "first_frame": "Niche context visible immediately; no generic brand intro.",
-    "first_3_seconds": "Problem/value recognizable by second 3 with multiple visual/audio beats.",
-    "voice": "Short voice segments with compressed dead air, warm EQ, natural word speed and differentiated delivery.",
-    "subtitles": "Kinetic captions inside conservative safe zone; max 2 lines; semantic highlights.",
-    "audio": "Final mix target about -14 to -12.5 LUFS; true peak at or below -0.8 dBTP.",
-    "proof": "Actual workflow visible by approximately second 4 for demo-oriented content.",
-    "originality": "No ripped meme clips or copyrighted trend audio."
+    "premise_first": true,
+    "first_frame_muted": true,
+    "proof_by_second_4": true
   }
 }
