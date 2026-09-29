@@ -59,6 +59,8 @@ jobs:
           subprocess.run(["python",script],check=True)
           PY
       - name: Add energetic voiceovers
+        env:
+          FISH_AUDIO_API_KEY: ${{ secrets.SEC }}
         run: |
           python - <<'PY'
           import json, subprocess

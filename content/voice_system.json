@@ -3,8 +3,8 @@
   "required": true,
   "objective": "Energetic German voiceover that leads the viewer through every reel and improves retention without sounding like a generic commercial.",
   "primary_voice": {
-    "provider": "HeyGen",
-    "voice_id": "a6c8e374b40a4c4eac1182b05ef1bf1e",
+    "provider": "Fish Audio",
+    "voice_id": "2dd7ea84ce76468b88b229871a2e18c6",
     "voice_name": "Ibrahim",
     "type": "private_clone",
     "language": "German",
@@ -17,7 +17,8 @@
       "founder-like",
       "brand-consistent",
       "non-generic"
-    ]
+    ],
+    "model": "s2.1-pro-free"
   },
   "writing_rules": [
     "Start speaking immediately; no greeting, no brand intro.",
@@ -62,8 +63,8 @@
     "06:45_warning": {
       "status": "approved_by_user",
       "voice_name": "Ibrahim",
-      "voice_id": "a6c8e374b40a4c4eac1182b05ef1bf1e",
-      "provider": "HeyGen",
+      "voice_id": "2dd7ea84ce76468b88b229871a2e18c6",
+      "provider": "Fish Audio",
       "locale": "de-DE",
       "speed": 1.04,
       "pitch": 0,

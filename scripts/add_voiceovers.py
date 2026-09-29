@@ -1,6 +1,7 @@
 #!/usr/bin/env python3
 import json
 import math
+import os
 import random
 import shutil
 import subprocess
@@ -13,6 +14,54 @@ ROOT = Path(__file__).resolve().parents[1]
 MANIFEST = ROOT / "content/daily_premium.json"
 OUT = ROOT / "media/daily-premium"
 TMP = ROOT / ".voiceover_tmp"
+
+def fish_reference_id() -> str:
+    configured = os.environ.get("FISH_AUDIO_VOICE_ID")
+    if configured:
+        return configured
+    data = json.loads((ROOT / "content/voice_system.json").read_text(encoding="utf-8"))
+    return str((data.get("primary_voice") or {}).get("voice_id") or "")
+
+def synthesize_fish_voice(text: str, destination: Path) -> None:
+    api_key = os.environ.get("FISH_AUDIO_API_KEY")
+    if not api_key:
+        raise RuntimeError("Missing Actions secret SEC (FISH_AUDIO_API_KEY).")
+    voice_id = fish_reference_id()
+    if not voice_id:
+        raise RuntimeError("Fish Audio voice_id is missing from content/voice_system.json.")
+    data = json.loads((ROOT / "content/voice_system.json").read_text(encoding="utf-8"))
+    model = str((data.get("primary_voice") or {}).get("model") or "s2.1-pro-free")
+    if model != "s2.1-pro-free":
+        raise RuntimeError("This renderer is restricted to the free Fish Audio model s2.1-pro-free.")
+    payload = json.dumps({"text": text, "reference_id": voice_id, "format": "mp3"}).encode("utf-8")
+    request = urllib.request.Request(
+        "https://api.fish.audio/v1/tts",
+        data=payload,
+        headers={"Authorization": f"Bearer {api_key}", "Content-Type": "application/json", "model": model},
+        method="POST",
+    )
+    try:
+        with urllib.request.urlopen(request, timeout=60) as response:
+            audio = response.read()
+    except urllib.error.HTTPError as error:
+        detail = error.read().decode("utf-8", "replace")[:1000]
+        raise RuntimeError(f"Fish Audio HTTP {error.code}: {detail}") from error
+    valid_mp3 = audio.startswith(b"ID3") or (len(audio) > 2 and audio[0] == 0xff and (audio[1] & 0xe0) == 0xe0)
+    if not valid_mp3:
+        raise RuntimeError("Fish Audio did not return a valid MP3.")
+    destination.write_bytes(audio)
+
+def materialize_voice(source: dict, destination: Path) -> bool:
+    text = str(source.get("text") or "").strip()
+    if text:
+        synthesize_fish_voice(text, destination)
+        print(f"Fish Audio TTS generated {destination.name} ({destination.stat().st_size} bytes).")
+        return True
+    url = source.get("url")
+    if url:
+        urllib.request.urlretrieve(url, destination)
+        return True
+    return False
 
 def probe_duration(path: Path) -> float:
     p = subprocess.run(
@@ -121,9 +170,8 @@ def main():
 
     for reel in data.get("reels", []):
         vo = reel.get("voiceover") or {}
-        url = vo.get("url")
-        if not url:
-            print(f"skip {reel['id']}: no voiceover url")
+        if not (vo.get("text") or vo.get("url")):
+            print(f"skip {reel['id']}: no voiceover text or url")
             continue
 
         video = OUT / f"{reel['id']}.mp4"
@@ -133,7 +181,7 @@ def main():
         voice = TMP / f"{reel['id']}.mp3"
         sfx = TMP / f"{reel['id']}-sfx.wav"
         mixed = TMP / f"{reel['id']}-mixed.mp4"
-        urllib.request.urlretrieve(url, voice)
+        materialize_voice(vo, voice)
 
         video_dur = probe_duration(video)
         voice_dur = probe_duration(voice)
