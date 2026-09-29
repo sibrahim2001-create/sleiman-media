@@ -17,7 +17,7 @@ jobs:
     steps:
       - name: Find Ibrahim voice and generate a free preview
         env:
-          FISH_AUDIO_API_KEY: ${{ secrets.FISH_AUDIO_API_KEY }}
+          FISH_AUDIO_API_KEY: ${{ secrets.SEC }}
         run: |
           python - <<'PY'
           import json, os, sys, urllib.request, urllib.error
@@ -25,7 +25,7 @@ jobs:
 
           api_key = os.environ.get("FISH_AUDIO_API_KEY")
           if not api_key:
-              raise SystemExit("Missing repository secret FISH_AUDIO_API_KEY.")
+              raise SystemExit("Missing repository secret SEC.")
 
           def request(url, data=None, model=None):
               headers = {"Authorization": f"Bearer {api_key}"}
