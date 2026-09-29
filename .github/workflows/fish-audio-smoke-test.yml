@@ -54,13 +54,17 @@ jobs:
           def voice_id(v):
               return str(v.get("_id") or v.get("id") or "")
           matches = [v for v in voices if "ibrahim" in title(v).lower() and voice_id(v)]
-          if len(matches) != 1:
-              print("Could not select exactly one Fish voice named Ibrahim.")
+          if len(matches) == 1:
+              selected = matches[0]
+          elif len(matches) == 0 and len(voices) == 1 and voice_id(voices[0]):
+              selected = voices[0]
+              print("Only one private Fish voice exists; using it for this internal preview.")
+          else:
+              print("Could not safely select one Fish voice.")
               print("Your Fish account voices (ID and title only):")
               for v in voices:
                   print(f"- {voice_id(v)} | {title(v)}")
-              raise SystemExit("Rename the intended clone to Ibrahim or add its ID as FISH_AUDIO_VOICE_ID, then rerun.")
-          selected = matches[0]
+              raise SystemExit("Keep one voice named Ibrahim, or set FISH_AUDIO_VOICE_ID and rerun.")
           selected_id = voice_id(selected)
           print(f"Selected private voice: {title(selected)} ({selected_id})")
 
@@ -73,7 +77,8 @@ jobs:
               },
               model="s2.1-pro-free",
           )
-          if not audio or audio[:3] != b"ID3":
+          is_mp3 = audio.startswith(b"ID3") or (len(audio) > 2 and audio[0] == 0xff and (audio[1] & 0xe0) == 0xe0)
+          if not is_mp3:
               raise SystemExit(f"TTS response was not a valid MP3 (Content-Type: {content_type}).")
           Path("fish-audio-preview.mp3").write_bytes(audio)
           print(f"Free preview generated successfully ({len(audio)} bytes).")
