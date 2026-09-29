@@ -1,0 +1,87 @@
+name: Fish Audio voice connection test
+
+on:
+  push:
+    branches: ["main"]
+    paths:
+      - ".github/workflows/fish-audio-smoke-test.yml"
+  workflow_dispatch:
+
+permissions:
+  contents: read
+
+jobs:
+  fish-audio-smoke-test:
+    runs-on: ubuntu-latest
+    timeout-minutes: 5
+    steps:
+      - name: Find Ibrahim voice and generate a free preview
+        env:
+          FISH_AUDIO_API_KEY: ${{ secrets.FISH_AUDIO_API_KEY }}
+        run: |
+          python - <<'PY'
+          import json, os, sys, urllib.request, urllib.error
+          from pathlib import Path
+
+          api_key = os.environ.get("FISH_AUDIO_API_KEY")
+          if not api_key:
+              raise SystemExit("Missing repository secret FISH_AUDIO_API_KEY.")
+
+          def request(url, data=None, model=None):
+              headers = {"Authorization": f"Bearer {api_key}"}
+              if data is not None:
+                  headers["Content-Type"] = "application/json"
+              if model:
+                  headers["model"] = model
+              req = urllib.request.Request(
+                  url,
+                  data=json.dumps(data).encode("utf-8") if data is not None else None,
+                  headers=headers,
+                  method="POST" if data is not None else "GET",
+              )
+              try:
+                  with urllib.request.urlopen(req, timeout=45) as response:
+                      return response.read(), response.headers.get("Content-Type", "")
+              except urllib.error.HTTPError as e:
+                  detail = e.read().decode("utf-8", "replace")[:1200]
+                  raise SystemExit(f"Fish Audio returned HTTP {e.code}: {detail}")
+
+          raw, _ = request("https://api.fish.audio/model?self=true&page_size=100")
+          payload = json.loads(raw.decode("utf-8"))
+          voices = payload.get("items", []) if isinstance(payload, dict) else payload
+          def title(v):
+              return str(v.get("title") or v.get("name") or v.get("nickname") or "")
+          def voice_id(v):
+              return str(v.get("_id") or v.get("id") or "")
+          matches = [v for v in voices if "ibrahim" in title(v).lower() and voice_id(v)]
+          if len(matches) != 1:
+              print("Could not select exactly one Fish voice named Ibrahim.")
+              print("Your Fish account voices (ID and title only):")
+              for v in voices:
+                  print(f"- {voice_id(v)} | {title(v)}")
+              raise SystemExit("Rename the intended clone to Ibrahim or add its ID as FISH_AUDIO_VOICE_ID, then rerun.")
+          selected = matches[0]
+          selected_id = voice_id(selected)
+          print(f"Selected private voice: {title(selected)} ({selected_id})")
+
+          audio, content_type = request(
+              "https://api.fish.audio/v1/tts",
+              {
+                  "text": "Anfrage rein. Wer übernimmt den nächsten Schritt? Genau das machen wir bei Sleiman Systems sichtbar.",
+                  "reference_id": selected_id,
+                  "format": "mp3",
+              },
+              model="s2.1-pro-free",
+          )
+          if not audio or audio[:3] != b"ID3":
+              raise SystemExit(f"TTS response was not a valid MP3 (Content-Type: {content_type}).")
+          Path("fish-audio-preview.mp3").write_bytes(audio)
+          print(f"Free preview generated successfully ({len(audio)} bytes).")
+          PY
+      - name: Upload internal preview
+        uses: actions/upload-artifact@v4
+        with:
+          name: fish-audio-voice-preview
+          path: fish-audio-preview.mp3
+          if-no-files-found: error
+          retention-days: 2
